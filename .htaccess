@@ -1,3 +1,6 @@
+Options +FollowSymLinks
+RewriteEngine on
+
 Redirect 301 /blog/how-to-replace-unity-with-i3-window-manager-on-ubuntu-1204 http://walther.io/how-to-replace-unity-with-i3-window-manager-on-ubuntu-1204
 Redirect 301 /blog/getting-started-and-going-further-with-i3-window-manager http://walther.io/getting-started-and-going-further-with-i3-window-manager
 Redirect 301 /blog/using-the-spotify-v1-api-with-php-55 http://walther.io/using-the-spotify-v1-api-with-php-55
