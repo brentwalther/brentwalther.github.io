@@ -1,0 +1,9 @@
+# Site settings
+title: Brent Walther's Homepage
+email: brent@walther.io
+description: Brent Walther -- programmer, music lover, country dancer, Aggie
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.brentwalther.net" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
