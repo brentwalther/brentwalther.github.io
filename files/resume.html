@@ -10,31 +10,39 @@
   <title>Brent Walther's Resume</title>
   <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen, print">
   <style>
+    body {
+      font-size: 12px;
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+
     td {
-      min-width: 110px;
+      padding: 0 8px;
+    }
+
+    table#header {
+      width: 100%;
+    }
+
+    table#meat td:nth-child(2) {
+      padding-top: 10px;
+    }
+
+    table#meat td:first-child {
+      border-right: 1px solid black;
+      vertical-align: top;
     }
 
     .contact-info {
       padding: 0 15px;
     }
 
-    tr#contact td {
-      vertical-align:middle;
-    }
-
-    .non-bold {
-      font-weight: normal;
-    }
-
-    td > p {
-      margin: 10px 0;
-    }
-
-    td > ul {
-        margin: 10px 0px 10px 25px;
+    .no-margin {
+      margin: 0;
     }
   </style>
-
 </head>
 
 <body>
@@ -42,7 +50,7 @@
 
   <h1 class="text-center">Brent Walther<br/></h1>
 
-  <table class="table">
+  <table id="header">
     <tr id="contact">
       <td colspan="2">
         <p class="text-center">
@@ -58,51 +66,53 @@
         <p>Seeking challenging software engineering intern positions during summer 2015.</p>
       </td>
     </tr> -->
+  </table>
+  <table id="meat">
     <tr id="education">
       <td>
         <h4>education</h4>
       </td>
       <td>
-        <h5>Texas A&amp;M University, College Station, TX</h5>
-        <p>Masters of Computer Science (MCS) <span class="pull-right muted">Gradation: May 2016</span></p>
-        <p>Bachelor of Science in Computer Science <span class="pull-right muted">Graduated: May 2014</span><br/>
+        <p class="no-margin"><strong>Texas A&amp;M University </strong>College Station, TX</p>
+        <p>Masters (MCS) in Computer Science <span class="pull-right muted">Gradation: May 2016</span><br>
+        Bachelors (BS) in Computer Science <span class="pull-right muted">Graduated: May 2014</span><br/>
         Major GPA: 3.627 - Total GPA: 3.296<br/>
         Startup Aggieland Entrepreneur in Residence</p>
       </td>
     </tr>
 
-    <tr id="releventExperience">
+    <tr id="experience">
       <td>
-        <h4>relevant experience</h4>
+        <h4>experience</h4>
       </td>
       <td>
-        <h5>Software Engineering Intern<span class="non-bold"> - Google, Seattle, WA</span> <span class="pull-right non-bold muted">May 2015 - Aug 2015</span></h5>
+        <p class="no-margin"><strong>Google</strong> Seattle, WA <br><strong><em>Software Engineering Intern</em></strong> Google Maps for Android Navigation <span class="pull-right muted">May 2015 - Aug 2015</span></p>
         <ul>
-	  <li>Completed two new features for Google Maps for Android (Navigation/Directions).</li>
+	        <li>Completed two new features for Google Maps for Android (Navigation/Directions).</li>
           <li>Turned an idea from a slide deck into a fully functioning feature touching each piece of Google's multi-tiered directions stack.</li>
-	  <li>Led the design and implementation of a completely new data format for the internal Google Maps Directions API.</li>
-	  <li>Prototyped 3 different ideas for a directions UI improvement and iterated on one of the ideas until it was ready to release on the internal beta.</li>
+	        <li>Led the design and implementation of a completely new data format for the internal Google Maps Directions API.</li>
+	        <li>Prototyped 3 different ideas for a directions UI improvement and iterated on one of the ideas until it was ready to release on the internal beta.</li>
         </ul>
-        <h5>Software Engineer<span class="non-bold"> - AskU</span> <span class="pull-right non-bold muted">Sept 2014 - May 2015</span></h5>
+        <p class="no-margin"><strong>AskU</strong> College Station, TX <br><strong><em>Software Engineer</em></strong> Platform/Mobile App <span class="pull-right muted">Sept 2014 - May 2015</span></p>
         <ul>
           <li>Startup that builds localized communities on web and mobile that connect students with questions with students that have the answers.</li>
           <li>Developed on the web platform's full stack utilizing Ruby on Rails, Javascript, Angular, ElasticSearch, AWS EC2 and S3.</li>
           <li>Developed on the mobile platform built with Angular and Ionic framework.
           <li>Designed and executed 5 A/B test experiments that increased user activation and retention.</li>
         </ul>
-        <h5>Software Engineering Intern<span class="non-bold"> - Google, Mountain View, CA</span> <span class="pull-right non-bold muted">May 2014 - Aug 2014</span></h5>
+        <p class="no-margin"><strong>Google</strong> Mountain View, CA <br><strong><em>Software Engineering Intern</em></strong> Java Platform <span class="pull-right muted">May 2014 - Aug 2014</span></p>
         <ul>
           <li>Maintained and improved Google's fork of OpenJDK7 (Java, JNI, and C++)</li>
           <li>Created an intuitive visualization for engineers to gauge their garbage collection performance</li>
           <li>Added numerous tooling interfaces to give projects new perspectives on performance data</li>
         </ul>
-        <h5>Co-Founder<span class="non-bold"> - Notequill</span> <span class="pull-right non-bold muted">Feb 2013 - Mar 2014</span></h5>
+        <p class="no-margin"><strong>Notequill</strong> College Station, TX <br><strong><em>Co-Founder</em></strong> <span class="pull-right muted">Feb 2013 - Mar 2014</span></p>
         <ul>
           <li>Co-Developed Notequill's "digital canvas" using HTML5 Canvas element and Javascript/jQuery</li>
           <li>Designed and engineered the platform from the ground up using PHP, MySQL, jQuery, Twitter Bootstrap, and RedbeanPHP</li>
           <li>Co-Invented provisional patent application #61/847,713 "Note Recorder System and Method" filed July 18, 2013</li>
         </ul>
-        <h5>Software Developer Associate I<span class="non-bold"> - DATATRAK, Bryan, TX</span> <span class="pull-right non-bold muted">Jan 2013 - Mar 2014</span></h5>
+        <p class="no-margin"><strong>DATATRAK International</strong> Bryan, TX <br><strong><em>Software Developer Associate I</em></strong> <span class="pull-right muted">Jan 2013 - Mar 2014</span></p>
         <ul>
           <li>Developed and maintained the core platform using Java, JSP, Javascript/jQuery, HTML, CSS, SQL, and XML</li>
           <li>Made necessary platform changes to replace antiquated Oracle Toplink with JPA/EclipseLink</li>
@@ -116,23 +126,29 @@
         <h4>skills</h4>
       </td>
       <td>
-        <ul>
-          <li>Languages: Java, HTML, CSS, Javascript, C++/C, PHP, Ruby on Rails, SQL</li>
-          <li>Technologies: Git, Angular, Google Closure, Elasticsearch, Eclipse, Laravel</li>
-        </ul>
+        <p class="no-margin"><strong>Languages:</strong> Java, HTML, CSS, Javascript, C++/C, PHP, Ruby on Rails, SQL</p>
+        <p class="no-margin"><strong>Technologies:</strong> Git, Angular, Google Closure, Elasticsearch, Eclipse, Laravel</p>
       </td>
     </tr>
 
-    <tr id="awards">
+    <tr id="leadership">
       <td>
-        <h4>leadership and awards</h4>
+        <h4>leadership</h4>
       </td>
       <td>
-        <h5>aggieHack(web) Sponsor and Planner: <i class="non-bold"> Planned and organized this 100 member hackathon event  at Texas A&amp;M during Oct 2013. Developed three of the four lightning challenges and served as a mentor to hackers that were new to web development.</i></h5>
-        <h5>3x Distinguished Student Award: <i class="non-bold">Given to students who have Outstanding Academic Achievement</i></h5>
+        <p class="no-margin"><strong>aggieHack(web) Sponsor and Planner: </strong> Planned and organized this 100 member hackathon event  at Texas A&amp;M during Oct 2013. Developed three of the four lightning challenges and served as a mentor to hackers that were new to web development.</p>
+      </td>
+    </tr>
+
+    <tr id="honors">
+      <td>
+        <h4>honors</h4>
+      </td>
+      <td>
+        <p class="no-margin"><strong>3x Distinguished Student Award: </strong>Given to students who have Outstanding Academic Achievement</p>
         <!-- Stuff below is old achievements and should probably be commented out -->
-        <h5>Qualified for State UIL Competition in Computer Science: <i class="non-bold">Consisted of 3 hour hackathons and written tests</i></h5>
-        <h5>11th place in National BPA Java Programming Competition: <i class="non-bold">The cleanest, most well written code that solved the problem statement</i></h5>
+<!--         <strong>Qualified for State UIL Competition in Computer Science: </strong>Consisted of 3 hour hackathons and written tests<br>
+        <strong>11th place in National BPA Java Programming Competition: </strong>The cleanest, most well written code that solved the problem statement</p> -->
       </td>
     </tr>
   </table>
