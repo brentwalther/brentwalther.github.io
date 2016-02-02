@@ -1,0 +1,52 @@
+h1, h2, h3, h4, h5, h6, p, a, a:visited, li {
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.row {
+  width: 100%;
+  padding: 5px 0;
+}
+
+.nav-link {
+  padding: 2px 8px;
+  text-decoration: none;
+}
+
+.float-right {
+  float: right;
+}
+
+.media-object {
+  padding: 8px;
+}
+
+.photo-caption {
+  margin: 2px;
+  font-size: 75%;
+  text-align: center;
+}
+
+#header-image {
+  max-width: 100%;
+  width: 100%;
+}
