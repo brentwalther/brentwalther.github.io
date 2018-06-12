@@ -6,10 +6,19 @@
 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="robots" content="index,follow" />
-  <meta name="keywords" content="Brent, Walther, Texas A&amp;M, tamu, computer, science, html, java, resume" />
-  <title>Brent Walther's Resume</title>
-  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen, print">
+  <meta name="keywords" content="Brent, Walther, Texas A&amp;M, tamu, 14, computer science, software engineering, google, startup, AskU" />
+  <meta name="description" content="Personal resume for Brent Walther, Texas A&M '14 graduate, Google software engineer, former engineer for startup AskU." />
+
+  <title>Brent Walther Personal Resume</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="/css/normalize.css" rel="stylesheet" media="screen, print">
+
   <style>
+    * {
+      font-family: 'Roboto', sans-serif;
+    }
+
     body {
       font-size: 12px;
     }
@@ -42,6 +51,15 @@
     .no-margin {
       margin: 0;
     }
+
+    .container {
+      margin: 0 auto;
+      width: 960px;
+    }
+
+    .text-center {
+      text-align: center;
+    }
   </style>
 </head>
 
@@ -68,68 +86,76 @@
     </tr> -->
   </table>
   <table id="meat">
-    <tr id="education">
-      <td>
-        <h4>education</h4>
-      </td>
-      <td>
-        <p class="no-margin"><strong>Texas A&amp;M University </strong>College Station, TX</p>
-        <p>Masters (MCS) in Computer Science - GPA: 3.58<span class="pull-right muted">Graduated: May 2016</span><br>
-        Bachelors (BS) in Computer Science - GPA: 3.3<span class="pull-right muted">Graduated: May 2014</span><br/>
-        <br/>
-        Startup Aggieland Entrepreneur in Residence (2013-2014)</p>
-      </td>
-    </tr>
-
     <tr id="experience">
       <td>
         <h4>experience</h4>
       </td>
       <td>
-        <p class="no-margin"><strong>Google</strong> Seattle, WA <br><strong><em>Software Engineer</em></strong> Google Maps for Android <span class="pull-right muted">Aug 2016 - Present</span></p>
-        <ul></ul>
-        <p class="no-margin"><strong>Google</strong> Seattle, WA <br><strong><em>Software Engineering Intern</em></strong> Google Maps for Android <span class="pull-right muted">May 2015 - Aug 2015</span></p>
+        <p class="no-margin">
+          <strong>Google</strong> Seattle, WA <br>
+          <strong><em>Software Engineer III</em></strong> &bull; Google Maps for Android &bull; Oct 2017 &ndash; Present
+        </p>
         <ul>
-	        <li>Built two production ready features that both ended up launching.</li>
-          <li>Turned a slide deck mockup into a fully functioning feature touching each piece of Google's multi-tiered directions stack.</li>
-	        <li>Designed and implemented a completely new data format for the internal Google Maps Directions API.</li>
-	        <li>Prototyped 3 different ideas for a directions UI improvement and fully implemented one of them.</li>
+          <li>Implemented client side and a significant amount of server-side code to double the number of eligible commute notifications users</li>
+          <li>Implemented four separate experiments to improve quality and click metrics for commute notifications. All four had successful outcomes</li>
         </ul>
-        <p class="no-margin"><strong>AskU</strong> College Station, TX <br><strong><em>Software Engineer</em></strong> Platform/Mobile App <span class="pull-right muted">Sept 2014 - May 2015</span></p>
+        <p class="no-margin">
+          <strong>Google</strong> Seattle, WA <br>
+          <strong><em>Software Engineer II</em></strong> &bull; Google Maps for Android &bull; Aug 2016 &ndash; Oct 2017
+        </p>
         <ul>
-          <li>Startup that builds localized communities on web and mobile that connect students with questions with students that have the answers.</li>
-          <li>Developed on the web platform's full stack utilizing Ruby on Rails, Javascript, Angular, ElasticSearch, AWS EC2 and S3.</li>
-          <li>Developed on the mobile platform built with Angular and Ionic framework.
-          <li>Designed and executed 5 A/B test experiments that increased user activation and retention.</li>
+          <li>Implemented new traffic-jam rendering logic and a brand new traffic-polyline generator that integrated with the map rendering team's brand new APIs</li>
+          <li>Launched a new traffic incident inspection card which integrated three new pieces of incident metadata in over 20 languages</li>
+          <li>Fixed two major accessibility issues within aGMM; one in the directions page header and one relating to TalkBack behavior within a scrolling view</li>
+          <li>Launched an Android shortcut and in-app promo for it in aGMM. The promo gets a 7% CTR. The shortcut is responsible for about 6% of all external invocations of the app to the traffic hub screen in aGMM.</li>
         </ul>
-        <p class="no-margin"><strong>Google</strong> Mountain View, CA <br><strong><em>Software Engineering Intern</em></strong> Java Platform <span class="pull-right muted">May 2014 - Aug 2014</span></p>
+        <p class="no-margin">
+          <strong>Google</strong> Seattle, WA <br>
+          <strong><em>Software Engineering Intern</em></strong> &bull; Google Maps for Android &bull; May 2015 &ndash; Aug 2015
+        </p>
         <ul>
-          <li>Maintained and improved Google's fork of OpenJDK7 (Java, JNI, and C++)</li>
-          <li>Created an intuitive visualization for engineers to gauge their garbage collection performance</li>
-          <li>Added numerous tooling interfaces to give projects new perspectives on performance data</li>
+	        <li>Built two production ready features that both ended up launching</li>
+          <li>Turned a mock from a slide deck into a fully functioning feature touching each piece of Google's multi-tiered directions stack</li>
+          <li>Designed and implemented a new data format for the internal Google Maps Directions/Navigation API</li>
+          <li>Prototyped 3 different ideas for a directions UI improvement and fully implemented one of them</li>
         </ul>
-        <p class="no-margin"><strong>Notequill</strong> College Station, TX <br><strong><em>Co-Founder</em></strong> <span class="pull-right muted">Feb 2013 - Mar 2014</span></p>
+        <p class="no-margin">
+          <strong>AskU</strong> College Station, TX <br>
+          <strong><em>Software Engineer</em></strong> &bull; Platform/Mobile App &bull; Sept 2014 &ndash; May 2015
+        </p>
+        <ul>
+          <li>Implemented and launched several features on the web platform utilizing Ruby on Rails, Javascript, Angular, ElasticSearch, AWS EC2 and S3</li>
+          <li>Implemented and launched several features on the mobile platform built with Angular and Ionic framework</li>
+          <li>Designed and executed 5 A/B test experiments that increased user activation and retention</li>
+        </ul>
+        <p class="no-margin">
+          <strong>Google</strong> Mountain View, CA <br>
+          <strong><em>Software Engineering Intern</em></strong> &bull; Java Platform &bull; May 2014 &ndash; Aug 2014
+        </p>
+        <ul>
+          <li>Designed and implemented a web-based visualization to see real-time JVM heap stats</li>
+          <li>Improved a garbage collection event serialization HTTP endpoint to export data for the visualization</li>
+          <li>Added a prototype monitoring interface to the JVM to classify different kinds of internal JVM memory usage</li>
+        </ul>
+        <p class="no-margin">
+          <strong>Notequill</strong> College Station, TX <br>
+          <strong><em>Co-Founder</em></strong>  &bull; Feb 2013 &ndash; Mar 2014
+        </p> 
         <ul>
           <li>Co-Developed Notequill's "digital canvas" using HTML5 Canvas element and Javascript/jQuery</li>
           <li>Designed and engineered the platform from the ground up using PHP, MySQL, jQuery, Twitter Bootstrap, and RedbeanPHP</li>
           <li>Co-Invented provisional patent application #61/847,713 "Note Recorder System and Method" filed July 18, 2013</li>
         </ul>
-        <p class="no-margin"><strong>DATATRAK International</strong> Bryan, TX <br><strong><em>Software Developer Associate I</em></strong> <span class="pull-right muted">Jan 2013 - Mar 2014</span></p>
+        <p class="no-margin">
+          <strong>DATATRAK International</strong> Bryan, TX <br>
+          <strong><em>Software Developer Associate I</em></strong> &bull; Jan 2013 &ndash; Mar 2014
+        </p>
         <ul>
           <li>Developed and maintained the core platform using Java, JSP, Javascript/jQuery, HTML, CSS, SQL, and XML</li>
-          <li>Made necessary platform changes to replace antiquated Oracle Toplink with JPA/EclipseLink</li>
-          <li>Optimized JSP display times as much as 250% with the help of JProfiler</li>
+          <li>Made necessary platform refactorings to replace platform ORM Oracle Toplink with JPA/EclipseLink</li>
+          <li>Improved JSP display by 250+% across the platform by fixing an i18n bug I found using JProfiler</li>
+          <li>Sped up an enormous release by helping document product requirements and performing integration testing</li>
         </ul>
-      </td>
-    </tr>
-
-    <tr id="skills">
-      <td>
-        <h4>skills</h4>
-      </td>
-      <td>
-        <p class="no-margin"><strong>Languages:</strong> Java, HTML, CSS, Javascript, C++/C, PHP, Ruby on Rails, SQL</p>
-        <p class="no-margin"><strong>Technologies:</strong> Git, Angular, Google Closure, Elasticsearch, Eclipse, Laravel</p>
       </td>
     </tr>
 
@@ -138,7 +164,8 @@
         <h4>leadership</h4>
       </td>
       <td>
-        <p class="no-margin"><strong>aggieHack(web) Sponsor and Planner: </strong> Planned and organized this 100 member hackathon event  at Texas A&amp;M during Oct 2013. Developed three of the four lightning challenges and served as a mentor to hackers that were new to web development.</p>
+        <p class="no-margin"><strong>Google Intern Host</strong> (Summer 2018) &ndash; Hosted two Google Engineering Practicum Interns</p>
+        <p class="no-margin"><strong>aggieHack(web) Sponsor and Planner</strong> (Fall 2013) &ndash; Planned and organized this 100 member hackathon event  at Texas A&amp;M. Developed three of the four lightning challenges and served as a mentor to hackers that were new to web development.</p>
       </td>
     </tr>
 
@@ -148,9 +175,28 @@
       </td>
       <td>
         <p class="no-margin"><strong>3x Distinguished Student Award: </strong>Given to students who have Outstanding Academic Achievement</p>
-        <!-- Stuff below is old achievements and should probably be commented out -->
-<!--         <strong>Qualified for State UIL Competition in Computer Science: </strong>Consisted of 3 hour hackathons and written tests<br>
-        <strong>11th place in National BPA Java Programming Competition: </strong>The cleanest, most well written code that solved the problem statement</p> -->
+      </td>
+    </tr>
+
+    <tr id="skills">
+      <td>
+        <h4>skills</h4>
+      </td>
+      <td>
+        <p class="no-margin"><strong>Languages:</strong> Java, C++, Proto, Javascript, Ruby on Rails, SQL</p>
+        <p class="no-margin"><strong>Technologies:</strong> Protocol Buffers, Git, Angular, Google Closure, Elasticsearch</p>
+      </td>
+    </tr>
+
+    <tr id="education">
+      <td>
+        <h4>education</h4>
+      </td>
+      <td>
+        <p class="no-margin"><strong>Texas A&amp;M University </strong>College Station, TX <br>
+          <strong><em>Masters (MCS) in Computer Science</em></strong> &bull; GPA 3.6 &bull; Graduated: May 2016<br>
+        <strong><em>Bachelors (BS) in Computer Science</em></strong> &bull; GPA 3.3 &bull; Graduated: May 2014<br>
+      Startup Aggieland Entrepreneur in Residence (2013-2014)</p>
       </td>
     </tr>
   </table>
