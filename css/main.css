@@ -4,31 +4,30 @@ h1, h2, h3, h4, h5, h6, p, a, a:visited, li {
   color: #222;
 }
 
-a:hover {
-  background: rgba(0, 0, 0, 0.5);
-  color: #FFF;
-  text-decoration: none;
-}
-
-.container {
-  position: relative;
+hr {
   width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
-  box-sizing: border-box;
+  background: #fff;
+  border: 0;
+  border-bottom: 1px solid #222;
 }
 
 .text-center {
   text-align: center;
 }
 
-.row {
-  width: 100%;
-  padding: 5px 0;
+.navbar {
+  border-bottom: 1px solid #222;
 }
 
-.nav-link {
-  padding: 2px 8px;
+a.nav-link {
+  text-decoration: none;
+}
+
+a.nav-link:hover {
+  background: radial-gradient(
+      rgba(0, 0, 0, 0.5),
+      #fff
+    );
   text-decoration: none;
 }
 
@@ -38,9 +37,6 @@ a:hover {
 
 .media-object {
   padding: 4px;
-  border: 1px solid #222;
-  width: 100%;
-  max-width: 100%;
 }
 
 .photo-caption {
@@ -49,7 +45,7 @@ a:hover {
   text-align: center;
 }
 
-#header-image {
+.media-object img {
   max-width: 100%;
   width: 100%;
 }
