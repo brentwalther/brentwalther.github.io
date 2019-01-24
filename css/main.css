@@ -20,6 +20,10 @@ hr {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .navbar {
   border-bottom: 1px solid #222;
 }
@@ -58,4 +62,25 @@ a.nav-link:hover {
 .muted {
   color: #666;
   font-size: 0.8em;
+}
+
+.button {
+  border: 1px solid #222;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.button-selected {
+  background-color: #ddd;
+}
+
+.button-group {
+  padding: 0;
+  margin: 0;
 }
