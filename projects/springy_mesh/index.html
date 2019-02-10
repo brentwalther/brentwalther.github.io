@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8>
+    <title>CSCE-649 Assignment 03 Demo - Flocking</title>
+    <style>
+      body { margin: 0; }
+      canvas { width: 100%; height: 100% }
+      #overlay { position: absolute; top: 0; left: 0;}
+      h3, label { color: #ddd !important;}
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div id="overlay">
+      <h3>CSCE-649 Assignment 04 Demo - Springy Meshes</h3>
+      <button onclick="simulation.reset()">Reset</button>
+      <label>
+        <input type="checkbox" id="useRK4" onclick="simulation.setIntegrationMethod()"> Use RK4
+      </label>
+      <label>
+        <input type="checkbox" id="useCrossSprings" onclick="simulation.setCrossSprings()" checked> Use Cross Springs
+      </label>
+      <label>
+        <input type="checkbox" id="randomRotation"> Random Initial Rotation
+      </label>
+    </div>
+    <div id="canvasSpot"></div>
+  </body>
+
+    <script src="js/three.min.js"></script>
+    <script src="js/THREEx.KeyboardState.js"></script>
+    <script src="js/THREEx.WindowResize.js"></script>
+
+    <script src="js/particle.js"></script>
+    <script src="js/triangle.js"></script>
+    <script src="js/assignment.js"></script>
+    <script>
+      var simulation = new Simulation();
+      simulation.start();
+    </script>
+
+        <script async="" src="//www.google-analytics.com/analytics.js"></script>
+	    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-43996976-1', 'brentwalther.net');
+            ga('send', 'pageview');
+
+	        </script>
+  </body>
+</html>
