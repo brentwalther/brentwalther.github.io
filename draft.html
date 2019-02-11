@@ -1,0 +1,39 @@
+---
+layout: containerless
+title: Markdown Editor
+excerpt: A local storage Markdown editor for writing.
+---
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    var simplemde = new SimpleMDE({ 
+      element: document.getElementById("editor"),
+      autofocus: true,
+      autosave: {
+        enabled: true,
+        uniqueId: 'draft-editor',
+      },
+      forceSync: true,
+      initialValue: '# Title',
+      toolbar: false,
+    });
+    var preview = document.getElementById('preview');
+    preview.innerHTML = simplemde.options.previewRender(simplemde.value(), preview);
+
+    var sideBySideRenderingFunction = function() {
+      preview.innerHTML = simplemde.options.previewRender(simplemde.value(), preview);
+    };
+    simplemde.codemirror.on("update", sideBySideRenderingFunction);
+  });
+</script>
+
+<div class="row">
+  <div class="col-xs">
+    <textarea id="editor"></textarea>
+  </div>
+  <div class="col-xs" id="preview">
+  </div>
+</div>
