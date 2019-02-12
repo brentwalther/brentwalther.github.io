@@ -59,12 +59,12 @@ title: Brent Walther
     };
 
     var refreshChartTable = function() {
-      albumButton.classList.remove("button-selected");
-      artistButton.classList.remove("button-selected");
+      albumButton.classList.remove("button-inactive");
+      artistButton.classList.remove("button-inactive");
       if (albumsOrArtists === "albums") {
-        albumButton.classList.add("button-selected");
+        artistButton.classList.add("button-inactive");
       } else {
-        artistButton.classList.add("button-selected");
+        albumButton.classList.add("button-inactive");
       }
 
       while (chartContainer.firstChild) {

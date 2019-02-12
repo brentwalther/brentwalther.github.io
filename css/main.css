@@ -65,18 +65,28 @@ a.nav-link:hover {
 }
 
 .button {
-  border: 1px solid #222;
-  color: black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  letter-spacing: .03em;
+  color: #fff;
+  background-color: #aaa;
+  box-sizing: border-box;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 18px;
   display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
+  margin: 0;
+  transition: all 0.23s ease-in-out 0s;
 }
 
-.button-selected {
+.button:hover {
+  background-color: #777;
+  cursor: pointer;
+}
+
+.button-inactive {
   background-color: #ddd;
 }
 
