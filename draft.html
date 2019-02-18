@@ -16,17 +16,30 @@ excerpt: A local storage Markdown editor for writing.
         enabled: true,
         uniqueId: 'draft-editor',
       },
-      forceSync: true,
       initialValue: '# Title',
       toolbar: false,
     });
     var preview = document.getElementById('preview');
-    preview.innerHTML = simplemde.options.previewRender(simplemde.value(), preview);
 
+    var codemirror = simplemde.codemirror;
+    // Get a live preview without needing a toolbar button. Also throttle the updates
+    // to not get flickers when a draft gets longer.
+    var COMMIT_THROTTLE_DURATION_MS = 500;
+    var lastUncommittedValue = simplemde.options.previewRender(simplemde.value(), preview);
+    var lastCommit = performance.now() - COMMIT_THROTTLE_DURATION_MS;
+    window.setInterval(
+      function() {
+        preview.innerHTML = lastUncommittedValue;
+      },
+      1000);
     var sideBySideRenderingFunction = function() {
-      preview.innerHTML = simplemde.options.previewRender(simplemde.value(), preview);
+      var now = performance.now();
+      if ((now - lastCommit) > COMMIT_THROTTLE_DURATION_MS) {
+        lastCommit = now;
+        lastUncommittedValue = simplemde.options.previewRender(simplemde.value(), preview);
+      }
     };
-    simplemde.codemirror.on("update", sideBySideRenderingFunction);
+    codemirror.on("update", sideBySideRenderingFunction);
   });
 </script>
 
