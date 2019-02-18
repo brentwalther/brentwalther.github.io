@@ -5,11 +5,10 @@ layout: default
 <div class="row">
   <div class="col-xs">
     <div class="box">
-      <header class="text-center">
+      <header>
         <h1>{{ page.title }}</h1>
       </header>
-      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} // {{ page.author }}{% endif %}{% if page.meta %} // {{ page.meta }}{% endif %}</p>
-
+      <p class="post-meta">Published {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {{ page.author }}{% endif %}</p>
       <article class="post-content">
         {{ content }}
       </article>
