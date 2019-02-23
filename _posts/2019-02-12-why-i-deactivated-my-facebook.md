@@ -1,4 +1,8 @@
-# Why I deactivated Facebook
+---
+layout: post
+title: Why I deactivated Facebook
+---
+
 I signed up for a Facebook account back in 2008 when the platform was still fairly young. I was in high school at the time and it was a pretty trendy thing to do (having recently opened up from the previous exclusivity it had to university students). From the beginning, I've appreciated Facebook for the grand vision that Mark Zuckerberg had (has?) for it: To connect the world. I really enjoyed sharing photos, creating, subscribing, and joining local events, and keeping up with friends that I've made in life. Facebook is still the de-facto standard when it comes to connectivity with your 'social' network of friends, family, and acquaintances. More recently though, I began to feel like Facebook was losing personal value for me and I was seeing too much bad press: frightening news stories about the companies questionable privacy practices and academic publishings shedding light on some of the psychological effects Facebook has on society. So, I decided that I was finished (at least for now and it would probably be a tough sell to convince me otherwise) with Facebook.
 
 ## Questionable privacy practices
