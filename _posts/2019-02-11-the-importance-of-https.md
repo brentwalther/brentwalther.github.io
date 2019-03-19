@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The importance of HTTPS
+author: Brent Walther
 ---
 
 ## Background

@@ -15,7 +15,7 @@ title: Brent Walther's Homepage
 email: brent@walther.io
 description: Brent Walther -- TAMU '14, software engineer, music lover
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://www.brentwalther.net" # the base hostname & protocol for your site
+url: "https://brentwalther.net" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
