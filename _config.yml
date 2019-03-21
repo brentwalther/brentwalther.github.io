@@ -19,3 +19,6 @@ url: "https://brentwalther.net" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+plugins:
+  - jekyll-sitemap
