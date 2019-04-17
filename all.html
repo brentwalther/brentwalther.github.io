@@ -1,0 +1,19 @@
+---
+layout: default
+title: Brent Walther
+---
+
+<script type="text/javascript">
+</script>
+
+<h1>Site Post List</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> // {{ post.date | date: "%m-%d-%Y" }}
+    </li>
+  {% endfor %}
+</ul>
+  
+
