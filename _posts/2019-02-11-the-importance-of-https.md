@@ -17,18 +17,18 @@ When you visit a website that is hosted on HTTPS, your browser fetches the webpa
 ## How do I know if a website is hosted using HTTPS?
 If you want to know if the webpage and hosting entity are trustworthy, all you have to do is look closely at the address bar always checking for either https:// and/or padlock icon. For example, accessing Google on Google Chrome using HTTPS looks like this:
 
-![Accessing Google.com over HTTPS shows the padlock icon.](http://127.0.0.1:4000/img/google_https_icon.png)
+![Accessing Google.com over HTTPS shows the padlock icon.](https://brentwalther.net/img/google_https_icon.png)
 
 You should always verify that HTTPS is used if you're transmitting *any* sensitive data including account passwords, credit card details, or personal email. To make this more obvious, Chrome 68 [2] and Safari 11.1 [3] (both released in in 2018) give you warnings when a page is insecure. They look like this:
 
 | | |
 | --- | --- |
-| Chrome | ![Accessing an unsecure website using Chrome 68+ shows an unsecure warning.](http://127.0.0.1:4000/img/chrome_not_secure.png) |
-| Safari | ![Accessing an unsecure website using Safari 11.1+ shows an unsecure warning.](http://127.0.0.1:4000/img/safari_not_secure.png)|
+| Chrome | ![Accessing an unsecure website using Chrome 68+ shows an unsecure warning.](https://brentwalther.net/img/chrome_not_secure.png) |
+| Safari | ![Accessing an unsecure website using Safari 11.1+ shows an unsecure warning.](https://brentwalther.net/img/safari_not_secure.png)|
 
 Now that my own personal migration is complete, my entire site is being served over HTTPS which means you can trust that its pages are authentic and created by me:
 
-![Accessing brentwalther.net over HTTPS shows the padlock icon.](http://127.0.0.1:4000/img/https_brentwalther_net.png)
+![Accessing brentwalther.net over HTTPS shows the padlock icon.](https://brentwalther.net/img/https_brentwalther_net.png)
 
 ## Give me more details. How does HTTPS work?
 Modern HTTPS is based on special certificates (similar to an *original and unique* signature) that both web servers and your browser have. When establishing a connection, your browser first verifies the identity of the server certificate based on what are called [certificate authorities](https://en.wikipedia.org/wiki/Certificate_authority). Certificate Authorities (CAs) are entities (companies, groups) that issue and maintain digital certificate records. CAs work together to form a hierarchy of trust (and actually, there are certificate models that don't require a hierarchy such as what's called a "[Web of Trust](https://en.wikipedia.org/wiki/Web_of_trust)") which is the basis for authenticity. Your browser and operating system have lists of CAs, and they are the ones that validate/prove "the certificate for Google.com is actually owned by Google Inc."
