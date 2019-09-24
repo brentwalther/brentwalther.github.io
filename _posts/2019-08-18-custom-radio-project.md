@@ -117,7 +117,7 @@ The rear only contains 4 mounting bolts which can be easily sealed with silicon 
 
 ### Parts List
 
-Here's a non-exhaustive list of what I used for this build. Including hardware one of these can be built for around $350. It's way louder than the all-in-one stereo units you can find at Costco or Sams Club.</p>
+Here's a non-exhaustive list of what I used for this build. Including hardware one of these can be built for around $350. It's way louder than the all-in-one stereo units you can find at Costco or Sams Club.
 
 - [Monoprice Weatherproof/Shockproof/IP67 Hard Case](https://www.amazon.com/gp/product/B00SSFAPVI) - At around $80 this thing is very sturdy, keeps water out, and comes with a sturdy handle.
 - Two [6.5 Inch 2 Way Waterproof and Weather Resistant Marine Speaker Pair (100 RMS/200 Peak each)](https://www.amazon.com/gp/product/B00022OBNS) - I tried Pyle this time despite really liking the Boss speakers I used for the previous build. No complaints yet and cheap; only $25 a pair.
