@@ -79,14 +79,14 @@ The components on the inside are mounted via aluminum C-channel I found at Home 
 
 The finished radio looks quite nice from the front and uses a small trickle charger to charge up. It sits easily upright though I would love to have a way to also sit it on its side so the three speakers were stacked. The sound is very directional (somehow to my surprise) so it's best placed facing the direction you want the sound to go. The volume of the case with all components installed seems close to the right size to get good speaker suspension -- bass is loud and even shakes the lid some.
 
-The inside of the cooler is slightly messier than I'd like but it's still a work in progress. The battery is held in place via paracord because I haven't thought of a better way that isn't too rigid (I don't want to jar the battery too much). A bluetooth module is mounted on top of the amp with a web of zip ties and some more bolts. A switch is placed alongside a 2-port USB power hub that shows the battery voltage to give an approximate idea of charge level.
+The inside of the cooler is slightly messier than I'd like but it's still a work in progress. The battery is held in place via paracord because I haven't thought of a better way that isn't too rigid (I don't want to jar the battery too much). The switch is placed alongside a 2-port USB power hub and the bluetooth module. The hub shows the battery voltage to give an approximate idea of charge level. The bluetooth module only draws a few mA so I keep it permanently powered (switch controls the amplifier)..
 
 <div class="row">
   <div class="col-xs">
     <div class="box">
       <div class="media-object">
-        <a href="/img/radio_cooler2/portable_boombox_v2_inside.JPG">
-          <img src="/img/radio_cooler2/portable_boombox_v2_inside_thumb.JPG" alt="Completed inside of portable custom radio.">
+        <a href="/img/radio_cooler2/portable_boombox_v2_inside.jpg">
+          <img src="/img/radio_cooler2/portable_boombox_v2_inside.jpg" alt="Completed inside of portable custom radio.">
           <p class="photo-caption">Finished and wired inside.</p>
         </a>
       </div>
