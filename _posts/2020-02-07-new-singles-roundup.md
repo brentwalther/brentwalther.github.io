@@ -1,11 +1,8 @@
 ---
 
 layout: album_review
-albumart:
-album: Untrapped
-artist: Yo Gotti
-ratingword: Decent.
-rating: 3
+album: Singles
+artist: Various
 
 ---
 
