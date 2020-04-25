@@ -1,19 +1,32 @@
-h1, h2, h3, h4, h5, h6, p, a, a:visited, li {
-  font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222;
-}
-
-hr {
-  width: 100%;
-  background: #fff;
-  border: 0;
-  border-bottom: 1px solid #222;
-}
-
 .container {
-  max-width: 640px;
+  max-width: 768px;
+}
+
+.float-right {
+  float: right;
+}
+
+.full-width {
   width: 100%;
+}
+
+.media-object {
+  padding: 4px;
+}
+
+.media-object img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.muted {
+  font-style: italic;
+}
+
+.photo-caption {
+  margin: 2px;
+  font-style: italic;
+  text-align: center;
 }
 
 .text-center {
@@ -24,92 +37,14 @@ hr {
   text-align: right;
 }
 
-.navbar {
-  border-bottom: 1px solid #222;
+fieldset {
+  margin-bottom: 1em;
 }
 
-a.nav-link {
-  text-decoration: none;
-}
-
-a.nav-link:hover {
-  background: rgba(0, 0, 0, 0.25);
-  text-decoration: none;
-
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 2s; /* Firefox < 16 */
-      -ms-animation: fadein 2s; /* Internet Explorer */
-       -o-animation: fadein 2s; /* Opera < 12.1 */
-          animation: fadein 2s;
-}
-
-.float-right {
-  float: right;
-}
-
-.media-object {
-  padding: 4px;
-}
-
-.photo-caption {
-  margin: 2px;
-  font-size: 75%;
-  text-align: center;
-}
-
-.media-object img {
-  max-width: 100%;
-  width: 100%;
-}
-
-.muted {
-  color: #666;
-  font-size: 0.8em;
-}
-
-.button {
-  border: none;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  letter-spacing: .03em;
-  color: #fff;
-  background-color: #aaa;
-  box-sizing: border-box;
-  height: 32px;
-  line-height: 32px;
-  padding: 0 18px;
-  display: inline-block;
-  margin-bottom: 4px;
-  transition: all 0.23s ease-in-out 0s;
-}
-
-.button:hover {
-  background-color: #777;
-  cursor: pointer;
-}
-
-.button-inactive {
-  background-color: #ddd;
-}
-
-input.email {
-  border: 1px solid #ABB0B2;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  color: #343434;
-  background-color: #fff;
-  box-sizing: border-box;
-  height: 32px;
-  padding: 0px 0.4em;
-  display: inline-block;
-  margin-bottom: 4px;
-  width: 100%;
+td {
   vertical-align: top;
 }
 
-.button-group {
-  padding: 0;
-  margin: 0;
+th {
+  white-space: nowrap;
 }

@@ -1,18 +1,18 @@
 ---
 layout: default
-title: Brent Walther
+title: Music
 ---
 
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function() {
     var data = {
-      "albums": {
+      "Album": {
         "7": [{"item":"A State Of Trance Year Mix 2018 (Mixed by Armin van Buuren)","count":113},{"item":"ASTROWORLD","count":98},{"item":"TESTING","count":77},{"item":"DAMN.","count":77},{"item":"Still Striving","count":65},{"item":"A State Of Trance Episode 871","count":57},{"item":"Starboy","count":54},{"item":"The Turnpike Troubadours","count":52},{"item":"50 Number Ones","count":51},{"item":"Scorpion","count":50},{"item":"Die Lit","count":48}],
         "30": [{"item":"ASTROWORLD","count":191},{"item":"TESTING","count":125},{"item":"A State Of Trance Year Mix 2018 (Mixed by Armin van Buuren)","count":119},{"item":"DAMN.","count":105},{"item":"Still Striving","count":93},{"item":"The Turnpike Troubadours","count":86},{"item":"NOT ALL HEROES WEAR CAPES (Deluxe)","count":70},{"item":"Kamikaze","count":66},{"item":"Not All Heroes Wear Capes","count":61},{"item":"Trilogy","count":61},{"item":"Scorpion","count":60}],
         "90": [{"item":"ASTROWORLD","count":251},{"item":"TESTING","count":197},{"item":"DAMN.","count":162},{"item":"NOT ALL HEROES WEAR CAPES (Deluxe)","count":148},{"item":"Still Striving","count":129},{"item":"A State Of Trance Year Mix 2018 (Mixed by Armin van Buuren)","count":119},{"item":"Trilogy","count":99},{"item":"The Turnpike Troubadours","count":98},{"item":"Goodbye Normal Street","count":96},{"item":"Kamikaze","count":92},{"item":"Diamonds & Gasoline","count":87}],
         "365": [{"item":"ASTROWORLD","count":337},{"item":"Still Striving","count":303},{"item":"TESTING","count":288},{"item":"DAMN.","count":262},{"item":"The Turnpike Troubadours","count":196},{"item":"Goodbye Normal Street","count":169},{"item":"Diamonds & Gasoline","count":157},{"item":"Trilogy","count":155},{"item":"XXYYXX","count":150},{"item":"If You're Reading This It's Too Late","count":149},{"item":"NOT ALL HEROES WEAR CAPES (Deluxe)","count":148}],
       },
-      "artists": {
+      "Artist": {
         "7": [{"item":"Travi$ Scott","count":114},{"item":"Kid Cudi","count":114},{"item":"Flume","count":95},{"item":"A$AP Rocky","count":90},{"item":"Jack Johnson","count":89},{"item":"Pat Green","count":82},{"item":"Drake","count":75},{"item":"Kendrick Lamar","count":68},{"item":"Arkasia","count":63},{"item":"Eminem","count":59},{"item":"Turnpike Troubadours","count":59}],
         "30": [{"item":"Metro Boomin","count":124},{"item":"A$AP Ferg","count":118},{"item":"The Weeknd","count":115},{"item":"Kid Cudi","count":114},{"item":"Travi$ Scott","count":102},{"item":"Pat Green","count":98},{"item":"Kendrick Lamar","count":97},{"item":"Flume","count":95},{"item":"Turnpike Troubadours","count":95},{"item":"Jack Johnson","count":93},{"item":"Drake","count":92}],
         "90": [{"item":"Drake","count":162},{"item":"Metro Boomin","count":158},{"item":"Randy Rogers Band","count":157},{"item":"The Weeknd","count":156},{"item":"A$AP Ferg","count":151},{"item":"Travi$ Scott","count":144},{"item":"Gucci Mane","count":140},{"item":"Pat Green","count":139},{"item":"Ryan Bingham","count":136},{"item":"Turnpike Troubadours","count":135},{"item":"Kendrick Lamar","count":132}],
@@ -20,38 +20,22 @@ title: Brent Walther
       }
     };
 
-    var albumsOrArtists = "albums";
+    var albumsOrArtists = "Album";
     var timePeriod = "90";
-    var chartContainer = document.getElementById('chart-container');
-    var albumButton = document.getElementById('charts-albums-button');
-    var artistButton = document.getElementById('charts-artists-button');
-    var timePeriodSelect = document.getElementById('charts-time-period');
+    var playCountTypeHeading = document.getElementById('play-count-type-heading');
+    var playCountTable = document.getElementById('play-count-table-body');
+    var albumButton = document.getElementById('play-count-type-album');
+    var artistButton = document.getElementById('play-count-type-artist');
+    var timePeriodSelect = document.getElementById('play-count-time-period-select');
 
     var createRow = function(itemName, count) {
-      var row = document.createElement("div");
-      row.classList.add("row");
-      row.classList.add("navbar");
+      var row = document.createElement("tr");
+      var col1 = document.createElement("td");
+      var col2 = document.createElement("td");
 
-      var col1 = document.createElement("div");
-      col1.classList.add("col-xs");
-      var box1 = document.createElement("div");
-      box1.classList.add("box");
-      var p1 = document.createElement("p");
+      col1.innerText = itemName;
+      col2.innerText = count;
 
-      var col2 = document.createElement("div");
-      col2.classList.add("col-xs");
-      var box2 = document.createElement("div");
-      box2.classList.add("box");
-      box2.classList.add("text-right");
-      var p2 = document.createElement("p");
-
-      p1.innerText = itemName;
-      p2.innerText = count;
-
-      box1.appendChild(p1);
-      box2.appendChild(p2);
-      col1.appendChild(box1);
-      col2.appendChild(box2);
       row.appendChild(col1);
       row.appendChild(col2);
 
@@ -59,30 +43,25 @@ title: Brent Walther
     };
 
     var refreshChartTable = function() {
-      albumButton.classList.remove("button-inactive");
-      artistButton.classList.remove("button-inactive");
-      if (albumsOrArtists === "albums") {
-        artistButton.classList.add("button-inactive");
-      } else {
-        albumButton.classList.add("button-inactive");
-      }
+      playCountTypeHeading.innerText = albumsOrArtists;
 
-      while (chartContainer.firstChild) {
-        chartContainer.removeChild(chartContainer.firstChild);
+      while (playCountTable.firstChild) {
+        playCountTable.removeChild(playCountTable.firstChild);
       }
 
       var selectedData = data[albumsOrArtists][timePeriod];
       selectedData.forEach(function(dataPiece) {
-        chartContainer.appendChild(createRow(dataPiece["item"], dataPiece["count"]));
+        playCountTable.appendChild(
+          createRow(dataPiece["item"], dataPiece["count"]));
       });
     };
 
     albumButton.addEventListener('click', function() {
-      albumsOrArtists = "albums";
+      albumsOrArtists = "Album";
       refreshChartTable();
     });
     artistButton.addEventListener('click', function() {
-      albumsOrArtists = "artists";
+      albumsOrArtists = "Artist";
       refreshChartTable();
     });
     timePeriodSelect.addEventListener('change', function() {
@@ -96,117 +75,70 @@ title: Brent Walther
 
 <div class="row">
   <div class="col-xs">
-    <div class="box text-center">
-      <a class="nav-link" href="#charts"><i class="fa fa-bar-chart"></i> Listening Charts</a>
-    </div>
-  </div>
-  <div class="col-xs">
-    <div class="box text-center">
-      <a class="nav-link" href="#ratings"><i class="fa fa-star-half-o"></i> Album Ratings</a>
-    </div>
-  </div>
-  <div class="col-xs">
-    <div class="box text-center">
-      <a class="nav-link" href="#concerts"><i class="fa fa-volume-up"></i> Concerts</a>
-    </div>
-  </div>
-  <hr>
-</div>
-
-<div class="row">
-  <div class="col-xs">
-    <div class="box">
-      <div class="float-right"><a href="#" class="muted">[Top]</a></div>
-      <h1 id="charts">Personal Charts</h1>
+    <fieldset>
+      <legend>Personal Charts</legend>
       <p>I keep track of what I listen to using <a href="https://www.last.fm/user/brentwalther">LastFM</a> but the tools there only allow me to see what my top artists/albums/songs are for some time period starting from the present. I was curious to know what my most "dense" artists and albums are (which ones I have listened to the most in any given N day window) so I wrote a script to do it for me. Below are the results of an analysis of over 85,000 personally logged tracks.</p>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs">
-    <div class="box">
-      <ul class="button-group">
-        <li class="button button-selected" id="charts-albums-button">Albums</li>
-        <li class="button" id="charts-artists-button">Artists</li>
-      </ul>
-    </div>
-  </div>
-  <div class="col-xs">
-    <div class="box text-right">
-      <p>Time Period:
-        <select id="charts-time-period">
-          <option value="7">7 days</option>
-          <option value="30">30 days</option>
-          <option value="90" selected="selected">90 days</option>
-          <option value="365">365 days</option>
-        </select>
-      </p>
-    </div>
-  </div>
-</div>
-<div class="row navbar">
-  <div class="col-xs">
-    <div class="box">
-      <h3>Album</h3>
-    </div>
-  </div>
-  <div class="col-xs">
-    <div class="box text-right">
-      <h3>Play Count</h3>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs">
-    <div class="box" id="chart-container">
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs">
-    <div class="box">
-      <p class="muted">Data last updated on Jan 23, 2019.</p>
-    </div>
+      <div class="row">
+        <div class="col-xs">
+          <button id="play-count-type-album">Albums</button>
+          <button id="play-count-type-artist">Artists</button>
+        </div>
+        <div class="col-xs">
+          <div class="box text-right">
+            <label for="play-count-time-period-select">Time Period:</label>
+            <select id="play-count-time-period-select">
+              <option value="7">7 days</option>
+              <option value="30">30 days</option>
+              <option value="90" selected="selected">90 days</option>
+              <option value="365">365 days</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-xs">
+          <table class="full-width">
+            <thead>
+              <tr>
+                <th id="play-count-type-heading" class="full-width">Album</th>
+                <th>Play Count</th>
+              </tr>
+            </thead>
+            <tbody id="play-count-table-body" class="full-width">
+            </tbody>
+          </table>
+          <p class="muted">* Data last updated on Jan 23, 2019.</p>
+        </div>
+      </div>
+    </fieldset>
   </div>
 </div>
 
-<div class="row">
-  <div class="col-xs">
-    <div class="box">
-      <div class="float-right"><a href="#" class="muted">[Top]</a></div>
-      <h1 id="ratings">My Album Ratings</h1>
-      <p>I really enjoy listening to new music when it comes out every Friday. Spotify has a neat page that gives you a list of new albums each week that you can browse through. I try to keep up with interesting new releases including Hiphop, Rap, and Country but I don't discrimanate between genres or album age. This serves as a log of some of the things I've listened to and my specific opinions on them.</p>
+<fieldset id="ratings">
+  <legend>My Album Ratings</legend>
+  <p>I really enjoy listening to new music when it comes out every Friday. Spotify has a neat page that gives you a list of new albums each week that you can browse through. I try to keep up with interesting new releases including Hiphop, Rap, and Country but I don't discrimanate between genres or album age. This serves as a log of some of the things I've listened to and my specific opinions on them.</p>
 
-      <p>My full listen log is on my <a href="https://www.last.fm/user/brentwalther">LastFM</a>. My Rap/Hip-Hop playlist (which I add too frequently) can be found <a href="https://open.spotify.com/user/121624922/playlist/5Rup4WYBgxlnXh1kCV0WCw?si=YYg3wxCzTYOzSYBArmBwoQ">here on Spotify</a>. Be sure to sort by recently added because I've been working on it for 4+ years!</p>
-    </div>
-  </div>
-</div>
+  <p>My full listen log is on my <a href="https://www.last.fm/user/brentwalther">LastFM</a>. My Rap/Hip-Hop playlist (which I add too frequently) can be found <a href="https://open.spotify.com/user/121624922/playlist/5Rup4WYBgxlnXh1kCV0WCw?si=YYg3wxCzTYOzSYBArmBwoQ">here on Spotify</a>. Be sure to sort by recently added because I've been working on it for 4+ years!</p>
 
-<div class="row">
-  <div class="col-xs">
-    <div class="box">
-      <p>My "rating" system is pretty simple. I rate albums on a five star scale:</p>
-      <ol>
-        <li><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i> Pass. I probably won't listen to this again.</li>
-        <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i> Meh. I didn't really like it but I could be convinced to give it another try</li>
-        <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i> Decent. I enjoyed it but it wasn't anything special.</li>
-        <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i> Yeah! This album was good, and I probably added some songs from it to a playlist.</li>
-        <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> FIRE! I have it on repeat.</li>
-      </ol>
-    </div>
-  </div>
+  <p>My "rating" system is pretty simple. I rate albums on a five star scale:</p>
+  <ol>
+    <li><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i> Pass. I probably won't listen to this again.</li>
+    <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i> Meh. I didn't really like it but I could be convinced to give it another try</li>
+    <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i> Decent. I enjoyed it but it wasn't anything special.</li>
+    <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i> Yeah! This album was good, and I probably added some songs from it to a playlist.</li>
+    <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> FIRE! I have it on repeat.</li>
+  </ol>
 
   {{ site.posts | where:"layout","album_review" }}
-  
-</div>
-<div class="row">
-  <div class="col-xs">
-    <div class="box">
-      <div class="float-right"><a href="#" class="muted">[Top]</a></div>
-      <h1 id="concerts">Concerts</h1>
-      <p>In addition to listening to a lot of music, I enjoy attending live performances as well. Below is a collection of concerts I'v attended which received a writeup.</p>
-      <h2>Hippie Sabotage</h2>
-      <p class="muted">Attended Feb 22, 2019 at <a href="https://goo.gl/maps/oucKDSpBpr52">Stubb's Bar-B-Q</a></p>
+</fieldset>
+
+<fieldset id="concerts">
+  <legend>Concerts</legend>
+      <p>In addition to listening to a lot of music, I enjoy attending live performances as well. Below is a collection of concerts I've attended which received a writeup.</p>
+      
+      <p><strong>Hippie Sabotage</strong></p>
+      <p><em>Attended Feb 22, 2019 at <a href="https://goo.gl/maps/oucKDSpBpr52">Stubb's Bar-B-Q</a></em></p>
       <p>Bass in your face via trap bangers and live guitar melodies mixed in. I've been listening to Hippie Sabotage for quite a while (hint: they make a great Pandora station for the beach) but had never seen them live. The tickets to go see this show were pretty inexpensive and the weather at Stubbs was perfect for a concert -- a cool 50s/60s temperature which only required a light jacket. Their performance just makes you want to jump to the beat.</p>
       <p>They were opened by Sebastian Paul who though I didn't recognize by name I think has contributed vocals to some of their songs. After he warmed us up with some lighter songs, Hippie Sabotage took the stage and came out strong, with bass that shook you all the way through. Ever since I sold my highschool truck (which had a 500 watt (RMS) Alpine Type-R subwoofer installed), I don't get many opportunities to hear the kind of low frequency booming power that a live trap performance brings. I wouldn't necessarily consider Hippie Sabotage to be purely in the trap genre but their live performance brings heat.</p>
       <p>Needless to say, I would definitely recommend you go to a show put on by this group if you're into hard hitting music. They hit everything from the deepest 20hz bottoming-out sounds to a loud 50, 75, 100 and more. They were big on predictably loud drops which I think really translated well into crowd energy. Check them out!</p>

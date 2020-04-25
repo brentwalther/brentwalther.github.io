@@ -6,7 +6,7 @@ tags: ['electronic-project']
 
 ---
 
-#### (a.k.a. radio cooler v2)
+**(a.k.a. radio cooler v2)**
 
 The custom radio cooler I built in college (and other [prior art](https://photos.app.goo.gl/cv6negoigsTsUUNs7)) has seen a lot of fun times between tailgates, pool days, tailgates, and hunting trips. However, it was built optimizing for battery life at the cost of portability (the 100 Ah battery weighs a ton!). I decided I wanted to build something sleeker and more portable, so I did.
 
@@ -115,7 +115,7 @@ The rear only contains 4 mounting bolts which can be easily sealed with silicon 
   </div>
 </div>
 
-### Parts List
+**Parts List**
 
 Here's a non-exhaustive list of what I used for this build. Including hardware one of these can be built for around $350. It's way louder than the all-in-one stereo units you can find at Costco or Sams Club.
 

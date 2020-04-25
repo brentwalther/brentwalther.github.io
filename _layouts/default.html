@@ -6,58 +6,50 @@
   </head>
 
 
-  <body>
+  <body bgcolor="#c0c0c0">
 
   <div class="container">
-    <div class="col-xs-12">
-      <div class="box">
-        <div class="row">
-          <div class="col-xs">
-            <div class="box">
-              <div class="media-object">
-                <img src="/img/2013-09-20.jpg">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <hr>
-          <div class="col-xs">
-            <div class="box">
-              <a class="nav-link" href="/"><i class="fa fa-user"></i> About</a>
-            </div>
-          </div>
-          <div class="col-xs">
-            <div class="box">
-              <a class="nav-link" href="/files/resume.html"><i class="fa fa-file"></i> Resume</a>
-            </div>
-          </div>
-          <div class="col-xs">
-            <div class="box">
-              <a class="nav-link" href="https://www.linkedin.com/in/brentwalther"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
-            </div>
-          </div>
-          <div class="col-xs">
-            <div class="box">
-              <a class="nav-link" href="http://www.github.com/brentwalther"><i class="fa fa-github-square"></i> Github</a>
-            </div>
-          </div>
-          <div class="col-xs">
-            <div class="box">
-              <a class="nav-link" href="/music.html"><i class="fa fa-music"></i> Music</a>
-            </div>
-          </div>
-          <div class="col-xs">
-            <div class="box">
-              <a class="nav-link" href="/projects.html"><i class="fa fa-external-link"></i> Projects</a>
-            </div>
-          </div>
-          <hr>
-        </div>
-
-        {{ content }}
+    <div class="window">
+      <div class="title-bar">
+        <div class="title-bar-text">Brent Walther's Homepage{% if page.title %} - {{ page.title }}{% endif %}</div>
       </div>
+      <div class="window-body">
+        <table>
+          <tr>
+            <td style="padding-right: 5px;">
+            <ul class="tree-view" id="navigation-tree">
+              <li>
+                Navigation
+                <ul>
+                  <li><a href="/">About</a></li>
+                  <li><a href="/files/resume.html">Resume</a></li>
+                  <li><a href="https://www.linkedin.com/in/brentwalther">LinkedIn</a ></li>
+                  <li><a href="http://www.github.com/brentwalther">Github</a></li>
+                  <li>
+                    <a href="/music.html">Music</a>
+                    <ul>
+                      <li><a href="/music.html#charts">Charts</a></li>
+                      <li><a href="/music.html#ratings">Reviews</a></li>
+                      <li><a href="/music.html#concerts">Concerts</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    Projects
+                    <ul>
+                      <li><a href="/projects.html">Software</a></li>
+                      <li><a href="/projects/electronics.html">Electronic</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </td>
+          <td>
+            {{ content }}
+          </td>
+        </tr>
+      </table>
+    </div>
 
     {% include footer.html %}
   </div>

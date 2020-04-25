@@ -1,12 +1,6 @@
-<div class="row">
-  <div class="col-xs">
-    <div class="box">
-      <div class="float-right"><a href="#" class="muted">[Top]</a></div>
-      <h2 id="{{ page.id | slugify }}">{{ page.title }}</h2>
-
-      <article class="post-content">
-        {{ content }}
-      </article>
-    </div>
-  </div>
-</div>
+<fieldset id="{{ page.id | slugify }}">
+  <legend>{{ page.title }}</legend>
+  <article class="post-content">
+    {{ content }}
+  </article>
+</fieldset>

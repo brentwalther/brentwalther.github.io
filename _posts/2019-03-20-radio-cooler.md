@@ -32,7 +32,7 @@ tags: ['electronic-project']
 
 After having seen a few in the wild and having one crummy proof-of-concept build, I ordered parts for and built a brand new radio cooler in the fall of 2013. It started with two speakers and grew to four and has since been used hundreds of times between tailgates, beaches, and poolsides. It lasts longer, is way louder, and is much more hardy than a lot of store-bought speaker systems. I built mine to be as water resistant as possible; I used all marine audio equipment and tried to make decent seals around the speakers and lid. It can get rained on or be thrown into a river float and still provide powerful loud sound for tens of hours.
 
-### Components
+**Components**
 
 My radio cooler is built from mostly inexpensive components and was constructed such that any component can be swapped out quite easily. For this build, I used:</p>
 
@@ -49,7 +49,7 @@ My radio cooler is built from mostly inexpensive components and was constructed 
 
 So all together it costs around $275 to build one of these give or take some depending on what kind of battery you use. You can also use any type of cooler that you feel comfortable mounting the amplifier and speakers in.
 
-### Construction
+**Construction**
 
 <div class="row">
   <div class="col-xs">
@@ -103,7 +103,7 @@ A common question I get about this cooler is whether or not it can actually hold
 
 I measured and cut the holes in the cooler using a reciprocating saw. Speaker and amplifier components were mounted using bolts with wingnuts through pre-drilled holes. I soldered the wires to the speakers but this is not required. All amplifier connections are using terminal connectors and the battery rests on the bottom with small brackets preventing it from sliding. There is a fair bit of storage space inside.
 
-### Wiring
+**Wiring**
 
 Below is a wiring diagram showing how where all the wires connect up with one another.
 

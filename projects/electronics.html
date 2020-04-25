@@ -1,38 +1,19 @@
 ---
 layout: default
-title: Projects
+title: Electronics Projects
 excerpt: A small collection of electronic projects that Brent Walther has worked on. I've enjoyed building custom portable radios for camping, the beach, the pool, and tailgating.
 ---
 
-<div class="row">
-  <div class="col-xs">
-    <div class="box text-center">
-      <a class="nav-link" href="/projects.html"><i class="fa fa-code"></i> Coding</a>
-    </div>
-  </div>
-  <div class="col-xs">
-    <div class="box text-center">
-      <a class="nav-link" href="#"><i class="fa fa-bolt"></i> Electronic</a>
-    </div>
-  </div>
-  <hr>
-</div>
+<p>Considering I'm interested in computer and write software for a living, it probably isn't a surprise that I enjoy tinkering with electronics too. This page is dedicated to some of the electronic stuff I've built which includes:</p>
 
 {% assign posts = site.posts | where_exp:"post", "post.tags contains 'electronic-project'" %}
 
-<div class="row">
-  <div class="col-xs">
-    <div class="box">
-      <h1>Electronics Projects</h1>
-      <ul>
-        {% for post in posts %}
-          <li><a href="#{{ post.id | slugify }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-</div>
+<ul>
+  {% for post in posts %}
+    <li><a href="#{{ post.id | slugify }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
 
-{{ site.posts | where_exp:"post", "post.tags contains 'electronic-project'" }}
+{{ posts }}
 
 </div>

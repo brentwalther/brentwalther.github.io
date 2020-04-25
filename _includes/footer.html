@@ -8,6 +8,24 @@
   </div>
 </div>
 
+<a id="go-to-top-button" href="#" style="position: fixed; top: 5px; right: 5px; visibility: hidden;"><button>Go to top</button></a>
+
+<script>
+  (function() {
+    var goToTopButton = document.getElementById('go-to-top-button');
+    let updateGoToTopVisiblity = function() {
+      if (window.pageYOffset > 0) {
+        goToTopButton.style.visibility = "visible";
+      } else {
+        goToTopButton.style.visibility = "hidden";
+      }
+    };
+    window.onscroll = updateGoToTopVisiblity;
+    updateGoToTopVisiblity();
+
+  })();
+</script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

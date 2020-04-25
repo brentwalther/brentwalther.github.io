@@ -1,5 +1,5 @@
 ---
-layout: containerless
+layout: bare
 title: Markdown Editor
 excerpt: A local storage Markdown editor for writing.
 ---
@@ -21,32 +21,30 @@ excerpt: A local storage Markdown editor for writing.
     });
     var preview = document.getElementById('preview');
 
-    var codemirror = simplemde.codemirror;
-    // Get a live preview without needing a toolbar button. Also throttle the updates
-    // to not get flickers when a draft gets longer.
-    var COMMIT_THROTTLE_DURATION_MS = 500;
-    var lastUncommittedValue = simplemde.options.previewRender(simplemde.value(), preview);
-    var lastCommit = performance.now() - COMMIT_THROTTLE_DURATION_MS;
-    window.setInterval(
-      function() {
-        preview.innerHTML = lastUncommittedValue;
-      },
-      1000);
-    var sideBySideRenderingFunction = function() {
-      var now = performance.now();
-      if ((now - lastCommit) > COMMIT_THROTTLE_DURATION_MS) {
-        lastCommit = now;
-        lastUncommittedValue = simplemde.options.previewRender(simplemde.value(), preview);
-      }
+    var counter = 0;
+
+    var sideBySideRenderingFunction = function(delay) {
+      var value = simplemde.options.previewRender(simplemde.value());
+      var count = ++counter;
+      window.setTimeout(
+        function() {
+          if (count == counter) {
+            preview.innerHTML = value;
+          }
+        },
+        delay)
     };
-    codemirror.on("update", sideBySideRenderingFunction);
+    simplemde.codemirror.on("update", function() { sideBySideRenderingFunction(250); });
   });
 </script>
 
-<div class="row">
-  <div class="col-xs">
-    <textarea id="editor"></textarea>
-  </div>
-  <div class="col-xs" id="preview">
-  </div>
-</div>
+<table style="width: 100%">
+  <tr>
+    <td>
+      <textarea id="editor"></textarea>
+    </td>
+    <td>
+      <div id="preview"></div>
+    </td>
+  </tr>
+</table>
