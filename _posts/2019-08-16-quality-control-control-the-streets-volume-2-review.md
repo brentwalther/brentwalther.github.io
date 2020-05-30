@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: quality_control_control_the_streets_vol_2_300x300.jpg
+tags: ["albumreview"]
+heroimage: quality_control_control_the_streets_vol_2_300x300.jpg
 album: Control The Streets Volume 2
 artist: Quality Control
 ratingword: Yeah!

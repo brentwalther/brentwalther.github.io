@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: black_thought_stream_of_thought_vol2_300x300.jpg
+tags: ["albumreview"]
+heroimage: black_thought_stream_of_thought_vol2_300x300.jpg
 album: Stream of Thought Vol. 2
 artist: Black Thought
 ratingword: Decent.

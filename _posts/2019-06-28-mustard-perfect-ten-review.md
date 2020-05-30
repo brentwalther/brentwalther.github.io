@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: mustard_perfect_ten_300x300.jpg
+tags: ["albumreview"]
+heroimage: mustard_perfect_ten_300x300.jpg
 album: Perfect Ten
 artist: Mustard
 ratingword: Decent.

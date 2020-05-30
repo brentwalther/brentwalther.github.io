@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: travis_scott_astroworld_300x300.jpg
+tags: ["albumreview"]
+heroimage: travis_scott_astroworld_300x300.jpg
 album: ASTROWORLD
 artist: Travis Scott
 ratingword: FIRE!

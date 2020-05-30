@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: boogie_everythings_for_sale_300x300.jpg
+tags: ["albumreview"]
+heroimage: boogie_everythings_for_sale_300x300.jpg
 album: Everything's for Sale
 artist: Boogie
 ratingword: Decent.

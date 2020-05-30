@@ -1,0 +1,5 @@
+<article id="{{ include.page.id | slugify }}">
+  <h3>{{ include.page.title }}</h3>
+  <p class="muted"><a href="{{ include.page.url }}">[Permalink]</a>
+  {{ include.page.content }}
+</article>

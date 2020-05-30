@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: lil_baby_street_gossip_300x300.jpg
+tags: ["albumreview"]
+heroimage: lil_baby_street_gossip_300x300.jpg
 album: Street Gossip
 artist: Lil Baby
 ratingword: Decent.

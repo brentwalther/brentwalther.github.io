@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: denzel_curry_imperial_300x300.jpg
+tags: ["albumreview"]
+heroimage: denzel_curry_imperial_300x300.jpg
 album: Imperial
 artist: Denzel Curry
 ratingword: Fire!

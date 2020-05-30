@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: earl_sweatshirt_feet_of_clay_300x300.jpg
+tags: ["albumreview"]
+heroimage: earl_sweatshirt_feet_of_clay_300x300.jpg
 album: FEET OF CLAY
 artist: Earl Sweatshirt
 ratingword: Decent.

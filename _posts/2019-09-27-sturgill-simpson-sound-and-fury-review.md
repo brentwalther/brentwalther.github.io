@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: sturgill_simpson_sound_and_fury_640x640.jpg
+tags: ["albumreview"]
+heroimage: sturgill_simpson_sound_and_fury_640x640.jpg
 album: "SOUND & FURY"
 artist: Sturgill Simpson
 ratingword: Yeah!

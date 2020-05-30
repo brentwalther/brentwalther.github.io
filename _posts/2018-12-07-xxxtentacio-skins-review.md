@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: xxxtentacion_skins_300x300.jpg
+tags: ["albumreview"]
+heroimage: xxxtentacion_skins_300x300.jpg
 album: SKINS
 artist: XXXTENTACION
 ratingword: Meh.

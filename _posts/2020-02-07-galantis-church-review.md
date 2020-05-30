@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: galantis_church_300x300.png
+tags: ["albumreview"]
+heroimage: galantis_church_300x300.png
 album: Church
 artist: Galantis
 ratingword: Yeah!

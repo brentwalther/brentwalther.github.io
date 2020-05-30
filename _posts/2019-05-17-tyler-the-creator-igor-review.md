@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: tyler_the_creator_igor_300x300.jpg
+tags: ["albumreview"]
+heroimage: tyler_the_creator_igor_300x300.jpg
 album: IGOR
 artist: Tyler, The Creator
 ratingword: Yeah!

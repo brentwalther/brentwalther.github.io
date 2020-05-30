@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: g_herbo_still_swervin_300x300.jpg
+tags: ["albumreview"]
+heroimage: g_herbo_still_swervin_300x300.jpg
 album: Still Swervin
 artist: G Herbo
 ratingword: Meh.

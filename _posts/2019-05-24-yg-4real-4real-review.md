@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: yg_4real_4real_300x300.jpg
+tags: ["albumreview"]
+heroimage: yg_4real_4real_300x300.jpg
 album: 4REAL 4REAL
 artist: YG
 ratingword: Decent.

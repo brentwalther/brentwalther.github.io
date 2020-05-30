@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: kodak_black_dying_to_live_300x300.jpg
+tags: ["albumreview"]
+heroimage: kodak_black_dying_to_live_300x300.jpg
 album: Dying To Live
 artist: Kodak Black
 ratingword: Yeah!

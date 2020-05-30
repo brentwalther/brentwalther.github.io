@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: saint_jhn_ghetto_lennys_love_songs_300x300.jpg
+tags: ["albumreview"]
+heroimage: saint_jhn_ghetto_lennys_love_songs_300x300.jpg
 album: Ghetto Lenny's Love Songs
 artist: SAINt JHN
 ratingword: Yeah!

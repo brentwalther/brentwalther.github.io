@@ -8,9 +8,9 @@ We were very excited to attend the Spring 2019 Aggie Ringday to see my sister Ma
 
 Congratulations Maddie!
 
-<div class="media-object">
+<figure>
   <a href="https://brentwalther.net/img/spring-2019/maddie_ring_day.jpg">
     <img alt="Katherine, Brent, Susan, Maddie, Memommy, Courtney, Cody, and Mike at Maddies Ring Day." src="https://brentwalther.net/img/spring-2019/maddie_ring_day_thumb.jpg" />
-    <p class="photo-caption">Click/tap to enlarge</p>
+    <figcaption>Click/tap to enlarge</figcaption>
   </a>
-</div>
+</figure>

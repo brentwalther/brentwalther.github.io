@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: rich_the_kid_the_world_is_yours_2_300x300.jpg
+tags: ["albumreview"]
+heroimage: rich_the_kid_the_world_is_yours_2_300x300.jpg
 album: The World Is Yours 2
 artist: Rich The Kid
 ratingword: Decent.

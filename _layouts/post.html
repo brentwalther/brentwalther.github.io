@@ -2,16 +2,8 @@
 layout: default
 ---
 
-<div class="row">
-  <div class="col-xs">
-    <div class="box">
-      <header>
-        <h1>{{ page.title }}</h1>
-      </header>
-      {% if page.author %}<p class="post-meta">Published {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>{% endif %}
-      <article class="post-content">
-        {{ content }}
-      </article>
-    </div>
-  </div>
-</div>
+<article>
+  {% if page.author %}<p class="post-meta">Published {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>{% endif %}
+
+  {{ content }}
+</article>

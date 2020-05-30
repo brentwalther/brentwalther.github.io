@@ -5,56 +5,30 @@
     {% include head_content.html %}
   </head>
 
+  <body>
+    <header>
+      {% if page.title %}
+      <h3 class="text-center"><a href="/">Brent Walther</a></h3>
+      {% else %}
+      <h1 class="text-center"><a href="/">Brent Walther</a></h1>
+      {% endif %}
+    </header>
 
-  <body bgcolor="#c0c0c0">
+    <main>
+      {% if page.heroimage %}
+        <figure>
+          <img src="{{ '/img/' | append: page.heroimage }}" />
+        </figure>
+      {% endif %}
+      {% if page.title %}
+        <h1>{{ page.title }}</h1>
+      {% endif %}
+      {{ content }}
+    </main>
 
-  <div class="container">
-    <div class="window">
-      <div class="title-bar">
-        <div class="title-bar-text">Brent Walther's Homepage{% if page.title %} - {{ page.title }}{% endif %}</div>
-      </div>
-      <div class="window-body">
-        <table>
-          <tr>
-            <td style="padding-right: 5px;">
-            <ul class="tree-view" id="navigation-tree">
-              <li>
-                Navigation
-                <ul>
-                  <li><a href="/">About</a></li>
-                  <li><a href="/files/resume.html">Resume</a></li>
-                  <li><a href="https://www.linkedin.com/in/brentwalther">LinkedIn</a ></li>
-                  <li><a href="http://www.github.com/brentwalther">Github</a></li>
-                  <li>
-                    <a href="/music.html">Music</a>
-                    <ul>
-                      <li><a href="/music.html#charts">Charts</a></li>
-                      <li><a href="/music.html#ratings">Reviews</a></li>
-                      <li><a href="/music.html#concerts">Concerts</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    Projects
-                    <ul>
-                      <li><a href="/projects.html">Software</a></li>
-                      <li><a href="/projects/electronics.html">Electronic</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </td>
-          <td>
-            {{ content }}
-          </td>
-        </tr>
-      </table>
-    </div>
-
-    {% include footer.html %}
-  </div>
-
-
+    <footer>
+      {% include footer.html %}
+    </footer>
   </body>
 
 </html>

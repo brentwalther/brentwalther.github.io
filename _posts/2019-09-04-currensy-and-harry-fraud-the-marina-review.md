@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: currensy_and_harry_fraud_the_marina_300x300.jpg
+tags: ["albumreview"]
+heroimage: currensy_and_harry_fraud_the_marina_300x300.jpg
 album: The Marina EP
 artist: Curren$y and Harry Fraud
 ratingword: Yeah!

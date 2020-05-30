@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: griselda_wwcd_300x300.jpg
+tags: ["albumreview"]
+heroimage: griselda_wwcd_300x300.jpg
 album: W.W.C.D.
 artist: Griselda
 ratingword: Yeah!

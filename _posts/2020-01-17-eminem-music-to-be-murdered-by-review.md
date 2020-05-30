@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: eminem_music_to_be_murdered_by_300x300.jpg
+tags: ["albumreview"]
+heroimage: eminem_music_to_be_murdered_by_300x300.jpg
 album: Music To Be Murdered by
 artist: Eminem
 ratingword: Yeah!

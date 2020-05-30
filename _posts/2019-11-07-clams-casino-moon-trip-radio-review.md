@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: clams_casino_moon_trip_radio_300x300.png
+tags: ["albumreview"]
+heroimage: clams_casino_moon_trip_radio_300x300.png
 album: Moon Trip Radio
 artist: Clams Casino
 ratingword: Yeah!

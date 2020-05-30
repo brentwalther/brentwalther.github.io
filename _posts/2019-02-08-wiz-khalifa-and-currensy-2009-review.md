@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: wiz_khalifa_currensy_2009_300x300.jpg
+tags: ["albumreview"]
+heroimage: wiz_khalifa_currensy_2009_300x300.jpg
 album: 2009
 artist: Wiz Khalifa &amp; Curren$y
 ratingword: Yeah!

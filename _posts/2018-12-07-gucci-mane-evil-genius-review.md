@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: gucci_mane_evil_genius_300x300.jpg
+tags: ["albumreview"]
+heroimage: gucci_mane_evil_genius_300x300.jpg
 album: Evil Genius
 artist: Gucci Mane
 ratingword: Yeah!

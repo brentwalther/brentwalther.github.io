@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: dababy_kirk_300x300.jpg
+tags: ["albumreview"]
+heroimage: dababy_kirk_300x300.jpg
 album: KIRK
 artist: DaBaby
 ratingword: Decent.

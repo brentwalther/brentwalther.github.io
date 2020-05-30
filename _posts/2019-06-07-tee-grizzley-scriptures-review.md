@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: tee_grizzley_scriptures_300x300.jpg
+tags: ["albumreview"]
+heroimage: tee_grizzley_scriptures_300x300.jpg
 album: Scriptures
 artist: Tee Grizzley
 ratingword: Pass.

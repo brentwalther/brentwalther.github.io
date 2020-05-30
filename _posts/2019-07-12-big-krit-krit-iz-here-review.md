@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: big_krit_krit_iz_here_300x300.jpg
+tags: ["albumreview"]
+heroimage: big_krit_krit_iz_here_300x300.jpg
 album: K.R.I.T. IZ HERE
 artist: Big K.R.I.T.
 ratingword: Yeah!

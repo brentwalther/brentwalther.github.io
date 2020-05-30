@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: kevin_gates_im_him_300x300.jpg
+tags: ["albumreview"]
+heroimage: kevin_gates_im_him_300x300.jpg
 album: I'm Him
 artist: Kevin Gates
 ratingword: Decent.

@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: danny_brown_uknowwhatimsaying_300x300.png
+tags: ["albumreview"]
+heroimage: danny_brown_uknowwhatimsaying_300x300.png
 album: "uknowwhatimsayin¿"
 artist: Danny Brown
 ratingword: Decent.

@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: lil_nas_x_7_ep_300x300.jpg
+tags: ["albumreview"]
+heroimage: lil_nas_x_7_ep_300x300.jpg
 album: 7 EP
 artist: Lil Nas X
 ratingword: Meh.

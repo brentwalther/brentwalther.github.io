@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: asap_ferg_floor_seats_300x300.jpg
+tags: ["albumreview"]
+heroimage: asap_ferg_floor_seats_300x300.jpg
 album: Floor Seats
 artist: A$AP Ferg
 ratingword: Yeah!

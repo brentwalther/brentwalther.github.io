@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: koe_wetzel_noise_complaint_500x500.jpg
+tags: ["albumreview"]
+heroimage: koe_wetzel_noise_complaint_500x500.jpg
 album: Noise Complaint
 artist: Koe Wetzel
 ratingword: Yeah!

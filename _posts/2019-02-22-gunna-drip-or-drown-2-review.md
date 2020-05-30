@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: gunna_drop_or_drown_2_300x300.jpg
+tags: ["albumreview"]
+heroimage: gunna_drop_or_drown_2_300x300.jpg
 album: Drip or Drown 2
 artist: Gunna
 ratingword: Decent.

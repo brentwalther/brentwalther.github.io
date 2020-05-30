@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: french_montana_montana_300x300.png
+tags: ["albumreview"]
+heroimage: french_montana_montana_300x300.png
 album: MONTANA
 artist: French Montana
 ratingword: Decent.

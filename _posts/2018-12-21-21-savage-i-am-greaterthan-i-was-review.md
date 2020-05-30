@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: 21_savage_i_am_i_was_300x300.jpg
+tags: ["albumreview"]
+heroimage: 21_savage_i_am_i_was_300x300.jpg
 album: i am &gt; i was
 artist: 21 savage
 ratingword: Decent.

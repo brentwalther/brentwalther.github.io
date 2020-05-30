@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: schoolboy_q_crash_talk_300x300.jpg
+tags: ["albumreview"]
+heroimage: schoolboy_q_crash_talk_300x300.jpg
 album: CrasH Talk
 artist: ScHoolboy Q
 ratingword: Decent.

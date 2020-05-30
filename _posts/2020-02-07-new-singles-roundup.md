@@ -1,6 +1,6 @@
 ---
 
-layout: album_review
+tags: ["albumreview"]
 album: Singles
 artist: Various
 

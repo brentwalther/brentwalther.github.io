@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: dj_snake_carte_blanche_300x300.jpg
+tags: ["albumreview"]
+heroimage: dj_snake_carte_blanche_300x300.jpg
 album: Carte Blanche
 artist: DJ Snake
 ratingword: Decent.

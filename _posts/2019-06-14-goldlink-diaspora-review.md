@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: goldlink_diaspora_300x300.jpg
+tags: ["albumreview"]
+heroimage: goldlink_diaspora_300x300.jpg
 album: Diaspora
 artist: GoldLink
 ratingword: Yeah!

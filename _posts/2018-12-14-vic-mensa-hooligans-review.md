@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: vic_mensa_hooligans_300x300.png
+tags: ["albumreview"]
+heroimage: vic_mensa_hooligans_300x300.png
 album: HOOLIGANS
 artist: Vic Mensa
 ratingword: Yeah!

@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: flume_hi_this_is_flume_640x640.jpg
+tags: ["albumreview"]
+heroimage: flume_hi_this_is_flume_640x640.jpg
 album: Hi This Is Flume (Mixtape)
 artist: Flume
 ratingword: Yeah!

@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: jackboys_jackboys_and_travis_scott_300x300.png
+tags: ["albumreview"]
+heroimage: jackboys_jackboys_and_travis_scott_300x300.png
 album: JACKBOYS
 artist: 'JACKBOYS & Travis Scott'
 ratingword: Meh.

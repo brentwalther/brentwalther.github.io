@@ -1,0 +1,20 @@
+<article id="{{ include.page.id | slugify }}">
+  <h3>{{ include.page.artist }} - {{ include.page.album }}</h3>
+  <p class="muted"><a href="{{ include.page.url }}">[Permalink]</a></p>
+  <table>
+    <tr>
+      {% if include.page.heroimage %}
+        <td style="min-width: 12em; vertical-align: top; padding-right: 1em;">
+          <img src="{{ '/img/' | append: include.page.heroimage }}">
+        </td>
+      {% endif %}
+      <td>
+        {% if include.page.ratingword %}
+          <h3>{{ include.page.ratingword }} - {{ include.page.rating }} / 5</h3>
+        {% endif %}
+        {{ include.page.content }}
+      </td>
+    </tr>
+  </table>
+  <p class="muted">Listened on: {{ include.page.date | date: "%A, %b %d, %Y" }}</p>
+</article>

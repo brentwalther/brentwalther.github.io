@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: logic_confessions_of_a_dangerous_mind_300x300.jpg
+tags: ["albumreview"]
+heroimage: logic_confessions_of_a_dangerous_mind_300x300.jpg
 album: Confessions of a Dangerous Mind
 artist: Logic
 ratingword: Decent.

@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: future_hndrxx_presents_the_wizrd_300x300.jpg
+tags: ["albumreview"]
+heroimage: future_hndrxx_presents_the_wizrd_300x300.jpg
 album: "Future Hndrxx Presents: The WIZRD"
 artist: Future
 ratingword: Yeah!

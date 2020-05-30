@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: tech_n9ne_n9na_300x300.png
+tags: ["albumreview"]
+heroimage: tech_n9ne_n9na_300x300.png
 album: N9NA
 artist: Tech N9ne
 ratingword: Decent.

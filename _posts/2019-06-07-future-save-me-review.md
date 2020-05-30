@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: future_save_me_300x300.jpg
+tags: ["albumreview"]
+heroimage: future_save_me_300x300.jpg
 album: SAVE ME
 artist: Future
 ratingword: Decent.

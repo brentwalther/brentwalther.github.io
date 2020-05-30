@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: denzel_curry_zuu_300x300.jpg
+tags: ["albumreview"]
+heroimage: denzel_curry_zuu_300x300.jpg
 album: ZUU
 artist: Denzel Curry
 ratingword: Yeah!

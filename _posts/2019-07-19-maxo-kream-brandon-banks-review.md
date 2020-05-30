@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: maxo_kream_brandon_banks_300x300.jpg
+tags: ["albumreview"]
+heroimage: maxo_kream_brandon_banks_300x300.jpg
 album: Brandon Banks
 artist: Maxo Kream
 ratingword: Decent.

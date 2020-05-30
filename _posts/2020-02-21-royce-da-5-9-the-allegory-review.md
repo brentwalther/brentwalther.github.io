@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: royce_da_5_9_the_allegory_300x300.jpg
+tags: ["albumreview"]
+heroimage: royce_da_5_9_the_allegory_300x300.jpg
 album: The Allegory
 artist: "Royce da 5'9\""
 ratingword: Yeah!

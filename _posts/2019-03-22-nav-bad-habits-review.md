@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: nav_bad_habits_300x300.jpg
+tags: ["albumreview"]
+heroimage: nav_bad_habits_300x300.jpg
 album: Bad Habits
 artist: Nav
 ratingword: Decent.

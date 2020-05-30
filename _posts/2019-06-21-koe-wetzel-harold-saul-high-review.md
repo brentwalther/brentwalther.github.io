@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: koe_wetzel_harold_saul_high_400x400.png
+tags: ["albumreview"]
+heroimage: koe_wetzel_harold_saul_high_400x400.png
 album: Harold Saul High
 artist: Koe Wetzel
 ratingword: Decent.

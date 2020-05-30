@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: anonymuz_there_is_no_threat_300x300.jpg
+tags: ["albumreview"]
+heroimage: anonymuz_there_is_no_threat_300x300.jpg
 album: There Is No Threat
 artist: Anonymuz
 ratingword: Yeah!

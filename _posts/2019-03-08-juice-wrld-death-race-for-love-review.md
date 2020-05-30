@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: juice_wrld_death_race_for_love_300x300.jpg
+tags: ["albumreview"]
+heroimage: juice_wrld_death_race_for_love_300x300.jpg
 album: Death Race for Love
 artist: Juice WRLD
 ratingword: Decent.

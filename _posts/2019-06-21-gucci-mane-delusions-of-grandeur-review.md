@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: gucci_mane_delusions_of_grendeur_400x400.png
+tags: ["albumreview"]
+heroimage: gucci_mane_delusions_of_grendeur_400x400.png
 album: Delusions of Grandeur
 artist: Gucci Mane
 ratingword: Yeah!

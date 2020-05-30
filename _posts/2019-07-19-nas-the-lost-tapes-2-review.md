@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: nas_the_lost_tapes_2_300x300.jpg
+tags: ["albumreview"]
+heroimage: nas_the_lost_tapes_2_300x300.jpg
 album: The Lost Tapes 2
 artist: Nas
 ratingword: Decent.

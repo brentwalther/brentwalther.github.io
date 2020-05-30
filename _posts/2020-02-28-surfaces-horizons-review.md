@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: surfaces_horizons_300x300.jpg
+tags: ["albumreview"]
+heroimage: surfaces_horizons_300x300.jpg
 album: Horizons
 artist: Surfaces
 ratingword: FIRE!

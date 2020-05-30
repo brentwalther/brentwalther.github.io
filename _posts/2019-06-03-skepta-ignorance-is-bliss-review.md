@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: skepta_ignorance_is_bliss_300x300.png
+tags: ["albumreview"]
+heroimage: skepta_ignorance_is_bliss_300x300.png
 album: Ignorance is Bliss
 artist: Skepta
 ratingword: Yeah!

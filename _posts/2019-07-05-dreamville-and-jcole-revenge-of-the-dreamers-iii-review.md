@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: dreamville_revenge_of_the_dreamers_iii_300x300.jpg
+tags: ["albumreview"]
+heroimage: dreamville_revenge_of_the_dreamers_iii_300x300.jpg
 album: Revenge of the Dreamers III
 artist: Dreamville & J. Cole
 ratingword: Fire!

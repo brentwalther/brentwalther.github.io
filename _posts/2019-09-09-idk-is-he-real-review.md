@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: idk_is_he_real_300x300.jpg
+tags: ["albumreview"]
+heroimage: idk_is_he_real_300x300.jpg
 album: Is He Real?
 artist: IDK
 ratingword: Meh.

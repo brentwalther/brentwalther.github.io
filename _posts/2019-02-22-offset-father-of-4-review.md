@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: offset_father_of_4_300x300.jpg
+tags: ["albumreview"]
+heroimage: offset_father_of_4_300x300.jpg
 album: FATHER OF 4
 artist: Offset
 ratingword: Decent.

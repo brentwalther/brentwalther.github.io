@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: logic_supermarket_soundtrack_300x300.png
+tags: ["albumreview"]
+heroimage: logic_supermarket_soundtrack_300x300.png
 album: Supermarket (Soundtrack)
 artist: Logic
 ratingword: Yeah!

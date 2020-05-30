@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: wale_wow_thats_crazy_300x300.jpg
+tags: ["albumreview"]
+heroimage: wale_wow_thats_crazy_300x300.jpg
 album: "Wow... That's Crazy"
 artist: Wale
 ratingword: Yeah!

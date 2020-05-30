@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: logic_ysiv_300x300.jpg
+tags: ["albumreview"]
+heroimage: logic_ysiv_300x300.jpg
 album: YSIV
 artist: Logic
 ratingword: Yeah!

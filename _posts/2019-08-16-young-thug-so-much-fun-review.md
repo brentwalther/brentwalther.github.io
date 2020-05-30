@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: young_thug_so_much_fun_300x300.png
+tags: ["albumreview"]
+heroimage: young_thug_so_much_fun_300x300.png
 album: So Much Fun
 artist: Young Thug
 ratingword: Decent.

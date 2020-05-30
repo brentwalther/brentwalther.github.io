@@ -1,9 +1,6 @@
 ---
-
-layout: embedded_post
 title: Portable Custom Radio
-tags: ['electronic-project']
-
+tags: ["project"]
 ---
 
 **(a.k.a. radio cooler v2)**
@@ -12,108 +9,70 @@ The custom radio cooler I built in college (and other [prior art](https://photos
 
 The first step was choosing some type of case. Coolers are pretty convenient because they're easy to cut through and they can be fairly water resistant but they are also difficult to seal well. I began looking at electrical junction boxes (and I still think one could work quite well) but many had awkward dimensions and I wasn't sure if drilling or cutting through them would work well. I finally settled on a latching plastic case meant for electrical components or firearms. It seals well and has a convenient handle already installed. It also was long enough to fit three speakers.
     
-<div class="row">
-  <div class="col-xs">
-    <div class="box">
-      <div class="media-object">
-        <a href="/img/radio_cooler2/empty_case.jpg">
-          <img src="/img/radio_cooler2/empty_case_thumb.jpg" alt="Empty radio case.">
-          <p class="photo-caption">Empty case.</p>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="col-xs">
-    <div class="box">
-      <div class="media-object">
-        <a href="/img/radio_cooler2/amplifier_sizing.jpg">
-          <img src="/img/radio_cooler2/amplifier_sizing_thumb.jpg" alt="Case with amplifier inside.">
-          <p class="photo-caption">Amplifier sizing.</p>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+<figure>
+  <a href="/img/radio_cooler2/empty_case.jpg">
+    <img src="/img/radio_cooler2/empty_case_thumb.jpg" alt="Empty radio case.">
+    <figcaption>Empty case.</figcaption>
+  </a>
+</figure>
+<figure>
+  <a href="/img/radio_cooler2/amplifier_sizing.jpg">
+    <img src="/img/radio_cooler2/amplifier_sizing_thumb.jpg" alt="Case with amplifier inside.">
+    <figcaption>Amplifier sizing.</figcaption>
+  </a>
+</figure>
 
 The case is quite spacious inside. I placed the amplifier in first to size it up but I had compared dimensions online before purchasing.
 
-<div class="row">
-  <div class="col-xs">
-    <div class="box">
-      <div class="media-object">
-        <a href="/img/radio_cooler2/aluminum_rail_installation.jpg">
-          <img src="/img/radio_cooler2/aluminum_rail_installation_thumb.jpg" alt="Inside of case with speakers, amplifier, and aluminum rails installed.">
-          <p class="photo-caption">Installed speakers and some components.</p>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="col-xs">
-    <div class="box">
-      <div class="media-object">
-        <a href="/img/radio_cooler2/installed_speakers.jpg">
-          <img src="/img/radio_cooler2/installed_speakers_thumb.jpg" alt="Outside of case after installing speakers.">
-          <p class="photo-caption"> Outside of case with speakers installed.</p>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+<figure>
+  <a href="/img/radio_cooler2/aluminum_rail_installation.jpg">
+    <img src="/img/radio_cooler2/aluminum_rail_installation_thumb.jpg" alt="Inside of case with speakers, amplifier, and aluminum rails installed.">
+    <figcaption>Installed speakers and some components.</figcaption>
+  </a>
+</figure>
+<figure>
+  <a href="/img/radio_cooler2/installed_speakers.jpg">
+    <img src="/img/radio_cooler2/installed_speakers_thumb.jpg" alt="Outside of case after installing speakers.">
+    <figcaption> Outside of case with speakers installed.</figcaption>
+  </a>
+</figure>
 
 I carefully measured and cut out holes for the speakers using a dremel tool. I used a tiny cutting wheel to get a rough shape first and then used one of the sanding heads to round them out. If I were to do it a second time, I would tape templates down from the start to get perfectly round holes. After cutting the holes, I installed the speakers using bolts and wing nuts as well as a bit of silicon sealant around the speaker beds.
       
 The components on the inside are mounted via aluminum C-channel I found at Home Depot. It was inexpensive, reasonably strong, light weight, and shouldn't rust if any moisture gets inside. The two T brackets ended up getting mounted behind the battery to C-channel two cross members. The battery is 12V/20Ah sealed unit I picked up on Amazon. The entire assembly is mounted to the case at 4 anchor points: 2 to the bottom of the battery and two at the place where the lower amplifier holes are.
 
-<div class="row">
-  <div class="col-xs">
-    <div class="box">
-      <div class="media-object">
-        <a href="/img/radio_cooler2/portable_boombox_v2_front.jpg">
-          <img src="/img/radio_cooler2/portable_boombox_v2_front_thumb.jpg" alt="Finished portable custom radio front.">
-          <p class="photo-caption">Finished radio front w/ trickle charger.</p>
-        </a>
-      </div>
-  	</div>
-  </div>
-</div>
+<figure>
+  <a href="/img/radio_cooler2/portable_boombox_v2_front.jpg">
+    <img src="/img/radio_cooler2/portable_boombox_v2_front_thumb.jpg" alt="Finished portable custom radio front.">
+    <figcaption>Finished radio front w/ trickle charger.</figcaption>
+  </a>
+</figure>
 
 The finished radio looks quite nice from the front and uses a small trickle charger to charge up. It sits easily upright though I would love to have a way to also sit it on its side so the three speakers were stacked. The sound is very directional (somehow to my surprise) so it's best placed facing the direction you want the sound to go. The volume of the case with all components installed seems close to the right size to get good speaker suspension -- bass is loud and even shakes the lid some.
 
 The inside of the cooler is slightly messier than I'd like but it's still a work in progress. The battery is held in place via paracord because I haven't thought of a better way that isn't too rigid (I don't want to jar the battery too much). The switch is placed alongside a 2-port USB power hub and the bluetooth module. The hub shows the battery voltage to give an approximate idea of charge level. The bluetooth module only draws a few mA so I keep it permanently powered (switch controls the amplifier)..
 
-<div class="row">
-  <div class="col-xs">
-    <div class="box">
-      <div class="media-object">
-        <a href="/img/radio_cooler2/portable_boombox_v2_inside.jpg">
-          <img src="/img/radio_cooler2/portable_boombox_v2_inside.jpg" alt="Completed inside of portable custom radio.">
-          <p class="photo-caption">Finished and wired inside.</p>
-        </a>
-      </div>
-      <div class="media-object">
-        <a href="/img/radio_cooler2/portable_boombox_v2_rear.JPG">
-          <img src="/img/radio_cooler2/portable_boombox_v2_rear_thumb.JPG" alt="Finished portable custom radio rear.">
-          <p class="photo-caption">Finished radio rear w/ trickle charger.</p>
-        </a>
-      </div>
-  	</div>
-  </div>
-</div>
+<figure>
+  <a href="/img/radio_cooler2/portable_boombox_v2_inside.jpg">
+    <img src="/img/radio_cooler2/portable_boombox_v2_inside.jpg" alt="Completed inside of portable custom radio.">
+    <figcaption>Finished and wired inside.</figcaption>
+  </a>
+</figure>
+<figure>
+  <a href="/img/radio_cooler2/portable_boombox_v2_rear.JPG">
+    <img src="/img/radio_cooler2/portable_boombox_v2_rear_thumb.JPG" alt="Finished portable custom radio rear.">
+    <figcaption>Finished radio rear w/ trickle charger.</figcaption>
+  </a>
+</figure>
 
 The rear only contains 4 mounting bolts which can be easily sealed with silicon caulking. The radio is significantly more portable than the previous iteration and can be carried with one hand like a suit case.
 
-<div class="row">
-  <div class="col-xs">
-    <div class="box">
-      <div class="media-object">
-        <a href="/img/radio_cooler2/portable_boombox_v2_size_reference.JPG">
-          <img src="/img/radio_cooler2/portable_boombox_v2_size_reference_thumb.JPG" alt="Me holding the custom radio at my side.">
-          <p class="photo-caption">Finished radio is very portable.</p>
-        </a>
-      </div>
-  	</div>
-  </div>
-</div>
+<figure>
+  <a href="/img/radio_cooler2/portable_boombox_v2_size_reference.JPG">
+    <img src="/img/radio_cooler2/portable_boombox_v2_size_reference_thumb.JPG" alt="Me holding the custom radio at my side.">
+    <figcaption>Finished radio is very portable.</figcaption>
+  </a>
+</figure>
 
 **Parts List**
 

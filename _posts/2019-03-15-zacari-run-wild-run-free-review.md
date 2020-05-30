@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: zacari_run_wild_run_free_300x300.jpg
+tags: ["albumreview"]
+heroimage: zacari_run_wild_run_free_300x300.jpg
 album: Run Wild Run Free
 artist: Zacari
 ratingword: Yeah!

@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: lil_wayne_funeral_300x300.png
+tags: ["albumreview"]
+heroimage: lil_wayne_funeral_300x300.png
 album: Funeral
 artist: Lil Wayne
 ratingword: Decent.

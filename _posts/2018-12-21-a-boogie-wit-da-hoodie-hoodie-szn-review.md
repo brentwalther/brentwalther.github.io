@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: a_boogie_wit_da_hoodie_hoodie_szn_300x300.jpg
+tags: ["albumreview"]
+heroimage: a_boogie_wit_da_hoodie_hoodie_szn_300x300.jpg
 album: Hoodie SZN
 artist: A Boogie wit da Hoodie
 ratingword: Decent.

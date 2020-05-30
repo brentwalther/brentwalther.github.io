@@ -5,8 +5,13 @@
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-<link rel="stylesheet" href="https://unpkg.com/98.css">
+<!-- Stolen from https://csswizardry.com/2020/05/the-fastest-google-fonts/ -->
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" />
+<link rel="stylesheet" href="ttps://fonts.googleapis.com/css2?family=Open+Sans&display=swap" media="print" onload="this.media='all'" />
+<noscript>
+  <link rel="stylesheet" href="ttps://fonts.googleapis.com/css2?family=Open+Sans&display=swap" />
+</noscript>
+
 <link rel="stylesheet" href="/css/main.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
 

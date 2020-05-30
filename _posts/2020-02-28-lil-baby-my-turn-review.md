@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: lil_baby_my_turn_300x300.png
+tags: ["albumreview"]
+heroimage: lil_baby_my_turn_300x300.png
 album: My Turn
 artist: Lil Baby
 ratingword: Decent.

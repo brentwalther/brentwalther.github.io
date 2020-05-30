@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: lil_yachty_lil_boat_3_300x300.png
+tags: ["albumreview"]
+heroimage: lil_yachty_lil_boat_3_300x300.png
 album: Lil Boat 3
 artist: Lil Yachty
 ratingword: Meh.

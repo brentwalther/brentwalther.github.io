@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: flying_lotus_flamagra_300x300.png
+tags: ["albumreview"]
+heroimage: flying_lotus_flamagra_300x300.png
 album: Flamagra
 artist: Flying Lotus
 ratingword: Yeah!

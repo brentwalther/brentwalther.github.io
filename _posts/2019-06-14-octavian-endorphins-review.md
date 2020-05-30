@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: octavian_endorphins_300x300.jpg
+tags: ["albumreview"]
+heroimage: octavian_endorphins_300x300.jpg
 album: Endorphins
 artist: Octavian
 ratingword: Decent.

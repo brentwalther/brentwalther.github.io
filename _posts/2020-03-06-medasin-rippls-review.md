@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: medasin_rippls_300x300.jpg
+tags: ["albumreview"]
+heroimage: medasin_rippls_300x300.jpg
 album: RIPPLS
 artist: Medasin
 ratingword: Yeah!

@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: tyga_legendary_300x300.jpg
+tags: ["albumreview"]
+heroimage: tyga_legendary_300x300.jpg
 album: Legendary
 artist: Tyga
 ratingword: Decent.

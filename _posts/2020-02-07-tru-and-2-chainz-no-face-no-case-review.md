@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: tru_and_2_chainz_no_face_no_case_300x300.jpg
+tags: ["albumreview"]
+heroimage: tru_and_2_chainz_no_face_no_case_300x300.jpg
 album: No Face, No Case
 artist: T.R.U & 2 Chainz
 ratingword: Meh.

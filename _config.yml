@@ -6,6 +6,8 @@ defaults:
     values:
       layout: "default"
       author: "Brent Walther"
+      # WARNING: do not change this else risk screwing up every link that
+      # has been indexed. Use post.url to obtain the link.
       permalink: :title
 
 exclude: [README.md, Gemfile, Gemfile.lock]

@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: silkmoney_i_hate_my_life_300x300.jpg
+tags: ["albumreview"]
+heroimage: silkmoney_i_hate_my_life_300x300.jpg
 album: I Hate My Life and I Really Wish People Would Stop Telling Me Not To
 artist: $ILKMONEY
 ratingword: Meh.

@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: anderson_paak_ventura_300x300.jpg
+tags: ["albumreview"]
+heroimage: anderson_paak_ventura_300x300.jpg
 album: Ventura
 artist: Anderson .Paak
 ratingword: Decent.

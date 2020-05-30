@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: j_cole_born_sinner_300x300.jpg
+tags: ["albumreview"]
+heroimage: j_cole_born_sinner_300x300.jpg
 album: Born Sinner
 artist: J. Cole
 ratingword: Yeah!

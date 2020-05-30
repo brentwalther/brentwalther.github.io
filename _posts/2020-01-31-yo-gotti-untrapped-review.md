@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: yo_gotti_untrapped_300x300.jpg
+tags: ["albumreview"]
+heroimage: yo_gotti_untrapped_300x300.jpg
 album: Untrapped
 artist: Yo Gotti
 ratingword: Decent.

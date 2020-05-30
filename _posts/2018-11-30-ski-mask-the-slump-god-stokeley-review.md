@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: ski_mask_the_slump_god_stokeley_300x300.jpg
+tags: ["albumreview"]
+heroimage: ski_mask_the_slump_god_stokeley_300x300.jpg
 album: STOKELEY
 artist: Ski Make The Slump God
 ratingword: Meh.

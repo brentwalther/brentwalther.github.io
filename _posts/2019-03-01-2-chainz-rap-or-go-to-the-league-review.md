@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: 2_chainz_rap_or_go_to_the_league_300x300.jpg
+tags: ["albumreview"]
+heroimage: 2_chainz_rap_or_go_to_the_league_300x300.jpg
 album: Rap or Go to the League
 artist: 2 Chainz
 ratingword: Decent.

@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: lil_uzi_vert_eternal_atake_300x300.jpg
+tags: ["albumreview"]
+heroimage: lil_uzi_vert_eternal_atake_300x300.jpg
 album: Eternal Atake
 artist: Lil Uzi Vert
 ratingword: Meh.

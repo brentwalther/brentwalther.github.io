@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: kid_ink_missed_calls_300x300.jpg
+tags: ["albumreview"]
+heroimage: kid_ink_missed_calls_300x300.jpg
 album: Missed Calls
 artist: Kid Ink
 ratingword: Yeah!

@@ -10,9 +10,9 @@ We attended her graduation party the following day and despite rain had a great 
 
 We're proud of you Courtney. Congratulations on graduating!
 
-<div class="media-object">
+<figure>
   <a href="https://brentwalther.net/img/spring-2019/walther_kids.jpg">
     <img alt="Maddie, Cody, Courtney, and Brent on Courtney's Graduation Day." src="https://brentwalther.net/img/spring-2019/walther_kids_thumb.jpg" />
-    <p class="photo-caption">Maddie, Cody, Courtney, and Brent on Courtney's Graduation Day. Click/tap to enlarge</p>
+    <figcaption>Maddie, Cody, Courtney, and Brent on Courtney's Graduation Day. Click/tap to enlarge</figcaption>
   </a>
-</div>
+</figure>

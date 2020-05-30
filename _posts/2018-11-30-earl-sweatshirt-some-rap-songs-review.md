@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: earl_sweatshirt_some_rap_songs_300x300.jpg
+tags: ["albumreview"]
+heroimage: earl_sweatshirt_some_rap_songs_300x300.jpg
 album: Some Rap Songs
 artist: Earl Sweatshirt
 ratingword: Decent.

@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: mike_will_made_it_creed_ii_the_album_300x300.jpg
+tags: ["albumreview"]
+heroimage: mike_will_made_it_creed_ii_the_album_300x300.jpg
 album: "Creed II: The Album"
 artist: Mike WiLL Made-It
 ratingword: Yeah!

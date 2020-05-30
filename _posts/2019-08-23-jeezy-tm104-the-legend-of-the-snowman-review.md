@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: jeezy_tm104_the_legend_of_the_snowman_300x300.jpg
+tags: ["albumreview"]
+heroimage: jeezy_tm104_the_legend_of_the_snowman_300x300.jpg
 album: TM104 The Legend of the Snowman
 artist: Jeezy
 ratingword: Yeah!

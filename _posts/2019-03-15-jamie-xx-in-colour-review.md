@@ -1,11 +1,11 @@
 ---
 
-layout: album_review
+tags: ["albumreview"]
 artist: Jamie xx
 album: In Colour
 ratingword: Yeah!
 rating: 4
-albumart: jamie_xx_in_colour_300x300.jpg
+heroimage: jamie_xx_in_colour_300x300.jpg
 
 ---
 

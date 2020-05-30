@@ -1,7 +1,7 @@
 ---
 
-layout: album_review
-albumart: meek_mill_championships_300x300.jpg
+tags: ["albumreview"]
+heroimage: meek_mill_championships_300x300.jpg
 album: Championships
 artist: Meek Mill
 ratingword: Yeah!
