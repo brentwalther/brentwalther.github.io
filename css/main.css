@@ -70,3 +70,16 @@ footer,
 .text-center {
   text-align: center;
 }
+
+code,
+code > span {
+  font-family: monospace;
+}
+
+th {
+  border-bottom: 1px solid #eee;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
