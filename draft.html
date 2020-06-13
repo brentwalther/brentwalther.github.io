@@ -4,43 +4,46 @@ title: Markdown Editor
 excerpt: A local storage Markdown editor for writing.
 ---
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css"
+/>
 <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
 
 <script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function() {
-    var simplemde = new SimpleMDE({ 
+  document.addEventListener("DOMContentLoaded", function () {
+    var simplemde = new SimpleMDE({
       element: document.getElementById("editor"),
       autofocus: true,
       autosave: {
         enabled: true,
-        uniqueId: 'draft-editor',
+        uniqueId: "draft-editor",
       },
-      initialValue: '# Title',
+      initialValue: "# Title",
       toolbar: false,
     });
-    var preview = document.getElementById('preview');
+    var preview = document.getElementById("preview");
 
     var counter = 0;
 
-    var sideBySideRenderingFunction = function(delay) {
+    var sideBySideRenderingFunction = function (delay) {
       var value = simplemde.options.previewRender(simplemde.value());
       var count = ++counter;
-      window.setTimeout(
-        function() {
-          if (count == counter) {
-            preview.innerHTML = value;
-          }
-        },
-        delay)
+      window.setTimeout(function () {
+        if (count == counter) {
+          preview.innerHTML = value;
+        }
+      }, delay);
     };
-    simplemde.codemirror.on("update", function() { sideBySideRenderingFunction(250); });
+    simplemde.codemirror.on("update", function () {
+      sideBySideRenderingFunction(250);
+    });
   });
 </script>
 
-<table style="width: 100%">
+<table style="width: 100%;">
   <tr>
-    <td style="width: 50%">
+    <td style="width: 50%;">
       <textarea id="editor"></textarea>
     </td>
     <td style="width: 50%; vertical-align: top;">

@@ -1,16 +1,25 @@
 ---
 layout: default
 title: Projects
-excerpt: A small collection of projects (software, electronic, and more) that Brent Walther has worked on.
+excerpt:
+  A small collection of projects (software, electronic, and more) that Brent
+  Walther has worked on.
 ---
 
-<p>Even though software engineering is my profession, I don't only code in the office. I'll occassionally dabble in software side-projects at home, too. This page is dedicated to hobby/side projects I've worked on outside of my job. It includes some academic projects too.</p>
+<p>
+  Even though software engineering is my profession, I don't only code in the
+  office. I'll occassionally dabble in software side-projects at home, too. This
+  page is dedicated to hobby/side projects I've worked on outside of my job. It
+  includes some academic projects too.
+</p>
 
 {% assign projects = site.tags.project%}
 
 <ul>
   {% for project in projects %}
-    <li><a href="#{{ project.id | slugify }}">{{ project.title }}</a> - {{ project.date | date: "%b '%y" }}</li>
+  <li>
+    <a href="#{{ project.id | slugify }}">{{ project.title }}</a> - {{ project.date | date: "%b '%y" }}
+  </li>
   {% endfor %}
 </ul>
 

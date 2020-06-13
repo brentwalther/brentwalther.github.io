@@ -40,5 +40,3 @@ layout: default
     {% endif %}
   {% endfor %}
 </ul>
-  
-

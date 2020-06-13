@@ -2,9 +2,16 @@
 layout: default
 ---
 
-Howdy, I'm Brent. I'm a software engineer currently working for Google and graduated from [Texas A&amp;M University](http://www.tamu.edu) in 2014. I learned programming as a kid in the 90s/00s while hanging out in IRC chat (mIRC, anybody?) and browsing forums (SwiftIRC, namely).
+Howdy, I'm Brent. I'm a software engineer currently working for Google and
+graduated from [Texas A&amp;M University](http://www.tamu.edu) in 2014. I
+learned programming as a kid in the 90s/00s while hanging out in IRC chat (mIRC,
+anybody?) and browsing forums (SwiftIRC, namely).
 
-If I'm not programming, I'm probably playing video games like [Rocket League](https://rocketleague.tracker.network/profile/steam/76561198099061550), listening to [music](https://www.last.fm/user/brentwalther), learning about personal finance, or driving my trucks. If you want to chat, shoot me an [email](mailto:brent@walther.io).
+If I'm not programming, I'm probably playing video games like
+[Rocket League](https://rocketleague.tracker.network/profile/steam/76561198099061550),
+listening to [music](https://www.last.fm/user/brentwalther), learning about
+personal finance, or driving my trucks. If you want to chat, shoot me an
+[email](mailto:brent@walther.io).
 
 If you're interested in hearing from me, subscribe to my Mailchimp mailing list:
 

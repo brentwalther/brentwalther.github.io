@@ -77,12 +77,19 @@ title: Music
 
 ## Charts {#charts}
 
-This is a snapshot of my top albums and artists based on my [LastFM](https://www.last.fm/user/brentwalther) listening history. LastFM is a wonderful tool into understanding what music you actually listen to but you have to pay to access advanced reporting. I was curious to know what my most "dense" artists and albums are (which ones I have listened to the most in a given time period) so I wrote a script to do it for me. Below are the results of an analysis of over 85,000 personally logged tracks.
+This is a snapshot of my top albums and artists based on my
+[LastFM](https://www.last.fm/user/brentwalther) listening history. LastFM is a
+wonderful tool into understanding what music you actually listen to but you have
+to pay to access advanced reporting. I was curious to know what my most "dense"
+artists and albums are (which ones I have listened to the most in a given time
+period) so I wrote a script to do it for me. Below are the results of an
+analysis of over 85,000 personally logged tracks.
 
 <button id="play-count-type-album">Albums</button>
 <button id="play-count-type-artist">Artists</button>
 <label for="play-count-time-period-select">Time Period:</label>
 <select id="play-count-time-period-select">
+
   <option value="7">7 days</option>
   <option value="30">30 days</option>
   <option value="90" selected="selected">90 days</option>
@@ -103,16 +110,26 @@ This is a snapshot of my top albums and artists based on my [LastFM](https://www
 
 ## Album Ratings {#ratings}
 
-I'm a huge fan of "New Music Friday" (did you know most new music is released on Friday?). Spotify has a neat page that gives you a list of the top (and maybe paid too, it's hard to tell) new albums every week that you can browse through. I try to keep up with interesting new releases in Hip-hop, Rap, Country, Electronic, and more. This section is a log of some of the things I've listened to and my specific opinions of them.
+I'm a huge fan of "New Music Friday" (did you know most new music is released on
+Friday?). Spotify has a neat page that gives you a list of the top (and maybe
+paid too, it's hard to tell) new albums every week that you can browse through.
+I try to keep up with interesting new releases in Hip-hop, Rap, Country,
+Electronic, and more. This section is a log of some of the things I've listened
+to and my specific opinions of them.
 
-My full listen log is on my [LastFM](https://www.last.fm/user/brentwalther). My Rap/Hip-Hop playlist (which I add too frequently) can be found [here on Spotify](https://open.spotify.com/user/121624922/playlist/5Rup4WYBgxlnXh1kCV0WCw?si=YYg3wxCzTYOzSYBArmBwoQ). Be sure to sort by recently added because I've been working on it for 4+ years!
+My full listen log is on my [LastFM](https://www.last.fm/user/brentwalther). My
+Rap/Hip-Hop playlist (which I add too frequently) can be found
+[here on Spotify](https://open.spotify.com/user/121624922/playlist/5Rup4WYBgxlnXh1kCV0WCw?si=YYg3wxCzTYOzSYBArmBwoQ).
+Be sure to sort by recently added because I've been working on it for 4+ years!
 
 My "rating" system is pretty simple. I rate albums on a five star scale:
 
 - 1/5 - Pass. I probably won't listen to this again.
-- 2/5 - Meh. I didn't really like it but I could be convinced to give it another try
+- 2/5 - Meh. I didn't really like it but I could be convinced to give it another
+  try
 - 3/5 - Decent. I enjoyed it but it wasn't anything special.
-- 4/5 - Yeah! This album was good, and I probably added some songs from it to a playlist.
+- 4/5 - Yeah! This album was good, and I probably added some songs from it to a
+  playlist.
 - 5/5 - FIRE! I have it on repeat.
 
 <br><!-- hack <br> to prevent the first review from being scooped up in the generated <li> above. I don't know why it does that. -->
@@ -123,7 +140,9 @@ My "rating" system is pretty simple. I rate albums on a five star scale:
 
 ## Concerts {#concerts}
 
-In addition to listening to a lot of music, I enjoy attending live performances as well. Below is a collection of concerts I've attended which received a writeup.
+In addition to listening to a lot of music, I enjoy attending live performances
+as well. Below is a collection of concerts I've attended which received a
+writeup.
 
 {% for concert in site.tags.concert %}
   {% include embedded_post.html page=concert %}
