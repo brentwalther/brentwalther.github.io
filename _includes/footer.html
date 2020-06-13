@@ -1,14 +1,32 @@
-<p class="text-center"><a href="/">Home</a> - <a href="/files/resume.html">Resume</a> - <a href="https://www.linkedin.com/in/brentwalther">LinkedIn</a> - <a href="http://www.github.com/brentwalther">Github</a> - <a href="/music.html">Music</a> - <a href="/projects.html">Projects</a></p>
+<p class="text-center">
+  <a href="/">Home</a> - <a href="/files/resume.html">Resume</a> -
+  <a href="https://www.linkedin.com/in/brentwalther">LinkedIn</a> -
+  <a href="http://www.github.com/brentwalther">Github</a> -
+  <a href="/music.html">Music</a> - <a href="/projects.html">Projects</a>
+</p>
 <p class="text-center">&#0169; {{ "now" | date: "%Y" }} Brent Walther</p>
-<p class="text-center muted">Site last updated {{ site.time | date: "%a, %b %d, %Y" }}</p>
+<p class="text-center muted">
+  Site last updated {{ site.time | date: "%a, %b %d, %Y" }}
+</p>
 <p class="text-center muted"><a href="/all.html">All Posts</a></p>
 
-<a id="go-to-top-button" href="#" style="position: fixed; top: 5px; right: 5px; visibility: hidden; background: #fff;">Go to top</a>
+<a
+  id="go-to-top-button"
+  href="#"
+  style="
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    visibility: hidden;
+    background: #fff;
+  "
+  >Go to top</a
+>
 
 <script>
-  (function() {
-    var goToTopButton = document.getElementById('go-to-top-button');
-    let updateGoToTopVisiblity = function() {
+  (function () {
+    var goToTopButton = document.getElementById("go-to-top-button");
+    let updateGoToTopVisiblity = function () {
       if (window.pageYOffset > 0) {
         goToTopButton.style.visibility = "visible";
       } else {
@@ -17,16 +35,30 @@
     };
     window.onscroll = updateGoToTopVisiblity;
     updateGoToTopVisiblity();
-
   })();
 </script>
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    (i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date());
+    (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "//www.google-analytics.com/analytics.js",
+    "ga"
+  );
 
-  ga('create', 'UA-43996976-1', 'brentwalther.net');
-  ga('send', 'pageview');
+  ga("create", "UA-43996976-1", "brentwalther.net");
+  ga("send", "pageview");
 </script>

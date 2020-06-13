@@ -3,7 +3,10 @@ layout: default
 ---
 
 <article>
-  {% if page.author %}<p class="post-meta">Published {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>{% endif %}
-
+  {% if page.author %}
+  <p class="post-meta">
+    Published {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}
+  </p>
+  {% endif %}
   {{ content }}
 </article>

@@ -4,17 +4,19 @@
   <table>
     <tr>
       {% if include.page.heroimage %}
-        <td style="min-width: 12em; vertical-align: top; padding-right: 1em;">
-          <img src="{{ '/img/' | append: include.page.heroimage }}">
-        </td>
+      <td style="min-width: 12em; vertical-align: top; padding-right: 1em;">
+        <img src="{{ '/img/' | append: include.page.heroimage }}" />
+      </td>
       {% endif %}
       <td>
         {% if include.page.ratingword %}
-          <h3>{{ include.page.ratingword }} - {{ include.page.rating }} / 5</h3>
+        <h3>{{ include.page.ratingword }} - {{ include.page.rating }} / 5</h3>
         {% endif %}
         {{ include.page.content }}
       </td>
     </tr>
   </table>
-  <p class="muted">Listened on: {{ include.page.date | date: "%A, %b %d, %Y" }}</p>
+  <p class="muted">
+    Listened on: {{ include.page.date | date: "%A, %b %d, %Y" }}
+  </p>
 </article>
