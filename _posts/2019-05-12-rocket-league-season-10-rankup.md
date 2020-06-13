@@ -6,7 +6,9 @@ author: Brent Walther
 
 I'm still playing Rocket League 6 seasons later...
 
-This season, I finally achieved the Champion season rank  which is 3 ranks beneath the top rank of Grand Champion. I played over 400+ games this season so the grind was real.
+This season, I finally achieved the Champion season rank which is 3 ranks
+beneath the top rank of Grand Champion. I played over 400+ games this season so
+the grind was real.
 
 Here's a screenshot of the when I went up a division (div 3) and got MVP:
 

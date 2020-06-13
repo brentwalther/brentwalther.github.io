@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Maddie's Ringday! - April 2019 
+title: Maddie's Ringday! - April 2019
 author: Brent Walther
 ---
 
-We were very excited to attend the Spring 2019 Aggie Ringday to see my sister Maddie receive hard-earned Aggie ring! We also go to see her do her ring dunk the following evening.
+We were very excited to attend the Spring 2019 Aggie Ringday to see my sister
+Maddie receive hard-earned Aggie ring! We also go to see her do her ring dunk
+the following evening.
 
 Congratulations Maddie!
 
