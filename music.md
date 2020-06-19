@@ -89,7 +89,6 @@ analysis of over 85,000 personally logged tracks.
 <button id="play-count-type-artist">Artists</button>
 <label for="play-count-time-period-select">Time Period:</label>
 <select id="play-count-time-period-select">
-
   <option value="7">7 days</option>
   <option value="30">30 days</option>
   <option value="90" selected="selected">90 days</option>
