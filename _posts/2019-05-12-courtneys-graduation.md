@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Courtney's Graduation! - May 2019
+title: Courtney's Graduation
 author: Brent Walther
 ---
 
@@ -15,8 +15,8 @@ first time), seeing tons of family members, and being merry!
 We're proud of you Courtney. Congratulations on graduating!
 
 <figure>
-  <a href="https://brentwalther.net/img/spring-2019/walther_kids.jpg">
-    <img alt="Maddie, Cody, Courtney, and Brent on Courtney's Graduation Day." src="https://brentwalther.net/img/spring-2019/walther_kids_thumb.jpg" />
+  <a href="/img/spring-2019/walther_kids.jpg">
+    <img alt="Maddie, Cody, Courtney, and Brent on Courtney's Graduation Day." src="/img/spring-2019/walther_kids_thumb.jpg" />
     <figcaption>Maddie, Cody, Courtney, and Brent on Courtney's Graduation Day. Click/tap to enlarge</figcaption>
   </a>
 </figure>
