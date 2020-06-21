@@ -7,16 +7,35 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="robots" content="index,follow" />
   <meta name="keywords" content="Brent, Walther, Texas A&amp;M, tamu, 14, computer science, software engineering, google, startup, AskU" />
-  <meta name="description" content="Personal resume for Brent Walther, Texas A&M '14 graduate, Google software engineer, former engineer for startup AskU." />
+  <meta name="description" content="Brent Walther's Resume: MCS, BCS Texas A&M '14, Google software engineer, former engineer for startup AskU." />
 
-  <title>Brent Walther Personal Resume</title>
+  <title>Brent Walther Resume</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="/css/normalize.css" rel="stylesheet" media="screen, print">
+
+  <!-- Stolen from https://csswizardry.com/2020/05/the-fastest-google-fonts/ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link
+    rel="preload"
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="ttps://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+    media="print"
+    onload="this.media='all'"
+  />
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="ttps://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+    />
+  </noscript>
 
   <style>
     * {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Open Sans', sans-serif;
     }
 
     body {
@@ -92,9 +111,10 @@
           <strong>Software Engineer III</strong> &bull; Austin, TX &bull; Google Play Services (GMS Core) &bull; Oct 2018 &ndash; Present
         </p>
         <ul>
-          <li>Modularized our code base by splitting up monolithic build targets into finer grained targets and optimizing compile-time binary variant calculations. These improve build time, reduce overall technical debt, and automate configuration.</li>
-          <li>Improved GmsCore module release flexibility through several new features including versioned prebuilts, cross-Android-user module feature sharing, improved after-boot/after-upgrade module availability latency, and introduced virtual placebos to reduce noise in system health metrics via control/treatment experiments while simultaneously reducing the cost of deployment to user devices.</li>
-          <li>Modernized and stabilized code base by integrating Google Guava collections where appropriate and refactoring tests with Google Truth and Robolectric libraries.</li>
+          <li>Automated and optimized compile-time APK variant calculations. GMS Core is shipped to many different form factors and Android SDK levels; this feature reduces technical debt and mistakes by automating away manual configuration.</li>
+          <li>Improved distribution of GMS Core release - prebuilt module matching, optimized preloading over the network, after boot, and after APK package upgrade, virtual placebo releases that reduce system health metrics noise while simultaneously reducing the cost of deployment to user devices.</li>
+          <li>Modernized and stabilized our code base by integrating Google Guava collections where appropriate.</li>
+          <li>Writing and refactoring rich unit, integration, and Android instrumentation tests using Google Truth, Robolectric.</li>
         </ul>
         <p>
           <strong>Software Engineer III</strong> &bull; Seattle, WA &bull; Google Maps for Android (aGMM) &bull; Oct 2017 &ndash; Sept 2018
@@ -176,7 +196,7 @@
         <h4 class="no-margin">skills</h4>
       </td>
       <td>
-        <p><strong>Strong/Recent:</strong> Java, Python, Protobuf, Android, Robolectric, Google Guava, Truth, Bazel, Git</p>
+        <p><strong>Strong/Recent:</strong> Java, Python, Protobuf, Android, Robolectric, Google Guava, Google Truth, Bazel, Starlark, Git</p>
         <p><strong>Moderate familiarity:</strong> Dagger, Guice, C++, Javascript, Ruby, SQL</p>
         <p><strong>Past:</strong> Angular, Elasticsearch</p>
       </td>
