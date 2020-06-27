@@ -1,8 +1,7 @@
 ---
+title: Post Index
 layout: default
 ---
-
-## Posts
 
 ### Tags
 
