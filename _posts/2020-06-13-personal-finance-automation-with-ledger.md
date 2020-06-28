@@ -12,7 +12,7 @@ I found the [`ledger-cli`](https://www.ledger-cli.org/) tool which is double-ent
 My new workflow for managing my budget looks like this:
 
 1. Every month, [download CSV exports](#download-csvs) of transactions from my credit card and bank accounts.
-2. Use my JCF tool to automatically [match the transactions and export them](#match-and-convert) to a ledger-cli compatible file.
+2. Use my [JCF](https://www.github.com/brentwalther/jcf) tool to automatically [match the transactions and export them](#match-and-convert) to a ledger-cli compatible file.
 3. [Merge each ledger file](#merge-and-ingest) into the main ledger.
 4. Use ledger-cli to [export an updated master CSV and mapping file](#export-csv-and-mappings) of all expenses.
 5. [Check diffs using Git](#maintenance-with-git) and commit the results if they look correct.
@@ -20,13 +20,22 @@ My new workflow for managing my budget looks like this:
 
 If you want to skip the details, there are [scripts](#scripts) and [example files](#example-files) at the bottom.
 
+## Setup
+
+To try and follow follow this workflow, you'll need to get some of the software set up:
+
+1. To run [JCF](https://www.github.com/brentwalther/jcf), you need to install the build system [`bazel`](https://docs.bazel.build/versions/3.3.0/getting-started.html).
+2. Use git to clone [JCF](https://www.github.com/brentwalther/jcf).
+3. Either download a precompiled binary or build `ledger-cli` from source: [https://www.ledger-cli.org/download.html](https://www.ledger-cli.org/download.html)
+4. Download the [scripts](#scripts) the edit the [variables.sh](#variables) file with paths to your ledger files/executable.
+
 ## Download transaction CSVs {#download-csvs}
 
 Each month, I log in to my bank and credit card accounts and download all the transactions that occurred in the last month. I know that I could automate this even more using something like [Plaid](https://plaid.com/), but I'm a bit security paranoid so I still do it myself. I run my [balances](#check-balances) script to find the beginning date for each of the exports, and use the end date of the end of last month. I collect all these in a folder.
 
 ## Match transactions and convert to ledger format {#match-and-convert}
 
-Once I have all my CSV files with transactions from the accounts, I run them through my [JCF](https://www.github.com/brentwalther/jcf) tool to match them and then export them to a standalone ledger file. I do this for each CSV one at a time and export each to their own ledger file. The JCF tool requires that you inspect the CSV first and specify the date format and the column ordering. Here's an example invocation of the tool:
+Once I have all my CSV files with transactions from the accounts, I run them through my [JCF](https://www.github.com/brentwalther/jcf) tool to match them and then export them to a standalone ledger file. I do this for each CSV one at a time and export each to their own ledger file. The [JCF](https://www.github.com/brentwalther/jcf) tool requires that you inspect the CSV first and specify the date format and the column ordering. Here's an example invocation of the tool:
 
 ```bash
 bazel run :csv_matcher -- \
@@ -59,7 +68,7 @@ Finally, I use a [pivot table](https://support.google.com/docs/answer/1272900) i
 
 ## Scripts {#scripts}
 
-### Variables
+### Variables {#variables}
 
 I keep paths to all the 'global' variables in a `vars.sh` file to make other scripts easier to produce. I build ledger from source but you can probably download a prebuilt binary too.
 
