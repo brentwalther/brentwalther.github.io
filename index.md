@@ -2,10 +2,11 @@
 layout: default
 ---
 
-Howdy, I'm Brent. I'm a software engineer currently working for Google and
+Howdy! I'm Brent.
+
+I'm a software engineer currently working for Google in Austin, TX and
 graduated from [Texas A&amp;M University](http://www.tamu.edu) in 2014. I
-learned programming as a kid in the 90s/00s while hanging out in IRC chat (mIRC,
-anybody?) and browsing forums (SwiftIRC, namely).
+learned programming as a kid in the 90s/00s while hanging out in IRC chat (mIRC) and browsing forums (SwiftIRC, namely). These days I'm most experienced with Java and Android.
 
 If I'm not programming, I'm probably playing video games like
 [Rocket League](https://rocketleague.tracker.network/profile/steam/76561198099061550),
