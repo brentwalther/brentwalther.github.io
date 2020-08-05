@@ -94,7 +94,7 @@ have a short description.
 - 2009-12-06 - [Bouncer](files/archive/Bouncer.java)
 - 2009-12-06 - [PingPong](files/archive/PingPong.java)
 - 2009-12-03 - [Shooter](files/archive/Shooter.java)
-- 2019-12-03 - [AnimationTest](files/archive/AnimationTest.java)
+- 2009-12-03 - [AnimationTest](files/archive/AnimationTest.java)
 - 2009-12-03 - [StringObjectClass](files/archive/StringObjectClass.java)
 - 2009-12-03 - [GraphicsUpdaterTester](files/archive/GraphicsUpdaterTester.java)
 - 2009-11-18 - [SumOfRoots](files/archive/SumOfRoots.java)
@@ -118,7 +118,7 @@ have a short description.
 - 2008-12-23 - [picwin_mp3.mrc](files/archive/picwin_mp3.mrc) - One of the first
   programs I was really proud of. It was a music player for mIRC (written in
   mIRC scripting language) that used 'picture windows' for display. Picture
-  windows were essentially a canvas you could draw on. Messy.
+  windows were essentially a canvas you could draw on. Messy, but still working as of 2020.
 - 2008-09-10 - [oldmp3.mrc](files/archive/oldmp3.mrc) - An older mp3 player that
   used mIRC native dialog functions instead of a picture window.
 - 2008-04-06 - [Trivia.mrc](files/archive/Trivia.mrc)
