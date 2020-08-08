@@ -4,19 +4,19 @@ tags: ["project", "personalfinance"]
 ---
 
 In my
-[Personal Finance Philosophy](/personal-finance-philosophy) post, I talk about the important of budgeting but also how it's time consuming to do properly. I knew this is something software could help with so when I initially began doing double-entry accounting for all my personal finances I used
-[GnuCash](/personal-finance-with-gnucash), an open-source accounting tool. It worked well but there was still a lot of manual process and the expense matcher is terrible to use. I wanted something better.
+[Personal Finance Philosophy](/personal-finance-philosophy) post, I describe the importance of budgeting and acknowledge that it can be time consuming to do properly. Since I'm a software engineer by trade, I looked for software to help me with the job. I initially began doing double-entry accounting for all my personal finances I used
+[GnuCash](/personal-finance-with-gnucash), an open-source accounting tool. It allowed me to understand the workflows, but the integrated expense matcher is terrible and I wanted something better.
 
-I found the [`ledger-cli`](https://www.ledger-cli.org/) tool which is double-entry accounting software where your ledger is a simple text file instead of something sophisticated like a database. This allows me to use version control to maintain it and write simple scripts to update and modify it (in addition to its already powerful CLI).
+I found the [`ledger-cli`](https://www.ledger-cli.org/) tool which is double-entry accounting software that uses a simple text file as your database. This allows you to use version control (git) to maintain/version it and write simple scripts to update and modify it (in addition to the already powerful CLI).
 
 My new workflow for managing my budget looks like this:
 
 1. Every month, [download CSV exports](#download-csvs) of transactions from my credit card and bank accounts.
 2. Use my [JCF](https://www.github.com/brentwalther/jcf) tool to automatically [match the transactions and export them](#match-and-convert) to a ledger-cli compatible file.
-3. [Merge each ledger file](#merge-and-ingest) into the main ledger.
+3. [Merge each ledger file](#merge-step) into the main ledger.
 4. Use ledger-cli to [export an updated master CSV and mapping file](#export-csv-and-mappings) of all expenses.
 5. [Check diffs using Git](#maintenance-with-git) and commit the results if they look correct.
-6. [Import the CSV](#budget-with-pivot-table) into a spreadsheet and use a pivot table to break down expenses in to budget categories.
+6. [Import the master expenses CSV](#budget-with-pivot-table) into a spreadsheet and use a pivot table to break down the expenses in to budget categories.
 
 If you want to skip the details, there are [scripts](#scripts) and [example files](#example-files) at the bottom.
 
@@ -28,35 +28,41 @@ To try and follow follow this workflow, you'll need to get some of the software 
 2. Use git to clone [JCF](https://www.github.com/brentwalther/jcf).
 3. Either download a precompiled binary or build `ledger-cli` from source: [https://www.ledger-cli.org/download.html](https://www.ledger-cli.org/download.html)
 4. Download the [scripts](#scripts) the edit the [variables.sh](#variables) file with paths to your ledger files/executable.
+5. Create an initial master.accounts file. For an example list of accounts, see [here](/personal-finance-with-gnucash#setup).
 
 ## Download transaction CSVs {#download-csvs}
 
-Each month, I log in to my bank and credit card accounts and download all the transactions that occurred in the last month. I know that I could automate this even more using something like [Plaid](https://plaid.com/), but I'm a bit security paranoid so I still do it myself. I run my [balances](#check-balances) script to find the beginning date for each of the exports, and use the end date of the end of last month. I collect all these in a folder.
+Each month, I log in to my bank and credit card accounts and download all the transactions that occurred in the last month. I know that I could automate this even more using something like [Plaid](https://plaid.com/), but I'm a bit security paranoid so I still do it myself. If I can't remember where I left off in any given account, I can invoke ledger to find out:
+
+```bash
+~/Development/ledger/ledger -f /path/to/master.ledger register "Account:Name" --tail 10 --sort date
+```
+
+After downloading each one, I use the linux `scp` program to copy them from my laptop to my server.
 
 ## Match transactions and convert to ledger format {#match-and-convert}
 
-Once I have all my CSV files with transactions from the accounts, I run them through my [JCF](https://www.github.com/brentwalther/jcf) tool to match them and then export them to a standalone ledger file. I do this for each CSV one at a time and export each to their own ledger file. The [JCF](https://www.github.com/brentwalther/jcf) tool requires that you inspect the CSV first and specify the date format and the column ordering. Here's an example invocation of the tool:
+Once I have all my transaction CSV files, I transform each one to a matched ledger-compatible file using my [JCF](https://www.github.com/brentwalther/jcf) tool. The tool handles determining CSV column ordering, date format, and does account guessing or tab-completed manual matching. Here's an example invocation of the tool:
 
 ```bash
-bazel run :csv_matcher -- \
-  --mapping_file '/mnt/nas/Finance/ledger/payee-account-mappings.tsv' \
-  --transaction_csv ~/Downloads/transactions\ \(5\).csv \
-  --csv_field_ordering 'date,,amt,,desc' \
-  --date_format 'yyyy-MM-dd' \
-  --output ~/Downloads/brent_chk_may.ledger
+cd ~/Development/jcf
+
+bash match.sh /home/brentwalther/Downloads/1234_jul "Assets:Account 1234" /path/to/payee-account-mappings.tsv /path/to/master.accounts
 ```
 
-## Merge and ingest the new ledgers {#merge-and-ingest}
+You'll need to have the master accounts file already set up (it powers the tab-completion in the matcher). If it's your first time matching transactions, you won't have any mappings yet (which requires you to use the tab-completed matching to start), but you should create an empty file near your master ledger. You'll update the mappings file after every single CSV import.
 
-After converting all the CSV files, I'll have a collection of individual ledger files to merge in to the master ledger. I merge them one at a time using my [ingest.sh](#ingest) script, specifying the name of the account when I invoke it. Here's an example:
+## Merge the new ledgers {#merge-step}
+
+After converting all the CSV files, I'll have a collection of individual ledger files to merge in to the master ledger. I merge them one at a time using my [merge.sh](#merge) script, specifying the name of the account when I invoke it. Here's an example:
 
 ```bash
-bash ingest.sh ~/Downloads/brent_chk_may.ledger "Assets:Current Assets:Brent Checking"
+bash merge.sh ~/Downloads/1234_jul.ledger
 ```
 
 ## Export the new master CSV and mapping files {#export-csv-and-mappings}
 
-After ingesting a single account, I use my [`export-expense-csv.sh`](#export-expense-csv) and [`export-expense-mappings.sh`](#export-expense-mappings) scripts to update the master expense CSV and expense mapping files that live right beside my master ledger. I use git to maintain these files too.
+After merging an account, I use my [`export-expense-csv.sh`](#export-expense-csv) and [`export-expense-mappings.sh`](#export-expense-mappings) scripts to update the master expense CSV and expense mapping files that live right beside my master ledger. I use git to maintain all these files.
 
 ## Use git to maintain my databases {#maintenance-with-git}
 
@@ -80,11 +86,11 @@ I use this primarily to quickly see what the last recorded transaction is for ea
 
 <script src="https://gist.github.com/brentwalther/c9dcfbb7d32604566aab91d6a65744ed.js?file=balances.sh"></script>
 
-### Ingest a converted ledger file {#ingest}
+### Merge a converted ledger file {#merge}
 
-Right now, my [JCF](https://www.github.com/brentwalther/jcf) tool exports matched transactions to a ledger file with splits between the matched account and "An Account". I use this script to fill in the correct name, concatenate it with the master ledger, use --pedantic to make sure I'm not importing some rogue account, and print out the new master ledger in a nice sorted format. Afterwards, I can use a diff-tool to compare the updated file.
+The [JCF](https://www.github.com/brentwalther/jcf) tool is designed to match all transactions from a CSV and exports a ledger compatible file, but you may need to make sure you aren't imbalanced. When using the `merge.sh`, it'll use the `master.accounts` file and `--pedantic` CLI option to make sure there are no rogue accounts and then it sorts and formats the whole master ledger. Afterwards, I can use any diff-tool to compare the updated file.
 
-<script src="https://gist.github.com/brentwalther/c9dcfbb7d32604566aab91d6a65744ed.js?file=ingest.sh"></script>
+<script src="https://gist.github.com/brentwalther/c9dcfbb7d32604566aab91d6a65744ed.js?file=merge.sh"></script>
 
 ### Export expense CSV {#export-expense-csv}
 
@@ -154,7 +160,9 @@ Here's a small excerpt of my actual master ledger:
 
 ### `master.accounts`
 
-My master accounts file is just a list of all accounts in the ledger precedded with 'account'. `ledger-cli` supports some fancy virtual account and commodity stuff but I don't use any of it at the moment. To get an idea of what accounts I use, see the list [here](/personal-finance-with-gnucash#setup).
+My master accounts file is just a list of all accounts in the ledger preceeded with `account ` (e.g. `account Assets:Bank:Ally Checking`). `ledger-cli` supports some fancy virtual account and commodity stuff but I don't use any of it at the moment.
+
+I've got an example list of accounts [here](/personal-finance-with-gnucash#setup).
 
 ### `expenses.csv`
 
@@ -183,16 +191,16 @@ This is the input to my [JCF](https://www.github.com/brentwalther/jcf) tool and 
 
 ```
 HOMEGOODS #503  Expenses:Shopping:Home
-City of Austin T PAYMENT~ Future Amount: 29.15 ~ Tran: ACHDW    Expenses:Bills:Electric
-Amazon.com*L37GD4ET3    Expenses:Shopping:Amazon/Online
+City of Austin   Expenses:Bills:Electric
+Amazon.com    Expenses:Shopping:Amazon/Online
 GOOGLE*GOOGLE FI        Expenses:Bills:Mobile Phone
-WALGREENS #1933 Expenses:Food/Drink:Convenient Store
+WALGREENS Expenses:Food/Drink:Convenient Store
 TORCHYS TACOS NORTHSHORE        Expenses:Food/Drink:Restaurants
-CORNER STORE 0967 00AUSTIN              TX      Expenses:Food/Drink:Convenient Store
-CORNER STORE 0967 00AUSTIN              TX      Expenses:Auto:Gas
+CORNER STORE              TX      Expenses:Food/Drink:Convenient Store
+CORNER STORE              TX      Expenses:Auto:Gas
 LEIF JOHNSON BEN WHITE  Expenses:Auto:Repair and Maintenance
-AMZN Mktp US*7T6F82WE3  Expenses:Shopping:Amazon/Online
+AMZN Mktp  Expenses:Shopping:Amazon/Online
 TST* PINTHOUSE PIZZA - SO       Expenses:Food/Drink:Restaurants
-MARKET@WORK 2067379149  Expenses:Food/Drink:Fast Food
+MARKET@WORK  Expenses:Food/Drink:Fast Food
 CHUY'S  Expenses:Food/Drink:Restaurants
 ```
