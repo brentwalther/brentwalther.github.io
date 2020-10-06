@@ -11,7 +11,7 @@ learned programming as a kid in the 90s/00s while hanging out in IRC chat ([mIRC
 If I'm not programming, I'm probably playing video games like
 [Rocket League](https://rocketleague.tracker.network/profile/steam/76561198099061550),
 listening to [music](https://www.last.fm/user/brentwalther), learning about
-personal finance, or driving my trucks. If you want to chat, shoot me an
+personal finance, or driving my [trucks](/trucks). If you want to chat, shoot me an
 [email](mailto:brent@walther.io).
 
 If you're interested in hearing from me, subscribe to my Mailchimp mailing list:
