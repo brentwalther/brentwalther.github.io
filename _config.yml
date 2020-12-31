@@ -15,7 +15,7 @@ exclude: [README.md, Gemfile, Gemfile.lock]
 # Site settings
 title: Brent Walther's Homepage
 email: brent@walther.io
-description: Brent Walther -- TAMU '14, software engineer, music lover
+description: Brent Walther -- TAMU '14, software engineer, music lover, gamer
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://brentwalther.net" # the base hostname & protocol for your site
 
