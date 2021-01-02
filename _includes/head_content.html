@@ -2,13 +2,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>
-  {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
-</title>
 <meta
   name="description"
   content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
 />
+{% if page.tags %}
+<meta
+  name="keywords"
+  content="{{ page.tags | join: ',' }}"
+/>
+{% endif %}
 
 <!-- Stolen from https://csswizardry.com/2020/05/the-fastest-google-fonts/ -->
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
@@ -29,5 +32,3 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
   />
 </noscript>
-
-<link rel="stylesheet" href="/css/main.css" />
