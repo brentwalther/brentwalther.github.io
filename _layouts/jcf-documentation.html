@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      JCF - Java Cash Flow{% if page.title %} - {{ page.title }}{% endif %}
+    </title>
+    {% include head_content.html %}
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+
+  <body>
+    <header>
+      {% if page.title %}
+      <h1><a href="/jcf">JCF Documentation</a></h1>
+      {% endif %}
+    </header>
+
+    <main>
+      {% if page.title %}
+      <h2>{{ page.title }}</h2>
+      <p class="muted">Last updated on {{ page.date | date: "%b %d, %Y" }}</p>
+      {% endif %}
+
+      {{ content }}
+    </main>
+
+    <footer>
+      <p class="text-center">&#0169; {{ "now" | date: "%Y" }} <a href="/">Brent Walther</a></p>
+      {% include base_footer.html %}
+    </footer>
+  </body>
+</html>
