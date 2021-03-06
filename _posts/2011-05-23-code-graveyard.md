@@ -118,7 +118,8 @@ have a short description.
 - 2008-12-23 - [picwin_mp3.mrc](files/archive/picwin_mp3.mrc) - One of the first
   programs I was really proud of. It was a music player for mIRC (written in
   mIRC scripting language) that used 'picture windows' for display. Picture
-  windows were essentially a canvas you could draw on. Messy, but still working as of 2020.
+  windows were essentially a canvas you could draw on. The code is incomprehensible,
+  but it's still working as of 2020.
 - 2008-09-10 - [oldmp3.mrc](files/archive/oldmp3.mrc) - An older mp3 player that
   used mIRC native dialog functions instead of a picture window.
 - 2008-04-06 - [Trivia.mrc](files/archive/Trivia.mrc)
