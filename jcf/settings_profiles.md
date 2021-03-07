@@ -11,24 +11,53 @@ I create settings profiles as I go before I match each CSV. Each new settings pr
 
 To create one, I open the CSV file and determine the following:
 
-1. The ordering of the data columns, and then converting those to `CsvFieldPosition` messages containing an index and one of [these column types](https://github.com/brentwalther/jcf/blob/92232fcdec0287ed7c7a81643f77aa5883af76ad/src/main/proto/settings_profile.proto#L15-L33) like this:
-   ```
-   csv_field_positions: {
-     position: {
-       field: DATE
-       column_index: 1
-     }
-     // ...more...
-   }
-   ``` 
-1. The date format, using *lowercase* `y`, *uppercase* `M`, and *lowercase* `d`. For example:
-   ```
-   csv_date_format_java: 'yyyy-MM-dd'
-   ```
-   or
-   ```
-   csv_date_format_java: 'MM/dd/yy'
-   ``` 
+```
+settings_profile: {
+  // First, the name of the settings profile. This is how you'll refer
+  // to it when matching the CSV.
+  name: 'ally'
+
+  // Next, the columns where all the interesting data resides, with
+  // columns starting at index *0* ! List them as `position` objects as
+  // with the index and field type for each field.
+  //
+  // Valid field types are:
+  //   DATE - The date on which a transaction occurred.
+  //   DESCRIPTION - The description of the transaction in question.
+  //   DEBIT - The debit amount of the transaction if credit/debit amounts
+  //     are separate.
+  //   CREDIT - The credit amount of the transaction, if credit/debit
+  //     amounts are separate.
+  //   AMOUNT - The amount of the transaction interpreted literally.
+  //   NEGATED_AMOUNT - The amount of the transaction but negated (i.e.
+  //     positive becomes negative and visa versa). You'd choose this if
+  //     the AMOUNT type caused your splits to balance upside down.
+  csv_field_positions: {
+    position: {
+      field: DATE
+      column_index: 0
+    }
+    position: {
+      field:DESCRIPTION
+      column_index: 2
+    }
+    position: {
+      field: AMOUNT
+      column_index: 3
+    }
+  }
+
+  // Then, the date format for the dates in the DATE column. The format
+  // is interpreted like a java.time.format.DateTimeFormatter pattern. For
+  // example, year is `y`, month is `M`, and day is `d` for patterns like:
+  // - 'yyyy-MM-dd' - like 2020-12-28
+  // - 'MM/dd/yy'   - like 12/28/20
+  csv_date_format_java: 'MM/dd/yy'
+
+  // Lastly, the name of the account as it appears in your master accounts
+  // file from which these transactions are coming from.
+  csv_account_name: 'Assets:Current Assets:Checking 1234'
+```
 
 Lastly, I sometimes have a separate profile for account nicknames but also sometimes lump a profile together with all settings set at once! JCF will let you know if a setting isn't specified correctly.
 

@@ -9,10 +9,20 @@ I use the [JCF](https://github.com/brentwalther/jcf) tool to convert my bank's t
 
 Never head of JCF? See the [setup](/jcf/setup.html).
 
-JCF is a tool I wrote that can read CSV files exported by bank and credit card company websites, provide text-based prompts to help you match the transactions to other accounts, and then export `ledger` files that can be merged in to a master ledger. Invoking and using the tool is very easy with some quick extra setup:
+JCF is a tool to read CSV files exported by bank and credit card company websites and provide a series of prompts to guide you in matching the transactions to other accounts. The export is a `ledger`-CLI compatible file that can be merged in to a master ledger. 
 
+1. First, download a CSV from your institution. If you have no prior transactions from this account in your ledger, choose any amount of history (be aware invocations of JCF are one-shot and cannot be paused/continued). Otherwise, check the register to see where the export should start:
+
+   ```
+   # git clone https://github.com/brentwalther/ledger-scripts
+   # cd ledger-scripts
+
+   bash register "Ally 1234"
+
+   ... prints out most recent transactions in Ally 1234 account.
+   ```
 1. Adding a [settings profile](/jcf/settings_profiles.html) for the institution's CSV format.
-2. Ensuring your [`master.accounts`](/jcf/master_accounts_file.html) file has all the accounts you intend to use for matching.
+1. Ensuring your [`master.accounts`](/jcf/master_accounts_file.html) file has all the accounts you intend to use for matching.
 
 After that, I convert a CSV file to a ledger file like this:
 
@@ -45,7 +55,7 @@ Assuming you didn't escape via <Ctrl> + C, you'll see the path to the exported l
 
 ```
 Jan 06, 2021 9:03:40 PM net.brentwalther.jcf.CsvMatcher run
-INFO: Wrote file: yes - /home/brentwalther/Downloads/transactions.ledger
+INFO: Wrote file: yes - /home/brentwalther/Downloads/output.ledger
 ```
 
 Next, get on to [merging it](/jcf/merging.html).
