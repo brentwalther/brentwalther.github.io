@@ -51,7 +51,7 @@ to accept the default (1):
 
 The options are calculated for every transaction and are based off the existing transaction examples in your master ledger and improve over time as you get more examples. If you're just starting out you may have to use the <TAB> autocomplete functionality quite often (assuming you have your accounts set up!) but over time you may be able to simply continue hitting <Enter> to accept the best guess because it is correct.
 
-Assuming you didn't escape via <Ctrl> + C, you'll see the path to the exported ledger file as soon as you finish matching the transactions. It'll look like:
+Assuming you didn't escape via `<Ctrl> + C`, you'll see the path to the exported ledger file as soon as you finish matching the transactions. It'll look like:
 
 ```
 Jan 06, 2021 9:03:40 PM net.brentwalther.jcf.CsvMatcher run
