@@ -1,6 +1,7 @@
 ---
 tags:
 - project
+- radiocooler
 title: Radio Cooler
 ---
 <figure>
