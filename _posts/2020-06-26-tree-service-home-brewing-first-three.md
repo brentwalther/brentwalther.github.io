@@ -2,20 +2,11 @@
 tags:
 - homebrew
 - project
-title: Home Brewing
+title: First three Homebrewed beers
 ---
 <div class="text-center">
 <a href="http://brent.beer">http://brent.beer</a> - <a href="https://untappd.com/user/Brentwalther">My Untappd</a>
 </div>
-
-A page dedicated to my love of beer.
-
-- [Tree Service Brewing](#tree-service-brewing)
-- [Hop Froth - Imperial Pale Ale](#hop-froth)
-- [Toasty Roasty - Imperial Stout w/ Coffee](#toasty-roasty)
-- [Sugar Daddy - Belgian Tripel](#sugar-daddy)
-
-## Tree Service Brewing {#tree-service-brewing}
 
 I've been interested in trying homebrewing for a few years but it wasn't until
 I had a second interested party that I finally decided to give it a try. My
@@ -33,6 +24,14 @@ carboy for fermenting, and then we have a cheap 6.5 gallon plastic carboy to
 ferment in. We have only bottled out beer thus far (as opposed to kegging).
 Though I've had some folks suggest that kegging is more convenient, I prefer
 bottling so far since it's easier to keep and share.
+
+Our first three beers were:
+
+<!--excerpt_end-->
+
+- [Hop Froth - Imperial Pale Ale](#hop-froth)
+- [Toasty Roasty - Imperial Stout w/ Coffee](#toasty-roasty)
+- [Sugar Daddy - Belgian Tripel](#sugar-daddy)
 
 ## Hop Froth - Imperial Pale Ale {#hop-froth}
 

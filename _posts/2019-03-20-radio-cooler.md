@@ -1,22 +1,10 @@
 ---
+heroimage: 'radio_cooler/IMG_1045.JPG'
 tags:
 - project
 - radiocooler
 title: Radio Cooler
 ---
-<figure>
-  <a href="/img/radio_cooler/IMG_1045.JPG">
-    <img src="/img/radio_cooler/thumbnail_IMG_1045.JPG" alt="A front 45 degree view of the radio cooler.">
-  </a>
-  <figcaption>It cleans up pretty nice.</figcaption>
-</figure>
-
-<figure>
-  <a href="/img/radio_cooler/IMG_1046.JPG">
-    <img src="/img/radio_cooler/thumbnail_IMG_1046.JPG" alt="A rear 45 degree view of the radio cooler.">
-  </a>
-  <figcaption>Bottle opener is used frequently.</figcaption>
-</figure>
 
 After having seen a few in the wild and having one crummy proof-of-concept
 build, I ordered parts for and built a brand new radio cooler in the fall
@@ -27,6 +15,15 @@ built mine to be as water resistant as possible; I used all marine audio
 equipment and tried to make decent seals around the speakers and lid. It can get
 rained on or be thrown into a river float and still provide powerful loud sound
 for tens of hours.
+
+<!--excerpt_end-->
+
+<figure>
+  <a href="/img/radio_cooler/IMG_1046.JPG">
+    <img src="/img/radio_cooler/thumbnail_IMG_1046.JPG" alt="A rear 45 degree view of the radio cooler.">
+  </a>
+  <figcaption>Bottle opener is used frequently.</figcaption>
+</figure>
 
 **Components**
 

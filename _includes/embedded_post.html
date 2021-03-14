@@ -1,5 +1,7 @@
 <article id="{{ include.page.id | slugify }}">
   <h2>{{ include.page.title }}</h2>
-  <p class="muted"><a href="{{ include.page.url }}">[Permalink]</a></p>
-  {{ include.page.content }}
+  {{ include.page.excerpt }}
+  {% if include.page.excerpt != include.page.content %}
+  <p><a href="{{ include.page.url }}">Read more...</a></p>
+  {% endif %}
 </article>

@@ -7,6 +7,8 @@ I recently took my 2003 F-250 on a trip pulling a single-axle camper trailer beh
 
 ![My 2003 F-250.](/img/2003_f250.jpg)
 
+<!--excerpt_end-->
+
 ### The engine oil cooler
 
 As described in this BulletProofDiesel article <a href="#footnote-2" id="fnl-2">\[2\]</a>, the engine oil cooler is one of the main things on a 6.0L Powerstroke that is prone to failures (especially on higher mileage vehicles). If it fails, the failure can quickly cascade to other parts (e.g. the EGR cooler) too. To know whether or not the oil cooler is beginning to cause problems for you, you need to know the temperatures of your engine oil and engine cooleant. It's recommended that the temperature of the two differ no more than about 10-15 degrees Farhenheit <a href="#footnote-1" id="fnl-1">\[1\]</a>.

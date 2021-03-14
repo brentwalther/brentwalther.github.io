@@ -20,6 +20,8 @@ life and durability at the cost of portability (the 100 Ah battery weighs a
 ton!). I decided I wanted to build something sleeker and more portable, so 
 that's what I did.
 
+<!--excerpt_end-->
+
 The first step was choosing some type of case. Coolers are pretty convenient
 because they're easy to cut through and they can be fairly water resistant but
 they are also difficult to seal well. I began looking at electrical junction

@@ -7,6 +7,8 @@ title: Budgeting with ledger-cli
 In my
 [Personal Finance Philosophy](/personal-finance-philosophy) post, I describe the importance of budgeting and acknowledge that it can be time consuming to do properly. Since I'm a software engineer by trade, I looked for software to help me with the job. Initially, that was practicing double-entry accounting for all my personal finances using [GnuCash](/personal-finance-with-gnucash), an open-source accounting tool. It allowed me to understand the workflows, but the integrated expense matcher is terrible and I wanted something better.
 
+<!--excerpt_end-->
+
 I found the [`ledger-cli`](https://www.ledger-cli.org/) tool which is double-entry accounting software that uses a simple text file as your database. This allows you to use version control (git) to maintain/version it and write simple scripts to update and modify it (in addition to the already powerful [CLI](https://www.ledger-cli.org/docs.html)).
 
 My new [workflow](/jcf/index.html) for managing my budget looks like this:

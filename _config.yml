@@ -9,6 +9,7 @@ defaults:
       # WARNING: do not change this else risk screwing up every link that
       # has been indexed. Use post.url to obtain the link.
       permalink: :title
+      excerpt_separator: <!--excerpt_end-->
 
 exclude: [README.md, Gemfile, Gemfile.lock]
 
