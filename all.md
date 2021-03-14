@@ -7,7 +7,7 @@ title: Post Index
 <ul>
 {% for tag in site.tags %}
   <li>
-    <a href="#{{ tag | first }}">{{ tag | first }}</a>
+    <a href="#{{ tag | first | split: " " | join: "-"  }}">{{ tag | first }}</a>
   </li>
 {% endfor %}
   <li><a href="#untagged">untagged</a></li>
@@ -15,7 +15,7 @@ title: Post Index
 
 {% for tag in site.tags %}
 
-### Tag: {{ tag | first }} {#{{ tag | first }}}
+### Tag: {{ tag | first }} {#{{ tag | first | split: " " | join: "-" }}}
 
 <ul>
   {% for post in tag[1] %}
