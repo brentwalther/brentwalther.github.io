@@ -9,7 +9,7 @@ title: Personal Finance with GnuCash
   - [Setup](#setup)
   - [Updating the ledger](#updating)
   - [Reports](#reports)
-  - [Getting tired](#tired)
+- [Getting tired](#tired)
 
 ## Background {#background}
 
@@ -60,18 +60,18 @@ negative balances:
 
 | Date       | Description  | Account                 | Amount | Balance |
 | ---------- | ------------ | ----------------------- | ------ | ------- |
-| 2020-05-07 | Paycheck     | Income>Salary           | -$1000 | ($1000) |
-| 2020-05-07 | Paycheck     | Assets>Checking Account | +$1000 | $1000   |
-| 2020-05-14 | Walmart      | Liability>Credit Card   | -$200  | ($200)  |
-| 2020-05-14 | Walmart      | Expenses>Groceries      | +$200  | $200    |
-| 2020-05-16 | Tex-Mex Food | Liability>Credit Card   | -$100  | ($300)  |
-| 2020-05-16 | Tex-Mex Food | Expenses>Restaurants    | +$100  | $100    |
-| 2020-05-21 | Paycheck     | Income>Salary           | -$1000 | ($2000) |
-| 2020-05-21 | Paycheck     | Assets>Checking Account | +$1000 | $2000   |
-| 2020-05-31 | Rent         | Assets>Checking Account | -$1300 | $700    |
-| 2020-05-31 | Rent         | Expenses>Rent           | +$1300 | $1300   |
-| 2020-05-31 | Pay CC       | Assets>Checking Account | -$300  | $400    |
-| 2020-05-31 | Pay CC       | Liability>Credit Card   | +$300  | $0      |
+| 2020-05-07 | Paycheck     | Income:Salary           | -$1000 | ($1000) |
+| 2020-05-07 | Paycheck     | Assets:Checking Account | +$1000 | $1000   |
+| 2020-05-14 | Walmart      | Liability:Credit Card   | -$200  | ($200)  |
+| 2020-05-14 | Walmart      | Expenses:Groceries      | +$200  | $200    |
+| 2020-05-16 | Tex-Mex Food | Liability:Credit Card   | -$100  | ($300)  |
+| 2020-05-16 | Tex-Mex Food | Expenses:Restaurants    | +$100  | $100    |
+| 2020-05-21 | Paycheck     | Income:Salary           | -$1000 | ($2000) |
+| 2020-05-21 | Paycheck     | Assets:Checking Account | +$1000 | $2000   |
+| 2020-05-31 | Rent         | Assets:Checking Account | -$1300 | $700    |
+| 2020-05-31 | Rent         | Expenses:Rent           | +$1300 | $1300   |
+| 2020-05-31 | Pay CC       | Assets:Checking Account | -$300  | $400    |
+| 2020-05-31 | Pay CC       | Liability:Credit Card   | +$300  | $0      |
 
 The ledger becomes a simple database. To see if you've fully reconciled the
 account and recorded all the transactions, you can simply compare the balance in
@@ -175,7 +175,7 @@ month for each account. I'll usually do the following:
    this money transfers from an "Income:Retirement" account. Since investments
    grow, the balance will not always match what you have in GnuCash. After
    practicing this accounting workflow for a hile, I began doing reconcile
-   balance transfers from an "Income>Unrealized Capital Gains" account.
+   balance transfers from an "Income:Unrealized Capital Gains" account.
 1. Log on to each credit card and download all the transactions as a CSV or OFX
    and import them using the GnuCash import tool. Sometimes it matches them to
    expense accounts automatically (though my main complaint with GnuCash is how
@@ -202,14 +202,13 @@ getting spent. Ideally your cash flow is always in the green which means you
 spent less than you earned. That green should go into the appropriate savings
 bucket per your own personal philosophy and financial position.
 
-### Getting tired of GnuCash {#tired}
+## Getting tired of GnuCash {#tired}
 
 While GnuCash is a powerful tool, I eventually got to the point where the
 bottleneck of the entire workflow was the crappy transaction matcher. Even with
 a couple thousand transactions examples in the database, it still failed to
-auto-match many transactions which took time to do manually. I began working on
-an auto-matching tool that could do a better. It was easy enough to read the
-GnuCash database but making it fully interoperable with GnuCash was not worth
-the time. I eventually found the [ledger-cli](https://www.ledger-cli.org/) tool
-that does pretty much everything I use GnuCash for but uses a simpler text file
-format that allows you to write scripts for it much easier.
+auto-match many transactions which ended up taking more time than I wanted to
+dedicate to it. I eventually switched to plain-text accounting using
+[ledger-cli](https://www.ledger-cli.org/) and wrote a simple text based expense
+matching tool called [JCF](/jcf). I'm able to get significantly more done in
+less time using the workflows.
