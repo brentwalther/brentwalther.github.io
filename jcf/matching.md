@@ -5,11 +5,11 @@ layout: jcf-documentation
 date: 2021-01-06
 ---
 
-I use the [JCF](https://github.com/brentwalther/jcf) tool to convert my bank's transactions CSV files to `ledger` compatible files.
+I use the [JCF](https://github.com/brentwalther/jcf) tool to convert my bank's transaction CSV files to `ledger-CLI` compatible files.
 
-Never head of JCF? See the [setup](/jcf/setup.html).
+Never head of [JCF](/jcf)? See the [setup](/jcf/setup.html).
 
-JCF is a tool to read CSV files exported by bank and credit card company websites and provide a series of prompts to guide you in matching the transactions to other accounts. The export is a `ledger`-CLI compatible file that can be merged in to a master ledger. 
+JCF is a tool that reads transactions from CSV files (e.g. bank and credit card website exports) and provides a series of prompts to guide you in splitting each with another account in your ledger. After, it exports a `ledger-CLI` compatible file that can be [merged in to a master ledger](/jcf/merging.html).
 
 1. First, download a CSV from your institution. If you have no prior transactions from this account in your ledger, choose any amount of history (be aware invocations of JCF are one-shot and cannot be paused/continued). Otherwise, check the register to see where the export should start:
 
@@ -36,7 +36,7 @@ After running the command, JCF will import all your existing account and transac
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│4 left to match (including this one).                                                                       │
+│Matched 10 of 28 transactions thus far.                                                                     │
 ├────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │Jan 29, 2020 - Torchy's Tacos                                                                               │
 │    -$18.25    Liabilities:Credit Card:Chase                                                                │
@@ -49,7 +49,7 @@ Enter an option number (1 of 3), type a character and hit tab to autocomplete fr
 to accept the default (1):
 ```
 
-The options are calculated for every transaction and are based off the existing transaction examples in your master ledger and improve over time as you get more examples. If you're just starting out you may have to use the <TAB> autocomplete functionality quite often (assuming you have your accounts set up!) but over time you may be able to simply continue hitting <Enter> to accept the best guess because it is correct.
+The options choices are determined by the existing transaction examples in your master ledger and improve over time as you get more examples. If you're just starting out you may have to use the <TAB> autocomplete functionality quite often (assuming you have your accounts set up!) but over time you may be able to simply continue hitting <Enter> to accept the best guess because it is correct.
 
 Assuming you didn't escape via `<Ctrl> + C`, you'll see the path to the exported ledger file as soon as you finish matching the transactions. It'll look like:
 

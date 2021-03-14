@@ -5,9 +5,9 @@ layout: jcf-documentation
 date: 2021-01-06
 ---
 
-The output of [matching](/jcf/matching.html) is a simple `ledger` compatible text file. It's perfectly fine to make local edits with your favorite text editor and depending on whether or not you matched all the transaction, you may have to!
+The output of [matching](/jcf/matching.html) is a simple `ledger-CLI` compatible text file. It's perfectly fine to open and edit the file using  your favorite text editor. Depending on whether every transaction is properly balanced, you may end up needing to.
 
-Merging the transactions from this ledger snippet is simple:
+Try merging the transactions from this ledger snippet is simple:
 
 ```
 bash merge.sh ~/Downloads/transactions.ledger
@@ -26,6 +26,9 @@ Amount to balance against:
 Error: Transaction does not balance
 ```
 
-If the account is missing, all you need to do is add it to your `master.accounts` file. If the transaction doesn't balance, simply add the missing splits creating new accounts if necessary.
+A few common reasons you'd have to make manual fixes:
 
-After a successful merge, I move on to [making a commit](/jcf/commit.html).
+- You want to split a transaction with an account not already in your `master.accounts` file. Edit `master.accounts` and add the account.
+- The transaction doesn't balance. This happens if you skipped the transaction during [matching](/jcf/matching.html) or you tried to multi-split and made a mistake. Either run the matcher again or edit the ledger snippet and properly balance the transaction, adding new accounts as necessary in `master.accounts`.
+
+If no errors were printed, you can assume the merge was successful. Next, I [diff and make a commit](/jcf/commit.html).
