@@ -1,11 +1,10 @@
 ---
 layout: default
 ---
-
 Howdy! I'm Brent.
 
 I'm a software engineer currently working for Google in Austin, TX and
-graduated from [Texas A&amp;M University](http://www.tamu.edu) in 2014. I've been interested in programming/computing since the 90s ([mIRC](https://en.wikipedia.org/wiki/MIRC_scripting_language)?) and these days I'm most experienced with Java and Android. I've shipped code in 10+ programming languages across mobile, web, server, and server-less applications.
+graduated from [Texas A&M University](http://www.tamu.edu) in 2014. I've been interested in programming/computing since the 90s ([mIRC](https://en.wikipedia.org/wiki/MIRC_scripting_language)?) and these days I'm most experienced with Java and Android. I've shipped code in 10+ programming languages across mobile, web, server, and server-less applications.
 
 If I'm not programming, I'm probably playing video games like
 [Rocket League](https://rocketleague.tracker.network/profile/steam/76561198099061550),

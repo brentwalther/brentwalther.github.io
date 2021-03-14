@@ -1,8 +1,8 @@
 ---
+tags:
+- project
 title: Portable Custom Radio
-tags: ["project"]
 ---
-
 **(a.k.a. radio cooler v2)**
 
 The custom radio cooler I built in college (and other
@@ -115,28 +115,28 @@ and can be carried with one hand like a suit case.
 **Parts List**
 
 Here's a non-exhaustive list of what I used for this build. Including hardware
-one of these can be built for around \$350. It's way louder than the all-in-one
+one of these can be built for around $350. It's way louder than the all-in-one
 stereo units you can find at Costco or Sams Club.
 
 - [Monoprice Weatherproof/Shockproof/IP67 Hard Case](https://www.amazon.com/gp/product/B00SSFAPVI) -
-  At around \$80 this thing is very sturdy, keeps water out, and comes with a
+  At around $80 this thing is very sturdy, keeps water out, and comes with a
   sturdy handle.
 - Two
   [6.5 Inch 2 Way Waterproof and Weather Resistant Marine Speaker Pair (100 RMS/200 Peak each)](https://www.amazon.com/gp/product/B00022OBNS) -
   I tried Pyle this time despite really liking the Boss speakers I used for the
-  previous build. No complaints yet and cheap; only \$25 a pair.
+  previous build. No complaints yet and cheap; only $25 a pair.
 - [Expert Power EXP12180 Sealed Lead Acid Battery](https://www.amazon.com/gp/product/B00A82A3RK) -
-  \$40 for 18 Ah. It lasts at least 6 hours (haven't ran it longer yet and too
+  $40 for 18 Ah. It lasts at least 6 hours (haven't ran it longer yet and too
   lazy to try and calculate it).
 - [Pyle Hydra Marine 400 Watt 4 Channel Audio Amplifier](https://www.amazon.com/gp/product/B000N5T0T4/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B000N5T0T4&linkCode=as2&tag=brentwalther-20&linkId=a5fdc9ea3b73f74269d88b1036aba20f) -
-  (\$43.55) - I used this in my previous iteration. It's powerful, extremely
+  ($43.55) - I used this in my previous iteration. It's powerful, extremely
   reliable, and sounds great. The form factor is perfect.
 - Either a 3.5mm to RCA pair auxilliary cord or a bluetooth module like this
   [JL Audio MBT-RX Bluetooth Audio Receiver](https://www.amazon.com/gp/product/B00MH5CFEU).
   I'd recommend this bluetooth receiver -- it sounds really good. Get a toggle
   switch for it.
 - [12V Trickle Battery Charger](https://www.amazon.com/gp/product/B074Z2NFWW/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B074Z2NFWW&linkCode=as2&tag=brentwalther-20&linkId=3aa12c3487b5db0571a9c7507a6e1af6) -
-  (\$16.98) - Inexpensive and better on your battery but expect long overnight
+  ($16.98) - Inexpensive and better on your battery but expect long overnight
   charge times. A battery charged too quickly will have less total recharge
   cycles - a low current trickle charger optimizes for battery longevity.
 - One

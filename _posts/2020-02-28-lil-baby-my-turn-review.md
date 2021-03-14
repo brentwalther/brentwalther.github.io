@@ -1,12 +1,12 @@
 ---
-tags: ["albumreview"]
-heroimage: lil_baby_my_turn_300x300.png
 album: My Turn
 artist: Lil Baby
-ratingword: Decent.
+heroimage: lil_baby_my_turn_300x300.png
 rating: 3
+ratingword: Decent.
+tags:
+- albumreview
 ---
-
 I didn't love the album but didn't hate it either. I gave it a full listen
 through and think Baby had some reasonably lyrics and flows but he's a little
 hard to listen to over a full album. The features were good though and I

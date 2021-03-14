@@ -1,12 +1,12 @@
 ---
-tags: ["albumreview"]
-heroimage: denzel_curry_imperial_300x300.jpg
 album: Imperial
 artist: Denzel Curry
-ratingword: Fire!
+heroimage: denzel_curry_imperial_300x300.jpg
 rating: 5
+ratingword: Fire!
+tags:
+- albumreview
 ---
-
 I'd heard tracks from this album before but couldn't remember if I had listened
 to it entirely so I decided to give it a listen. One turned into two. This album
 is very strong in beats, lyrics, variety, and content. Denzel comes off pretty

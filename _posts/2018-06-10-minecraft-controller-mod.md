@@ -1,8 +1,8 @@
 ---
+tags:
+- project
 title: Minecraft Controller Mod
-tags: ["project"]
 ---
-
 [Source Code](https://github.com/brentwalther/minecraft-controller-mod)
 
 <figure>

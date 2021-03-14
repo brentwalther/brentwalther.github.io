@@ -1,8 +1,8 @@
 ---
+tags:
+- concert
 title: Hippie Sabotage
-tags: ["concert"]
 ---
-
 _Attended Feb 22, 2019 at [Stubb's Bar-B-Q](https://goo.gl/maps/oucKDSpBpr52)_
 
 Bass in your face via trap bangers and live guitar melodies mixed in. I've been

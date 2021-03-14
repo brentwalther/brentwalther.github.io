@@ -1,12 +1,12 @@
 ---
-tags: ["albumreview"]
-heroimage: anonymuz_there_is_no_threat_300x300.jpg
 album: There Is No Threat
 artist: Anonymuz
-ratingword: Yeah!
+heroimage: anonymuz_there_is_no_threat_300x300.jpg
 rating: 4
+ratingword: Yeah!
+tags:
+- albumreview
 ---
-
 This album's got a few bangers on it that I liked. A few tracks have a pretty
 unhappy vibe to them though and it seems like Anonymuz is going through some
 emotional times and is facing some problems. After listening to a piece or work

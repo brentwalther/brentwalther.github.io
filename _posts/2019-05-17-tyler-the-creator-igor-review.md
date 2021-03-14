@@ -1,12 +1,12 @@
 ---
-tags: ["albumreview"]
-heroimage: tyler_the_creator_igor_300x300.jpg
 album: IGOR
 artist: Tyler, The Creator
-ratingword: Yeah!
+heroimage: tyler_the_creator_igor_300x300.jpg
 rating: 4
+ratingword: Yeah!
+tags:
+- albumreview
 ---
-
 We haven't heard from Tyler since his 2017 album Flower Boy which was a unique
 piece of work for Tyler. Flower Boy was very different in style and instruments
 but still had rap included. IGOR is the next step -- a collection of what I

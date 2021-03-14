@@ -1,10 +1,18 @@
 ---
-title: JCF settings profiles
-tags: ["java", "bazel", "ledger", "ledger-cli", "jcf", "java cash flow", "settings", "profiles", "csv"]
-layout: jcf-documentation
 date: 2021-01-05
+layout: jcf-documentation
+tags:
+- java
+- bazel
+- ledger
+- ledger-cli
+- jcf
+- java cash flow
+- settings
+- profiles
+- csv
+title: JCF settings profiles
 ---
-
 To allow JCF to read the transactions from a CSV file, it needs to know a few extra details like the column ordering and date formats in the CSV file. JCF settings profiles allow you to declare these configuration values ahead of time and may be version controled alongside your other data. As part of [setup](/jcf/setup.html#create-the-repo) you should have a `jcf_settings_profiles.textproto` file with a couple of example settings profiles.
 
 I create settings profiles as I go before I match each CSV. Each new settings profile can be re-used so after building up a collection you only need to create new ones for new accounts.

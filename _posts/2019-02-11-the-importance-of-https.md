@@ -1,9 +1,8 @@
 ---
+author: Brent Walther
 layout: post
 title: The importance of HTTPS
-author: Brent Walther
 ---
-
 ## Background
 
 Our lives are touching more technology than they ever have. Despite technology
@@ -45,7 +44,7 @@ snoop on or attack (a
 the connection. For me, I didn't think that the maintenance burden of securing
 my own server was worth it -- getting security right by yourself is difficult,
 and being able to consolidate all the artifacts I serve on the internet into one
-place with easily implemented security measures [1] was too good an opportunity
+place with easily implemented security measures \[1\] was too good an opportunity
 to pass up on.
 
 ## How do I know if a website is hosted using HTTPS?
@@ -59,7 +58,7 @@ using HTTPS looks like this:
 
 You should always verify that HTTPS is used if you're transmitting _any_
 sensitive data including account passwords, credit card details, or personal
-email. To make this more obvious, Chrome 68 [2] and Safari 11.1 [3] (both
+email. To make this more obvious, Chrome 68 \[2\] and Safari 11.1 \[3\] (both
 released in in 2018) give you warnings when a page is insecure. They look like
 this:
 
@@ -106,15 +105,15 @@ only your) private key. An encrypted exchange would go something like this:
 
 1. You (client <sup>A</sup>) have data X that you want send to server
    <sup>B</sup>
-2. You calculate a random value (R)
-3. You encrypt the random value with (<sup>B's</sup>) public key (which was
+1. You calculate a random value (R)
+1. You encrypt the random value with (<sup>B's</sup>) public key (which was
    validated by the CA). The data is now in encrypted form: R<sup>B</sup>
-4. You send it over to server B (which could be any site supporting HTTPS).
-5. The server decrypts R<sup>B</sup> with its own _private_ key and gets the
+1. You send it over to server B (which could be any site supporting HTTPS).
+1. The server decrypts R<sup>B</sup> with its own _private_ key and gets the
    original R. Using R and adding some of its own data, it produces a new R: R'
-6. It encrypts R' with _your_ public key. The random value is now in encrypted
+1. It encrypts R' with _your_ public key. The random value is now in encrypted
    form: R'<sup>A</sup>
-7. You decrypt the random value R'<sup>A</sup> to get R' which is a random value
+1. You decrypt the random value R'<sup>A</sup> to get R' which is a random value
    that **only you and the server know**. That random value (it is very large)
    can be used to encrypt/decrypt any later transmissions of data between the
    two for some amount of time (called session length).
@@ -130,11 +129,11 @@ forth using what's called a
 
 ### Links
 
-[1][custom domains on github pages gain support for https](https://github.blog/2018-05-01-github-pages-custom-domains-https/).
+\[1\][custom domains on github pages gain support for https](https://github.blog/2018-05-01-github-pages-custom-domains-https/).
 Published 2018-05-01 by Parker Moore. Retrieved 2019-02-10.
 
-[2][a milestone for chrome security: marking http as “not secure”.](https://www.blog.google/products/chrome/milestone-chrome-security-marking-http-not-secure/)
+\[2\][a milestone for chrome security: marking http as “not secure”.](https://www.blog.google/products/chrome/milestone-chrome-security-marking-http-not-secure/)
 Published 2018-07-24 by Emily Schechter. Retrieved 2019-02-10.
 
-[3][safari warns about unsecure logins](https://www.digicert.com/blog/safari-warns-about-unsecure-logins/)
+\[3\][safari warns about unsecure logins](https://www.digicert.com/blog/safari-warns-about-unsecure-logins/)
 Published 2018-03-30 by Vincent Lynch. Retrieved 2019-02-10

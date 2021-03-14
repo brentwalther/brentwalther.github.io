@@ -1,8 +1,9 @@
 ---
+tags:
+- project
+- personalfinance
 title: Budgeting with ledger-cli
-tags: ["project", "personalfinance"]
 ---
-
 In my
 [Personal Finance Philosophy](/personal-finance-philosophy) post, I describe the importance of budgeting and acknowledge that it can be time consuming to do properly. Since I'm a software engineer by trade, I looked for software to help me with the job. Initially, that was practicing double-entry accounting for all my personal finances using [GnuCash](/personal-finance-with-gnucash), an open-source accounting tool. It allowed me to understand the workflows, but the integrated expense matcher is terrible and I wanted something better.
 
@@ -11,10 +12,10 @@ I found the [`ledger-cli`](https://www.ledger-cli.org/) tool which is double-ent
 My new [workflow](/jcf/index.html) for managing my budget looks like this:
 
 1. Every month, [download CSV exports](#download-csvs) of transactions from my credit card and bank accounts.
-2. Use [JCF](https://www.github.com/brentwalther/jcf) to [match the transactions then convert them](#match-and-convert) to a ledger-cli compatible file.
-3. [Merge each ledger file](#merge-step) into the master ledger.
-5. [Check diffs using Git](#maintenance-with-git) and commit the results if they look correct.
-6. [Import the master expenses CSV](#budget-with-pivot-table) into a spreadsheet and use a pivot table to break down the expenses in to budget categories.
+1. Use [JCF](https://www.github.com/brentwalther/jcf) to [match the transactions then convert them](#match-and-convert) to a ledger-cli compatible file.
+1. [Merge each ledger file](#merge-step) into the master ledger.
+1. [Check diffs using Git](#maintenance-with-git) and commit the results if they look correct.
+1. [Import the master expenses CSV](#budget-with-pivot-table) into a spreadsheet and use a pivot table to break down the expenses in to budget categories.
 
 Sound interesting? [Set it up](/jcf/setup.html) for yourself.
 

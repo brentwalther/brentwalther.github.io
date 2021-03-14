@@ -1,8 +1,8 @@
 ---
+tags:
+- personalfinance
 title: Personal Finance Philosophy
-tags: ["personalfinance"]
 ---
-
 - [Background](#background)
 - [Budgeting](#budgeting)
 - [Investing](#investing)
@@ -59,16 +59,16 @@ the "Amount Spent" column on a monthly basis:
 
 | Category         | Budget | Amount Spent |
 | ---------------- | ------ | ------------ |
-| Housing          | \$1500 | ???          |
-| Bills            | \$500  | ???          |
-| Restaurants/Bars | \$500  | ???          |
-| Groceries        | \$400  | ???          |
-| Car/Gas          | \$400  | ???          |
-| Shopping         | \$200  | ???          |
-| Travel           | \$100  | ???          |
-| Entertainment    | \$100  | ???          |
-| Doctor/Dentist   | \$75   | ???          |
-| **Total**        | \$3875 | ???          |
+| Housing          | $1500  | ???          |
+| Bills            | $500   | ???          |
+| Restaurants/Bars | $500   | ???          |
+| Groceries        | $400   | ???          |
+| Car/Gas          | $400   | ???          |
+| Shopping         | $200   | ???          |
+| Travel           | $100   | ???          |
+| Entertainment    | $100   | ???          |
+| Doctor/Dentist   | $75    | ???          |
+| **Total**        | $3875  | ???          |
 
 Trying to keep track of a budget with this many categories is difficult and
 without any type of automation also quite time consuming. To make this easier on
@@ -87,17 +87,17 @@ yourself a lot of good with minimal effort. They are:
 1. If your job has a 401k (or similar e.g. 403b) investment account with a
    company match, **always invest enough to get the full match**. The match is
    free money; why lose out on it?
-2. **Diversify your money in low-cost index funds**. Do not pick individual
+1. **Diversify your money in low-cost index funds**. Do not pick individual
    stocks (e.g. AMZN, TSLA) to invest in. Put simply, this means looking through
    the fund options your plan/brokerage has and trying to find funds with the
    lowest Expense Ratio (ER). Don't be fooled into pretty graphs that claim a
    "higher return" -- they often have much higher ERs that will eat away at your
    money over time. Do not pay for a financial manager, they're expensive at
    best and lose to index investing at worst.
-3. **Set up automatic investments** to keep your account growing, preferably via
+1. **Set up automatic investments** to keep your account growing, preferably via
    paycheck deductions. It's much easier to save when you never have to think
    about it.
-4. **Don't ever panic and sell** your investments if the markets are down --
+1. **Don't ever panic and sell** your investments if the markets are down --
    selling means you're realizing a loss! Let the markets recover.
 
 Speaking with a little more detail, the easiest way to invest is to build a

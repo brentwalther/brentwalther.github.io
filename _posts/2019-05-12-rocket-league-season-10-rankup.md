@@ -1,9 +1,8 @@
 ---
+author: Brent Walther
 layout: post
 title: Rocket League Season 10
-author: Brent Walther
 ---
-
 I'm still playing Rocket League 6 seasons later...
 
 This season, I finally achieved the Champion season rank which is 3 ranks

@@ -1,12 +1,12 @@
 ---
-tags: ["albumreview"]
-heroimage: flume_hi_this_is_flume_640x640.jpg
 album: Hi This Is Flume (Mixtape)
 artist: Flume
-ratingword: Yeah!
+heroimage: flume_hi_this_is_flume_640x640.jpg
 rating: 4
+ratingword: Yeah!
+tags:
+- albumreview
 ---
-
 Flume is pretty well known for several groovy electronic tunes but I hadn't
 heard much about him for a while so this album release took me by surprise. The
 album delivers some heavy kick and punch accompanied by experimental melodies. I

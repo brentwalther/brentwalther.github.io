@@ -1,8 +1,8 @@
 ---
+tags:
+- project
 title: Radio Cooler
-tags: ["project"]
 ---
-
 <figure>
   <a href="/img/radio_cooler/IMG_1045.JPG">
     <img src="/img/radio_cooler/thumbnail_IMG_1045.JPG" alt="A front 45 degree view of the radio cooler.">
@@ -34,11 +34,11 @@ such that any component can be swapped out quite easily. For this build, I
 used:</p>
 
 - [BOSS Audio MR60W 200 Watt Weatherproof Marine Speaker Pair](https://www.amazon.com/gp/product/B0001XO674/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0001XO674&linkCode=as2&tag=brentwalther-20&linkId=d27a93d077a8b48311c50f636e829d00) -
-  (\$24.99 x 2) - I used 4. They are cheap, can by pumped with power, and have
+  ($24.99 x 2) - I used 4. They are cheap, can by pumped with power, and have
   really taken a beating without deteriorating in quality. I'd recommend them
   for low to medium budget builds.
 - [Pyle Hydra Marine 400 Watt 4 Channel Audio Amplifier](https://www.amazon.com/gp/product/B000N5T0T4/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B000N5T0T4&linkCode=as2&tag=brentwalther-20&linkId=a5fdc9ea3b73f74269d88b1036aba20f) -
-  (\$43.55) - For the price, this thing is hard to beat. It can get loud enough
+  ($43.55) - For the price, this thing is hard to beat. It can get loud enough
   to make the speakers vibrate the lid of the cooler with air movement. It's
   powerful.
 - [Marine-grade deep cycle 12V battery](https://www.walmart.com/search/?cat_id=0&query=12v+marine+battery)
@@ -47,25 +47,25 @@ used:</p>
   price range. I use a 101 Ah battery and it lasts for several multi-hour uses
   before needing any recharge.
 - [Coleman 48-Quart Cooler](https://www.amazon.com/gp/product/B0000Dh3LT/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0000Dh3LT&linkCode=as2&tag=brentwalther-20&linkId=c879ce06997cab67615feb50507b7641)
-  (\$36.09) - I bought mine at Academy but Amazon has them too.
+  ($36.09) - I bought mine at Academy but Amazon has them too.
 - [12V Trickle Battery Charger](https://www.amazon.com/gp/product/B074Z2NFWW/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B074Z2NFWW&linkCode=as2&tag=brentwalther-20&linkId=3aa12c3487b5db0571a9c7507a6e1af6) -
-  (\$16.98) - Inexpensive and better on your battery but expect long overnight
+  ($16.98) - Inexpensive and better on your battery but expect long overnight
   charge times. A battery charged too quickly will have less total recharge
   cycles - a low current trickle charger optimizes for battery longevity.
 - [BOSS Audio 8 Gauge Amplifier Wiring Kit](https://www.amazon.com/gp/product/B000FKP7TY/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B000FKP7TY&linkCode=as2&tag=brentwalther-20&linkId=32e4c67c63df1578e4992fc4e34990fd) -
-  (\$14.99) - Inexpensive and has almost everything you need to wire it all up.
+  ($14.99) - Inexpensive and has almost everything you need to wire it all up.
   You may end up needing special electrical connectors or battery terminal
   connectors.
 - One
   [3.5mm to 2-Male RCA Adapter Cable](https://www.amazon.com/gp/product/B01D5H8JW0/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01D5H8JW0&linkCode=as2&tag=brentwalther-20&linkId=007bc4dec686f1b292f0a9b916c21aac)
-  (\$5.99)
+  ($5.99)
 - One
   [RCA Female to 2 RCA Male Splitter Adapter Pair](https://www.amazon.com/gp/product/B016FCTD3G/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B016FCTD3G&linkCode=as2&tag=brentwalther-20&linkId=91f7f82d753ff157015649c37a283d6b)
-  (\$5.69)
+  ($5.69)
 - Some type of toggle switch.
 - Some bolts and wing nuts.
 
-So all together it costs around \$275 to build one of these give or take some
+So all together it costs around $275 to build one of these give or take some
 depending on what kind of battery you use. You can also use any type of cooler
 that you feel comfortable mounting the amplifier and speakers in.
 

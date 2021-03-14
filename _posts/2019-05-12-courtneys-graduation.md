@@ -1,11 +1,10 @@
 ---
+author: Brent Walther
 layout: post
 title: Courtney's Graduation
-author: Brent Walther
 ---
-
 We made another trip down to College Station in May to watch my sister Courtney
-graduate from Texas A&amp;M! She'll be starting a job teaching in Prosper ISD an
+graduate from Texas A&M! She'll be starting a job teaching in Prosper ISD an
 elemantary school teacher this upcoming school year.
 
 We attended her graduation party the following day and despite rain had a great

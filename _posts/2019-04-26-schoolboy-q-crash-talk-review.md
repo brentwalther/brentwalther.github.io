@@ -1,12 +1,12 @@
 ---
-tags: ["albumreview"]
-heroimage: schoolboy_q_crash_talk_300x300.jpg
 album: CrasH Talk
 artist: ScHoolboy Q
-ratingword: Decent.
+heroimage: schoolboy_q_crash_talk_300x300.jpg
 rating: 3
+ratingword: Decent.
+tags:
+- albumreview
 ---
-
 I'm a big Q fan so was really looking forward to this album after its
 announcement. I listened to
 [his interview on the Breakfast Club](https://www.youtube.com/watch?v=lrRQHybTjvA)

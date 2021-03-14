@@ -1,10 +1,18 @@
 ---
-title: Matching
-tags: ["java", "bazel", "ledger", "ledger-cli", "jcf", "java cash flow", "transactions", "csv", "matcher"]
-layout: jcf-documentation
 date: 2021-01-06
+layout: jcf-documentation
+tags:
+- java
+- bazel
+- ledger
+- ledger-cli
+- jcf
+- java cash flow
+- transactions
+- csv
+- matcher
+title: Matching
 ---
-
 I use the [JCF](https://github.com/brentwalther/jcf) tool to convert my bank's transaction CSV files to `ledger-CLI` compatible files.
 
 Never head of [JCF](/jcf)? See the [setup](/jcf/setup.html).
@@ -21,7 +29,9 @@ JCF is a tool that reads transactions from CSV files (e.g. bank and credit card 
 
    ... prints out most recent transactions in Ally 1234 account.
    ```
+
 1. Adding a [settings profile](/jcf/settings_profiles.html) for the institution's CSV format.
+
 1. Ensuring your [`master.accounts`](/jcf/master_accounts_file.html) file has all the accounts you intend to use for matching.
 
 After that, I convert a CSV file to a ledger file like this:

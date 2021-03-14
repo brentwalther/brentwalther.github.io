@@ -1,9 +1,8 @@
 ---
+author: Brent Walther
 layout: post
 title: Why I deactivated Facebook
-author: Brent Walther
 ---
-
 I signed up for a Facebook account back in 2008 when the platform was still
 fairly young. I was in high school at the time and it was a pretty trendy thing
 to do (having recently opened up from the previous exclusivity it had to
@@ -27,17 +26,17 @@ companies with the same level of world impact. Some examples of just how
 terrible of a job Facebook has done at educating and protecting users:
 
 1. Exposing (or just handing over?) data of nearly **50 million** U.S. based
-   users from to Cambridge Analytica [1] "as a way to identify the personalities
-   of American voters and influence their behavior." [2]
-2. Allowing Russia (and probably others) to produce and disseminate fake news
+   users from to Cambridge Analytica \[1\] "as a way to identify the personalities
+   of American voters and influence their behavior." \[2\]
+1. Allowing Russia (and probably others) to produce and disseminate fake news
    and propaganda to over 790,000 users via "nearly 500 pages and accounts" and
-   \$135,000 worth of ad spend on Facebook. [3]
-3. Until mid-2015, allowing app developers (for example: Farmville, Candy Crush)
+   $135,000 worth of ad spend on Facebook. \[3\]
+1. Until mid-2015, allowing app developers (for example: Farmville, Candy Crush)
    to suck in all of an individual's friends data if that individual gives
    "basic" permissions to an app. The implication here is that there are
    countless companies (even bad actors) out there with **your** information
-   because your friend logged into their app. [4]
-4. The long-held conspiracy (I describe it as a conspiracy only because I'm
+   because your friend logged into their app. \[4\]
+1. The long-held conspiracy (I describe it as a conspiracy only because I'm
    unable to confirm that it's true) that Facebook is listening to your
    conversations as a means of picking up keywords to use for advertisement
    targeting. I've heard anecdotal evidence from numerous people and even had it
@@ -57,7 +56,7 @@ is still growing.
 
 I do acknowledge that I may have bias against Facebook because I currently work
 at Google who as a company I consider to be much more conscious of user data
-privacy [7]. Still, I feel as if there are too many bright people working at
+privacy \[7\]. Still, I feel as if there are too many bright people working at
 Facebook to display such negligence. If you're building a product for billions
 of people, you need to do the due diligence to protect them.
 
@@ -125,16 +124,16 @@ Facebook.
 
 1. [The Cambridge Analytica Files - The Guardian](https://www.theguardian.com/news/series/cambridge-analytica-files)
    Retrieved 2019-02-17.
-2. [Facebook and Cambridge Analytica: What You Need to Know as Fallout Widens](https://www.nytimes.com/2018/03/19/technology/facebook-cambridge-analytica-explained.html).
+1. [Facebook and Cambridge Analytica: What You Need to Know as Fallout Widens](https://www.nytimes.com/2018/03/19/technology/facebook-cambridge-analytica-explained.html).
    Published 2018-03-19 by Kevin Granville. Retrieved 2019-02-11.
-3. [Facebook Identifies Russia-Linked Misinformation Campaign](https://www.nytimes.com/2019/01/17/business/facebook-misinformation-russia.html).
+1. [Facebook Identifies Russia-Linked Misinformation Campaign](https://www.nytimes.com/2019/01/17/business/facebook-misinformation-russia.html).
    Published 2019-01-17 by Adam Satariano. Retrieved 2019-02-11.
-4. [Facebook Is Shutting Down Its API For Giving Your Friends’ Data To Apps](https://techcrunch.com/2015/04/28/facebook-api-shut-down/).
+1. [Facebook Is Shutting Down Its API For Giving Your Friends’ Data To Apps](https://techcrunch.com/2015/04/28/facebook-api-shut-down/).
    Published 2015-04-28 by Josh Constine. Retrieved 2019-02-11.
-5. [Encryption at Rest - Google Cloud](https://cloud.google.com/security/encryption-at-rest/)
+1. [Encryption at Rest - Google Cloud](https://cloud.google.com/security/encryption-at-rest/)
    Retrieved 2019-02-17.
-6. [Encryption in Transit in Google Cloud](https://cloud.google.com/security/encryption-in-transit/)
+1. [Encryption in Transit in Google Cloud](https://cloud.google.com/security/encryption-in-transit/)
    Retrieved 2019-02-17.
-7. For example, we encrypt all data at rest [5], transit [6], and engineers like
+1. For example, we encrypt all data at rest \[5\], transit \[6\], and engineers like
    myself are unable to access user data and would be fired for user data
    misuse. Data stays internal, where it belongs.

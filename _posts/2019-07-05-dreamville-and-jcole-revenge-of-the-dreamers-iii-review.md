@@ -1,12 +1,12 @@
 ---
-tags: ["albumreview"]
-heroimage: dreamville_revenge_of_the_dreamers_iii_300x300.jpg
 album: Revenge of the Dreamers III
 artist: Dreamville & J. Cole
-ratingword: Fire!
+heroimage: dreamville_revenge_of_the_dreamers_iii_300x300.jpg
 rating: 5
+ratingword: Fire!
+tags:
+- albumreview
 ---
-
 There was a good amound of hype leading up to this album release including the
 invitation hype, singles, and documentary release. The level of artistic talent
 all packaged up in one album is absolutely insane. Amazing flows from J. Cole,

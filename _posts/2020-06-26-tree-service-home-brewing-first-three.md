@@ -1,8 +1,9 @@
 ---
+tags:
+- homebrew
+- project
 title: Home Brewing
-tags: ["homebrew", "project"]
 ---
-
 <div class="text-center">
 <a href="http://brent.beer">http://brent.beer</a> - <a href="https://untappd.com/user/Brentwalther">My Untappd</a>
 </div>
@@ -46,12 +47,10 @@ We didn't measure the original or specific gravity of this beer so weren't sure 
   <figcaption>Our grains steeping in the pot.</figcaption>
 </figure>
 
-
 <figure>
   <img alt="The beer right after the boil, sealed in the carboy and ready to begin fermenting. The cap has an airlock to allow gas to escape during fermentation." src="/img/hop_froth_fermentation.jpg" />
   <figcaption>The beer right after the boil, sealed in the carboy and ready to begin fermenting. The cap has an airlock to allow gas to escape during fermentation.</figcaption>
 </figure>
-
 
 <figure>
   <img alt="The finished product. We had about 5 gallons of beer which fills many bottles." src="/img/hop_froth_bottles.jpg" />
@@ -71,12 +70,10 @@ The taste profile for this beer was even better than I expected. It was not very
   <figcaption>Steeping our grains. Look how dark it is already!</figcaption>
 </figure>
 
-
 <figure>
   <img alt="Trent roasted the beans in this coffee roaster he owns." src="/img/trent_coffee_roaster.jpg" />
   <figcaption>Trent roasted the beans in this coffee roaster he owns.</figcaption>
 </figure>
-
 
 <figure>
   <img alt="The finished beer. The head came out just right in my opinion and it poured very nicely. I should have rinsed my glassware out first though. Rookie mistake!" src="/img/toasty_roasty_glamour_shot.jpg" />
@@ -94,12 +91,10 @@ Of our first three beers, this one actually turned out to be my least favorite b
   <figcaption>The tripel during the boil. Very foamy!</figcaption>
 </figure>
 
-
 <figure>
   <img alt="Wort chilling using our fancy copper chiller coil. In my opinion, this is our best equipment purchase so far." src="/img/sugar_daddy_chill.jpg" />
   <figcaption>Wort chilling using our fancy copper chiller coil. In my opinion, this is our best equipment purchase so far.</figcaption>
 </figure>
-
 
 <figure>
   <img alt="To make sure we didn't have another ferment run over, this one was done in the boil pot with a towel covering it." src="/img/sugar_daddy_ferment.jpg" />

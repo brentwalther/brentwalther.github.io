@@ -1,12 +1,12 @@
 ---
-tags: ["albumreview"]
-heroimage: kody_west_overgrown_522x522.jpg
 album: Overgrown
 artist: Kody West
-ratingword: Decent.
+heroimage: kody_west_overgrown_522x522.jpg
 rating: 3
+ratingword: Decent.
+tags:
+- albumreview
 ---
-
 This release (from Mar 2020) slipped by me somehow. Having not heard from Kody
 West in quite some time, I was excited to learn there was new music. While I
 didn't dislike this album, the overtones of it were much darker than his

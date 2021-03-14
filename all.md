@@ -1,14 +1,13 @@
 ---
-title: Post Index
 layout: default
+title: Post Index
 ---
-
 ### Tags
 
 <ul>
 {% for tag in site.tags %}
   <li>
-    <a href="#{{ tag[0] }}">{{ tag[0] }}</a>
+    <a href="#{{ tag | first }}">{{ tag | first }}</a>
   </li>
 {% endfor %}
   <li><a href="#untagged">untagged</a></li>
@@ -16,7 +15,7 @@ layout: default
 
 {% for tag in site.tags %}
 
-### Tag: {{ tag[0] }} {#{{tag[0]}}}
+### Tag: {{ tag | first }} {#{{ tag | first }}}
 
 <ul>
   {% for post in tag[1] %}

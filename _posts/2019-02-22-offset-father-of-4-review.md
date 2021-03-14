@@ -1,12 +1,12 @@
 ---
-tags: ["albumreview"]
-heroimage: offset_father_of_4_300x300.jpg
 album: FATHER OF 4
 artist: Offset
-ratingword: Decent.
+heroimage: offset_father_of_4_300x300.jpg
 rating: 3
+ratingword: Decent.
+tags:
+- albumreview
 ---
-
 I really enjoyed this album and of the three recent(ish) independent albums by
 Migos members Quavo, Offset, and Takeoff, I think I like this one the best. I
 honestly thought this album would be too homogenous for me to enjoy but Offset

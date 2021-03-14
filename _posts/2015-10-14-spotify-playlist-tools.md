@@ -1,8 +1,8 @@
 ---
+tags:
+- project
 title: Spotify Playlist Tools
-tags: ["project"]
 ---
-
 [Source Code](https://github.com/brentwalther/playlist-tools)
 
 A playlist diff tool and a playlist copier for Spotify. Built with Angular

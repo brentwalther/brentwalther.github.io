@@ -1,8 +1,8 @@
 ---
+tags:
+- project
 title: Code Graveyard
-tags: ["project"]
 ---
-
 This is a collection of ancient programs I wrote during high school. Most of
 these were found either on old thumb drives or on my Dropbox. Select programs
 have a short description.

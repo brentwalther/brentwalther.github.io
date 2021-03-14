@@ -1,9 +1,9 @@
 ---
-tags: ["albumreview"]
 album: Singles
 artist: Various
+tags:
+- albumreview
 ---
-
 - **Believe (ft. Justin Timberlake) - Meek Mill** // **Play** // Solid song.
   Meek's got a good flow and Justin Timberlake fits well on the song.
 - **Intentions (ft. Quavo) - Justin Bieber** // **Play** // Biebers music has

@@ -1,10 +1,9 @@
 ---
+author: Brent Walther
 layout: post
 title: Maddie's Graduation
-author: Brent Walther
 ---
-
-Maddie graduated this spring with a Bachelor of Science in Nursing from the Texas A&M Nursing school. She's going on to work in the Baylor University Medical Center in downtown Dallas in the NICU unit. 
+Maddie graduated this spring with a Bachelor of Science in Nursing from the Texas A&M Nursing school. She's going on to work in the Baylor University Medical Center in downtown Dallas in the NICU unit.
 
 Congrats on graduating Maddie. I'm proud of you and your achievements!
 

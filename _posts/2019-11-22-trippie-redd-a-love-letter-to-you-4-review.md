@@ -1,12 +1,12 @@
 ---
-tags: ["albumreview"]
-heroimage: trippie_redd_a_love_letter_to_you_4_300x300.jpg
 album: A Love Letter to You 4
 artist: Trippie Redd
-ratingword: Decent.
+heroimage: trippie_redd_a_love_letter_to_you_4_300x300.jpg
 rating: 3
+ratingword: Decent.
+tags:
+- albumreview
 ---
-
 I have to say, I have really not been a fan of some of Trippie Redd's previous
 releases. His albums "!" and "LIFE'S A TRIP" were so bad (in my opinion) that I
 had to turn them off midway through listening to them. This one is much better!

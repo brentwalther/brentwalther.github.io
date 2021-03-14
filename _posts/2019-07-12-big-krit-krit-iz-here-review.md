@@ -1,12 +1,12 @@
 ---
-tags: ["albumreview"]
-heroimage: big_krit_krit_iz_here_300x300.jpg
 album: K.R.I.T. IZ HERE
 artist: Big K.R.I.T.
-ratingword: Yeah!
+heroimage: big_krit_krit_iz_here_300x300.jpg
 rating: 4
+ratingword: Yeah!
+tags:
+- albumreview
 ---
-
 I was a pretty big fan of this album. K.R.I.T. is (at this point) a very well
 known southern artist and his flow and sound are great embodiments of that
 southern style. The percussion in a bunch of the beats was really awesome and

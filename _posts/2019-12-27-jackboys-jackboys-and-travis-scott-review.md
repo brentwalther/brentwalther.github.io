@@ -1,12 +1,12 @@
 ---
-tags: ["albumreview"]
-heroimage: jackboys_jackboys_and_travis_scott_300x300.png
 album: JACKBOYS
-artist: "JACKBOYS & Travis Scott"
-ratingword: Meh.
+artist: JACKBOYS & Travis Scott
+heroimage: jackboys_jackboys_and_travis_scott_300x300.png
 rating: 2
+ratingword: Meh.
+tags:
+- albumreview
 ---
-
 I was pretty dissapointed by this release. There was a bit of hype online
 including a long
 [leaked tracklist](https://www.reddit.com/r/travisscott/comments/eg28sy/leaked_tracklist/)

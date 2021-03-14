@@ -1,12 +1,12 @@
 ---
-tags: ["albumreview"]
-heroimage: french_montana_montana_300x300.png
 album: MONTANA
 artist: French Montana
-ratingword: Decent.
+heroimage: french_montana_montana_300x300.png
 rating: 3
+ratingword: Decent.
+tags:
+- albumreview
 ---
-
 A reasonably interesting album from French Montana. A decent portion of the
 tracks were out as singles before this album actually dropped and like many
 albums, they were probably the better tracks. I enjoyed _50s and 100s_, _No

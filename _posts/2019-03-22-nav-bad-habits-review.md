@@ -1,12 +1,12 @@
 ---
-tags: ["albumreview"]
-heroimage: nav_bad_habits_300x300.jpg
 album: Bad Habits
 artist: Nav
-ratingword: Decent.
+heroimage: nav_bad_habits_300x300.jpg
 rating: 3
+ratingword: Decent.
+tags:
+- albumreview
 ---
-
 I liked the features on this album and I think the production is really good
 (it's executive produced by The Weeknd, apparently). In my opinion, Nav is still
 just too boring of an MC to keep my attention. Luckily for him, this album has a

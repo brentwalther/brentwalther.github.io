@@ -1,10 +1,9 @@
 ---
+author: Brent Walther
 layout: post
 title: May 2019 ARCA Airshow
-author: Brent Walther
 ---
-
-We went to an airshow in May hosted by the Austin Radio Control Association [1]
+We went to an airshow in May hosted by the Austin Radio Control Association \[1\]
 a little ways outside of Austin for a few hours on a sunny Saturday afternoon.
 The event was free and featured probably 50+ model airplanes being flown by a
 bunch of different pilots. Some of the pilots would do tricks and all the planes
@@ -15,7 +14,7 @@ These things can get expensive though! Here are a few of my favorites from the
 event:
 
 A jet plane with a real fuel-burning jet engine. This thing was crazy fast and
-apparently cost around \$15,000! This is it taking off from the air strip:
+apparently cost around $15,000! This is it taking off from the air strip:
 
 <figure>
   <a href="https://brentwalther.net/img/spring-2019/arca_airshow_jet_plane.jpg">
@@ -39,4 +38,4 @@ landed:
 
 ### Links
 
-[1][austin radio control association website](https://www.austinrc.org).
+\[1\][austin radio control association website](https://www.austinrc.org).

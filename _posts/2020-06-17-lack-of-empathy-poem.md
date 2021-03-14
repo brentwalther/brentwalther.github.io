@@ -1,9 +1,8 @@
 ---
+author: Brent Walther
 layout: poetry
 title: Lack of Empathy
-author: Brent Walther
 ---
-
 what I don't understand is undermining
 
 the country that you live in wondering
@@ -24,7 +23,7 @@ some accusatory lines
 
 but your shoes don't walk the line.
 
-I doubt it's you who's been alive 
+I doubt it's you who's been alive
 
 long enough to see the signs
 

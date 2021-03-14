@@ -2,7 +2,6 @@
 layout: default
 title: Music
 ---
-
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function() {
     var data = {
@@ -134,7 +133,7 @@ My "rating" system is pretty simple. I rate albums on a five star scale:
 <br><!-- hack <br> to prevent the first review from being scooped up in the generated <li> above. I don't know why it does that. -->
 
 {% for review in site.tags.albumreview %}
-  {% include album_review.html page=review %}
+{% include album_review.html page=review %}
 {% endfor %}
 
 ## Concerts {#concerts}
@@ -144,5 +143,5 @@ as well. Below is a collection of concerts I've attended which received a
 writeup.
 
 {% for concert in site.tags.concert %}
-  {% include embedded_post.html page=concert %}
+{% include embedded_post.html page=concert %}
 {% endfor %}

@@ -1,8 +1,8 @@
 ---
+tags:
+- personalfinance
 title: Personal Finance with GnuCash
-tags: ["personalfinance"]
 ---
-
 - [Background](#background)
 - [What is _double entry accounting_?](#what-is-double-entry-accounting)
 - [GnuCash](#gnucash)
@@ -58,20 +58,20 @@ like the below table. Note that the balance is the running balance for each
 individual account, not a total running balance. I use parantheses to represent
 negative balances:
 
-| Date       | Description  | Account                 | Amount  | Balance  |
-| ---------- | ------------ | ----------------------- | ------- | -------- |
-| 2020-05-07 | Paycheck     | Income>Salary           | -\$1000 | (\$1000) |
-| 2020-05-07 | Paycheck     | Assets>Checking Account | +\$1000 | \$1000   |
-| 2020-05-14 | Walmart      | Liability>Credit Card   | -\$200  | (\$200)  |
-| 2020-05-14 | Walmart      | Expenses>Groceries      | +\$200  | \$200    |
-| 2020-05-16 | Tex-Mex Food | Liability>Credit Card   | -\$100  | (\$300)  |
-| 2020-05-16 | Tex-Mex Food | Expenses>Restaurants    | +\$100  | \$100    |
-| 2020-05-21 | Paycheck     | Income>Salary           | -\$1000 | (\$2000) |
-| 2020-05-21 | Paycheck     | Assets>Checking Account | +\$1000 | \$2000   |
-| 2020-05-31 | Rent         | Assets>Checking Account | -\$1300 | \$700    |
-| 2020-05-31 | Rent         | Expenses>Rent           | +\$1300 | \$1300   |
-| 2020-05-31 | Pay CC       | Assets>Checking Account | -\$300  | \$400    |
-| 2020-05-31 | Pay CC       | Liability>Credit Card   | +\$300  | \$0      |
+| Date       | Description  | Account                 | Amount | Balance |
+| ---------- | ------------ | ----------------------- | ------ | ------- |
+| 2020-05-07 | Paycheck     | Income>Salary           | -$1000 | ($1000) |
+| 2020-05-07 | Paycheck     | Assets>Checking Account | +$1000 | $1000   |
+| 2020-05-14 | Walmart      | Liability>Credit Card   | -$200  | ($200)  |
+| 2020-05-14 | Walmart      | Expenses>Groceries      | +$200  | $200    |
+| 2020-05-16 | Tex-Mex Food | Liability>Credit Card   | -$100  | ($300)  |
+| 2020-05-16 | Tex-Mex Food | Expenses>Restaurants    | +$100  | $100    |
+| 2020-05-21 | Paycheck     | Income>Salary           | -$1000 | ($2000) |
+| 2020-05-21 | Paycheck     | Assets>Checking Account | +$1000 | $2000   |
+| 2020-05-31 | Rent         | Assets>Checking Account | -$1300 | $700    |
+| 2020-05-31 | Rent         | Expenses>Rent           | +$1300 | $1300   |
+| 2020-05-31 | Pay CC       | Assets>Checking Account | -$300  | $400    |
+| 2020-05-31 | Pay CC       | Liability>Credit Card   | +$300  | $0      |
 
 The ledger becomes a simple database. To see if you've fully reconciled the
 account and recorded all the transactions, you can simply compare the balance in
@@ -146,10 +146,10 @@ in your budget. When I started, these were the accounts I started with:
 Note that I only had a few physical accounts:
 
 1. An Ally checking and savings account.
-2. A 401k and Roth IRA with Vanguard
-3. A credit card with Capital One
-4. A credit card with Chase
-5. A student loan account
+1. A 401k and Roth IRA with Vanguard
+1. A credit card with Capital One
+1. A credit card with Chase
+1. A student loan account
 
 To get started, you essentially need to add all the accounts you want to track
 and then balance them all up. To do this in the very beginning, I just used
@@ -170,21 +170,21 @@ month for each account. I'll usually do the following:
    transactions is usually limited to paychecks, interest, rent, and credit card
    payments. The transfers either come from an Income account or go to a
    Liability or Expense account directly.
-2. Log on to Vanguard and add any new investment purchases that came from my
+1. Log on to Vanguard and add any new investment purchases that came from my
    payroll. Since payroll deductions never actually enter your bank account,
    this money transfers from an "Income:Retirement" account. Since investments
    grow, the balance will not always match what you have in GnuCash. After
    practicing this accounting workflow for a hile, I began doing reconcile
    balance transfers from an "Income>Unrealized Capital Gains" account.
-3. Log on to each credit card and download all the transactions as a CSV or OFX
+1. Log on to each credit card and download all the transactions as a CSV or OFX
    and import them using the GnuCash import tool. Sometimes it matches them to
    expense accounts automatically (though my main complaint with GnuCash is how
    crappy the auto-matcher is). Un-matched expenses get matched to the
    "Imbalance-USD" account automatically and you just need to change the
    transfer account to an Expense account for each transaction.
-4. Cross-check all the balances of my physical accounts with what GnuCash says
+1. Cross-check all the balances of my physical accounts with what GnuCash says
    to make sure they're up-to-date and I didn't miss any transactions.
-5. Done!
+1. Done!
 
 ### Reports {#reports}
 

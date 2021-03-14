@@ -1,10 +1,17 @@
 ---
-title: Making a commit
-tags: ["java", "bazel", "ledger", "ledger-cli", "jcf", "java cash flow", "commit", "git"]
-layout: jcf-documentation
 date: 2021-01-06
+layout: jcf-documentation
+tags:
+- java
+- bazel
+- ledger
+- ledger-cli
+- jcf
+- java cash flow
+- commit
+- git
+title: Making a commit
 ---
-
 After doing any [merge](/jcf/merging.html), the next step is to diff and commit the update to the master ledger repo.
 
 ```
