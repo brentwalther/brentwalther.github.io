@@ -1,16 +1,23 @@
 ---
 tags:
 - project
-title: Portable Custom Radio
+- 'portable custom boombox'
+- waterproof
+- bluetooth
+- marine
+- radiocooler
+title: Portable Custom Boombox
 ---
-**(a.k.a. radio cooler v2)**
 
-The custom radio cooler I built in college (and other
-[prior art](https://photos.app.goo.gl/cv6negoigsTsUUNs7)) has seen a lot of fun
-times between tailgates, pool days, tailgates, and hunting trips. However, it
-was built optimizing for battery life at the cost of portability (the 100 Ah
-battery weighs a ton!). I decided I wanted to build something sleeker and more
-portable, so I did.
+### (a.k.a. radio cooler v2)
+
+The [custom radio cooler](/radio-cooler) (and other
+[prior art](https://photos.app.goo.gl/cv6negoigsTsUUNs7)) I built in college
+has been dragged all over the place between tailgates, pool days, the beach,
+camping, and hunting trips. It is a complete workhorse optimized for battery
+life and durability at the cost of portability (the 100 Ah battery weighs a
+ton!). I decided I wanted to build something sleeker and more portable, so 
+that's what I did.
 
 The first step was choosing some type of case. Coolers are pretty convenient
 because they're easy to cut through and they can be fairly water resistant but
@@ -22,31 +29,31 @@ components or firearms. It seals well and has a convenient handle already
 installed. It also was long enough to fit three speakers.
 
 <figure>
-  <a href="/img/radio_cooler2/empty_case.jpg">
-    <img src="/img/radio_cooler2/empty_case_thumb.jpg" alt="Empty radio case.">
-    <figcaption>Empty case.</figcaption>
+  <a href="/img/portable_custom_boombox/empty_case.jpg">
+    <img src="/img/portable_custom_boombox/empty_case_thumb.jpg" alt="Empty case. The starting point of the portable boombox.">
+    <figcaption>Empty case, all bottom foam removed.</figcaption>
   </a>
 </figure>
 <figure>
-  <a href="/img/radio_cooler2/amplifier_sizing.jpg">
-    <img src="/img/radio_cooler2/amplifier_sizing_thumb.jpg" alt="Case with amplifier inside.">
+  <a href="/img/portable_custom_boombox/amplifier_sizing.jpg">
+    <img src="/img/portable_custom_boombox/amplifier_sizing_thumb.jpg" alt="Case with amplifier inside.">
     <figcaption>Amplifier sizing.</figcaption>
   </a>
 </figure>
 
 The case is quite spacious inside. I placed the amplifier in first to size it up
-but I had compared dimensions online before purchasing.
+but I definitely researched the dimensions of everything before purchasing.
 
 <figure>
-  <a href="/img/radio_cooler2/aluminum_rail_installation.jpg">
-    <img src="/img/radio_cooler2/aluminum_rail_installation_thumb.jpg" alt="Inside of case with speakers, amplifier, and aluminum rails installed.">
-    <figcaption>Installed speakers and some components.</figcaption>
+  <a href="/img/portable_custom_boombox/aluminum_rail_installation.jpg">
+    <img src="/img/portable_custom_boombox/aluminum_rail_installation_thumb.jpg" alt="Inside of case with speakers, amplifier, battery, and aluminum rails installed.">
+    <figcaption>Installed speakers, aluminum rails cut, and battery mounting bracket is shown.</figcaption>
   </a>
 </figure>
 <figure>
-  <a href="/img/radio_cooler2/installed_speakers.jpg">
-    <img src="/img/radio_cooler2/installed_speakers_thumb.jpg" alt="Outside of case after installing speakers.">
-    <figcaption> Outside of case with speakers installed.</figcaption>
+  <a href="/img/portable_custom_boombox/installed_speakers.jpg">
+    <img src="/img/portable_custom_boombox/installed_speakers_thumb.jpg" alt="Outside of case after installing speakers.">
+    <figcaption>Outside of case with speakers installed, along with a bunch of tools and hardware from the job.</figcaption>
   </a>
 </figure>
 
@@ -66,49 +73,53 @@ points: 2 to the bottom of the battery and two at the place where the lower
 amplifier holes are.
 
 <figure>
-  <a href="/img/radio_cooler2/portable_boombox_v2_front.jpg">
-    <img src="/img/radio_cooler2/portable_boombox_v2_front_thumb.jpg" alt="Finished portable custom radio front.">
-    <figcaption>Finished radio front w/ trickle charger.</figcaption>
+  <a href="/img/portable_custom_boombox/front.jpg">
+    <img src="/img/portable_custom_boombox/front_thumb.jpg" alt="Finished portable custom boombox front.">
+    <figcaption>Finished boombox front w/ trickle charger.</figcaption>
   </a>
 </figure>
 
-The finished radio looks quite nice from the front and uses a small trickle
+The finished boombox looks quite nice from the front and uses a small trickle
 charger to charge up. It sits easily upright though I would love to have a way
 to also sit it on its side so the three speakers were stacked. The sound is very
 directional (somehow to my surprise) so it's best placed facing the direction
 you want the sound to go. The volume of the case with all components installed
 seems close to the right size to get good speaker suspension -- bass is loud and
-even shakes the lid some.
+even shakes the lid some. I usually connect with bluetooth to my phone, and
+Spotify has an integrated equalizer (deep in the settings) I've used to fine
+tune.
 
-The inside of the cooler is slightly messier than I'd like but it's still a work
-in progress. The battery is held in place via paracord because I haven't thought
-of a better way that isn't too rigid (I don't want to jar the battery too much).
-The switch is placed alongside a 2-port USB power hub and the bluetooth module.
-The hub shows the battery voltage to give an approximate idea of charge level.
-The bluetooth module only draws a few mA so I keep it permanently powered
-(switch controls the amplifier)..
+The inside of the boombox is reasonably organized. The battery is strapped in
+place with paracord (as not to jar the battery as much if the boombox is knocked
+in to) and a switch is placed alongside the bluetooth receiver module. I highly
+recommend the [JL Audio](https://www.amazon.com/gp/product/B00MH5CFEU) unit; I
+tried multiple cheaper ones and they all had terrible background noise. The little
+round piece attached to the battery is a small 2-port USB hub with screen that
+shows the battery voltage to give an approximate idea of charge level. I eventually
+uninstalled it because it drained the battery, and moved the bluetooth unit's
+circuit to go through the switch, so it drawn nothing when off now.
 
 <figure>
-  <a href="/img/radio_cooler2/portable_boombox_v2_inside.jpg">
-    <img src="/img/radio_cooler2/portable_boombox_v2_inside.jpg" alt="Completed inside of portable custom radio.">
+  <a href="/img/portable_custom_boombox/inside.jpg">
+    <img src="/img/portable_custom_boombox/inside.jpg" alt="Completed inside of portable custom boombox.">
     <figcaption>Finished and wired inside.</figcaption>
   </a>
 </figure>
 <figure>
-  <a href="/img/radio_cooler2/portable_boombox_v2_rear.JPG">
-    <img src="/img/radio_cooler2/portable_boombox_v2_rear_thumb.JPG" alt="Finished portable custom radio rear.">
-    <figcaption>Finished radio rear w/ trickle charger.</figcaption>
+  <a href="/img/portable_custom_boombox/rear.jpg">
+    <img src="/img/portable_custom_boombox/rear_thumb.jpg" alt="Finished portable custom boombox rear.">
+    <figcaption>Finished boombox rear w/ trickle charger.</figcaption>
   </a>
 </figure>
 
 The rear only contains 4 mounting bolts which can be easily sealed with silicon
-caulking. The radio is significantly more portable than the previous iteration
+caulking. The boombox is significantly more portable than the previous iteration
 and can be carried with one hand like a suit case.
 
 <figure>
-  <a href="/img/radio_cooler2/portable_boombox_v2_size_reference.JPG">
-    <img src="/img/radio_cooler2/portable_boombox_v2_size_reference_thumb.JPG" alt="Me holding the custom radio at my side.">
-    <figcaption>Finished radio is very portable.</figcaption>
+  <a href="/img/portable_custom_boombox/complete_boombox_size_reference.jpg">
+    <img src="/img/portable_custom_boombox/complete_boombox_size_reference_thumb.jpg" alt="Me holding the custom boombox at my side.">
+    <figcaption>Finished boombox is very portable.</figcaption>
   </a>
 </figure>
 
