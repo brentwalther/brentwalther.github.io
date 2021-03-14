@@ -1,4 +1,5 @@
 ---
+heroimage: 'portable_custom_boombox/complete_boombox_size_reference.jpg'
 tags:
 - project
 - 'portable custom boombox'
@@ -107,7 +108,7 @@ circuit to go through the switch, so it drawn nothing when off now.
 </figure>
 <figure>
   <a href="/img/portable_custom_boombox/rear.jpg">
-    <img src="/img/portable_custom_boombox/rear_thumb.jpg" alt="Finished portable custom boombox rear.">
+    <img src="/img/portable_custom_boombox/rear_thumbnail.jpg" alt="Finished portable custom boombox rear.">
     <figcaption>Finished boombox rear w/ trickle charger.</figcaption>
   </a>
 </figure>
@@ -115,13 +116,6 @@ circuit to go through the switch, so it drawn nothing when off now.
 The rear only contains 4 mounting bolts which can be easily sealed with silicon
 caulking. The boombox is significantly more portable than the previous iteration
 and can be carried with one hand like a suit case.
-
-<figure>
-  <a href="/img/portable_custom_boombox/complete_boombox_size_reference.jpg">
-    <img src="/img/portable_custom_boombox/complete_boombox_size_reference_thumb.jpg" alt="Me holding the custom boombox at my side.">
-    <figcaption>Finished boombox is very portable.</figcaption>
-  </a>
-</figure>
 
 **Parts List**
 
