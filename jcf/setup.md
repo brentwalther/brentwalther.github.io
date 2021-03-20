@@ -27,7 +27,7 @@ You'll need git to clone JCF and my ledger scripts repository. Get it at [https:
 
 For convenience I like to structure all my repositories in a special directory. Usually `~/Development` on my personal workstations.
 
-#### Clone the tool Github repos
+#### Clone the tool Github repos {#clone-the-repos}
 
 ```
 cd ~/Development
