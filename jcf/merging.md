@@ -7,18 +7,19 @@ date: 2021-01-06
 
 The output of [matching](/jcf/matching.html) is a simple `ledger-CLI` compatible text file. It's perfectly fine to open and edit the file using  your favorite text editor. Depending on whether every transaction is properly balanced, you may end up needing to.
 
-Try merging the transactions from this ledger snippet is simple:
+To merge a ledger-cli compatible listing of transactions (e.g. `transactions.ledger` below) in to your `master.ledger`, use the [`ledger-scripts/merge.sh`](/jcf/setup.html#repos) as follows:
 
 ```
+cd ~/Development/ledger-scripts
 bash merge.sh ~/Downloads/transactions.ledger
 ```
 
-if there are any problems with the merge, ledger will print them and the merge will fail. For example:
+If there are any problems with the merge, ledger will print them and the merge will fail. For example:
 
 ```
 While balancing transaction from "/tmp/tmp.6lhsdICjqC", lines 24148-24149
 > 2020-01-30 * NORDSTROM #0010 LYNNWOOD WA
->   Liabilities:Credit Card:Chase 8881                        $-80.97
+>   Liabilities:Credit Card:Chase 1234                        $-80.97
 Unbalanced remainder is:
                $-80.97
 Amount to balance against:

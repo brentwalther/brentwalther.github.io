@@ -6,18 +6,40 @@ tags:
 - bazel
 - ledger
 - ledger-cli
+- ledger cli
 - jcf
 - java cash flow
 - settings
-- profiles
+- profile
+- convert
 - csv
+- ally
+- checking
+- savings
+- credit card
+- capital one
+- venture
+- performance savings
+- chase
+- sapphire reserve
+- amex
+- american express
+- blue cash preferred
 title: JCF settings profiles
 ---
 To allow JCF to read the transactions from a CSV file, it needs to know a few extra details like the column ordering and date formats in the CSV file. JCF settings profiles allow you to declare these configuration values ahead of time and may be version controled alongside your other data. As part of [setup](/jcf/setup.html#create-the-repo) you should have a `jcf_settings_profiles.textproto` file with a couple of example settings profiles.
 
 I create settings profiles as I go before I match each CSV. Each new settings profile can be re-used so after building up a collection you only need to create new ones for new accounts.
 
-To create one, I open the CSV file and determine the following:
+To see some examples, consider looking at:
+
+- [Ally Checking and Savings](#ally-checking-savings) settings profile.
+- [Capital One Venture Credit Card](#capital-one-venture) settings profile.
+- [Capital One Performance Savings](#capital-one-performance-savings) settings profile.
+- [American Express Blue Cash Preferred Credit Card](#amex-blue-cash-preferred) settings profile.
+- [Chase Sapphire Reserve Credit Card](#chase-sapphire-reserve) settings profile.
+
+You can just as easily create a custom one. I open the CSV file and define one myself by looking at the date format, column indexes of the data, and the [account](#accounts) if applies to using the following template:
 
 ```
 settings_profile: {
@@ -73,7 +95,7 @@ Lastly, I sometimes have a separate profile for account nicknames but also somet
 
 JCF works best when you have at the very least listed the expected accounts in your `master.ledger`. You may optionally have a separate `master.accounts` file containing an explicit account listing.
 
-As part of [setup](/jcf/setup.html#create-the-repo) you should have set up a master ledger with a bunch of income and expense accounts as part of setup. If you need to add more, simply edit your `master.ledger` to add explicit account lines like:
+As part of [setup](/jcf/setup.html#create-the-repo) you likely set up a master ledger with an explicit listing of income and expense accounts. As you begin cataloging transactions from more banks and financial institutions, just edit your `master.ledger` to new account listings like:
 
 ```
 account Expenses:My Expense Category:Sub Category 
@@ -84,3 +106,137 @@ or
 ```
 account Assets:Current Assets:My Bank 1234
 ```
+
+### JCF Settings profile for converting Ally Checking and Savings CSVs {#ally-checking-savings}
+
+As of March 2021, I use the following settings profile to [match and convert](/jcf/matching.html) CSV transaction exports from Ally Checking and Savings accounts to a ledger-cli compatible file which I can then [merge](/jcf/merging.html) in to my `master.ledger`. Simply replace the example account number suffix (`1234`) with your own:
+
+```
+settings_profile: {
+  name: '1234'
+  csv_date_format_java: 'yyyy-MM-dd'
+  csv_field_positions: {
+    position: {
+      field: DATE
+      column_index: 0
+    }
+    position: {
+      field: AMOUNT
+      column_index: 2
+    }
+    position: {
+      field: DESCRIPTION
+      column_index: 4
+    }
+  }
+  csv_account_name: 'Assets:Current Assets:Ally Checking 1234'
+}
+```
+
+### JCF Settings profile for converting Capital One Venture Credit Card CSVs {#capital-one-venture}
+
+As of March 2021, I use the follow settings profile to [match and convert](/jcf/matching.html) CSV transactions exports from my Capital One Venture Credit Card account to a ledger-cli compatible file which I can then [merge](/jcf/merging.html) in to my `master.ledger`. Simply replace the example account number suffix (`1234`) with your own:
+
+```
+settings_profile: {
+  name: '1234'
+  csv_account_name: 'Liabilities:Credit Card:Capital One Venture 1234'
+  csv_date_format_java: 'yyyy-MM-dd'
+  csv_field_positions: {
+    position: {
+      field: DATE
+      column_index: 1
+    }
+    position: {
+      field: DESCRIPTION
+      column_index: 3
+    }
+    position: {
+      field: DEBIT
+      column_index: 5
+    }
+    position: {
+      field: CREDIT
+      column_index: 6
+    }
+  }
+}
+```
+
+### JCF Settings profile for converting Capital One Performance Savings CSVs {#capital-one-performance-savings}
+
+As of March 2021, I use the follow settings profile to [match and convert](/jcf/matching.html) CSV transactions exports from my Capital One Performance Savings account to a ledger-cli compatible file which I can then [merge](/jcf/merging.html) in to my `master.ledger`. Simply replace the example account number suffix (`1234`) with your own:
+
+```
+ettings_profile: {
+  name: '1234'
+  csv_account_name: 'Assets:Current Assets:Capital One Savings 1234'
+  csv_date_format_java: 'MM/dd/yy'
+  csv_field_positions: {
+    position: {
+      field: DATE
+      column_index: 1
+    }
+    position: {
+      field: AMOUNT
+      column_index: 2
+    }
+    position: {
+      field: DESCRIPTION
+      column_index: 4
+    }
+  }
+}
+```
+
+### JCF Settings profile for converting American Express Blue Cash Preferred Credit Card CSVs {#amex-blue-cash-preferred}
+
+As of March 2021, I use the follow settings profile to [match and convert](/jcf/matching.html) CSV transactions exports from my American Express Blue Cash Preferred Credit Card account to a ledger-cli compatible file which I can then [merge](/jcf/merging.html) in to my `master.ledger`. Simply replace the example account number suffix (`12345`) with your own:
+
+```
+settings_profile: {
+  name: '12345'
+  csv_account_name: 'Liabilities:Credit Card:American Express Blue Cash Preferred 12345'
+  csv_date_format_java: 'MM/dd/yyyy'
+  csv_field_positions: {
+    position: {
+      field: DATE
+      column_index: 0
+    }
+    position: {
+      field: DESCRIPTION
+      column_index: 1
+    }
+    position: {
+      field: NEGATED_AMOUNT
+      column_index: 4
+    }
+  }
+}
+```
+
+### JCF Settings profile for converting Chase Sapphire Reserve Credit Card CSVs {#chase-sapphire-reserve}
+
+As of March 2021, I use the follow settings profile to [match and convert](/jcf/matching.html) CSV transactions exports from my Chase Sapphire Reserve Credit Card account to a ledger-cli compatible file which I can then [merge](/jcf/merging.html) in to my `master.ledger`. Simply replace the example account number suffix (`1234`) with your own:
+
+```
+settings_profile: {
+  name: '1234'
+  csv_account_name: 'Liabilities:Credit Card:Chase 1234'
+  csv_date_format_java: 'MM/dd/yyyy'
+  csv_field_positions: {
+    position: {
+      field: DATE
+      column_index: 1
+    }
+    position: {
+      field: DESCRIPTION
+      column_index: 2
+    }
+    position: {
+      field: AMOUNT
+      column_index: 5
+    }
+  }
+}
+````

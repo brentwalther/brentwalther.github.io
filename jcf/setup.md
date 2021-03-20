@@ -23,7 +23,7 @@ You need to install the [`ledger-CLI`](https://www.ledger-cli.org/download.html)
 
 You'll need git to clone JCF and my ledger scripts repository. Get it at [https://git-scm.com/](https://git-scm.com/).
 
-### Repos
+### Repos {#repos}
 
 For convenience I like to structure all my repositories in a special directory. Usually `~/Development` on my personal workstations.
 
