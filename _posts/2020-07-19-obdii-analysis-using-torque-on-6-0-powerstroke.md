@@ -1,7 +1,7 @@
 ---
 tags:
 - project
-title: Analyzing my 6.0L Powerstroke ODBII data
+title: Analyzing my 6.0L Powerstroke OBDII data
 ---
 I recently took my 2003 F-250 on a trip pulling a single-axle camper trailer behind it. I've had the truck now for a few months and am well aware of the shortcomings of the 6.0L Powerstroke engine but wanted to collect some data for my engine to use as justification and prioritization for upgrades. I've been looking at the parts offered by [BulletProofDiesel](https://bulletproofdiesel.com/pages/bullet-proof-your-ford-6-liter) for quite some time but didn't want to unnecessarily upgrade parts without first establishing a baseline for engine health. Using a bluetooth ODBII adapter and the Torque Android app, I collected that data on this recent trip. I estimate the total combine weight of the trailer, cargo, and passengers to be ~3000 pounds (on top of the truck curb weight).
 
@@ -13,7 +13,7 @@ I recently took my 2003 F-250 on a trip pulling a single-axle camper trailer beh
 
 As described in this BulletProofDiesel article <a href="#footnote-2" id="fnl-2">\[2\]</a>, the engine oil cooler is one of the main things on a 6.0L Powerstroke that is prone to failures (especially on higher mileage vehicles). If it fails, the failure can quickly cascade to other parts (e.g. the EGR cooler) too. To know whether or not the oil cooler is beginning to cause problems for you, you need to know the temperatures of your engine oil and engine cooleant. It's recommended that the temperature of the two differ no more than about 10-15 degrees Farhenheit <a href="#footnote-1" id="fnl-1">\[1\]</a>.
 
-I used the [Torque Android app](https://play.google.com/store/apps/details?id=org.prowl.torque&hl=en_US) and a bluetooth ODBII adapter to monitor the two temperatures using the truck's own sensors. The app polls the ECM for sensor values on a regular basis and can be configured to log specific values in a CSV file for export later. I monitored the values for an 8 hour trip between <a href="https://goo.gl/maps/nC38TSYrvBAzCsYY6">Palo Duro Canyon State Park</a> (outside of Amarillo, TX) back to our home in Austin, TX.
+I used the [Torque Android app](https://play.google.com/store/apps/details?id=org.prowl.torque&hl=en_US) and a bluetooth OBDII adapter to monitor the two temperatures using the truck's own sensors. The app polls the ECM for sensor values on a regular basis and can be configured to log specific values in a CSV file for export later. I monitored the values for an 8 hour trip between <a href="https://goo.gl/maps/nC38TSYrvBAzCsYY6">Palo Duro Canyon State Park</a> (outside of Amarillo, TX) back to our home in Austin, TX.
 
 After collecting the data it's clear that replacing my oil cooler, potentially with an upgrade, is a priority repair for this truck. While we didn't hit any snags along the trip, the engine oil ran quite hot. It ran 224°F on average and was as hot as 236°F during the trip. The coolant averaged 208°F. The difference between the two was 15.6°F on average but was as great as 25.5°F later on in the trip (after pulling for several hours).
 
