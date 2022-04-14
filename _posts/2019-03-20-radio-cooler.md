@@ -29,7 +29,7 @@ for tens of hours.
 
 My radio cooler is built from mostly inexpensive components and was constructed
 such that any component can be swapped out quite easily. For this build, I
-used:</p>
+used:
 
 - [BOSS Audio MR60W 200 Watt Weatherproof Marine Speaker Pair](https://www.amazon.com/gp/product/B0001XO674/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0001XO674&linkCode=as2&tag=brentwalther-20&linkId=d27a93d077a8b48311c50f636e829d00) -
   ($24.99 x 2) - I used 4. They are cheap, can by pumped with power, and have
