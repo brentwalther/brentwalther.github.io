@@ -115,20 +115,18 @@ I try to keep up with interesting new releases in Hip-hop, Rap, Country,
 Electronic, and more. This section is a log of some of the things I've listened
 to and my specific opinions of them.
 
-My full listen log is on my [LastFM](https://www.last.fm/user/brentwalther). My
-Rap/Hip-Hop playlist (which I add too frequently) can be found
-[here on Spotify](https://open.spotify.com/user/121624922/playlist/5Rup4WYBgxlnXh1kCV0WCw?si=YYg3wxCzTYOzSYBArmBwoQ).
-Be sure to sort by recently added because I've been working on it for 4+ years!
+My full listen log is on my [LastFM](https://www.last.fm/user/brentwalther). If
+you want a glimpse of my taste, look at my [Spotify profile](https://open.spotify.com/user/121624922).
 
-My "rating" system is pretty simple. I rate albums on a five star scale:
+My "rating" system is simple. I rate albums on a five star scale:
 
-- 1/5 - Pass. I probably won't listen to this again.
-- 2/5 - Meh. I didn't really like it but I could be convinced to give it another
+- 1 / 5 - Pass. I probably won't listen to this again.
+- 2 / 5 - Meh. I didn't really like it but I could be convinced to give it another
   try
-- 3/5 - Decent. I enjoyed it but it wasn't anything special.
-- 4/5 - Yeah! This album was good, and I probably added some songs from it to a
+- 3 / 5 - Decent. I enjoyed it but it wasn't anything special.
+- 4 / 5 - Yeah! This album was good, and I probably added some songs from it to a
   playlist.
-- 5/5 - FIRE! I have it on repeat.
+- 5 / 5 - FIRE! I have it on repeat.
 
 <br><!-- hack <br> to prevent the first review from being scooped up in the generated <li> above. I don't know why it does that. -->
 
