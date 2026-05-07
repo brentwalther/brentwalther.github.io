@@ -5,7 +5,7 @@ layout: default
 ## Trucks (past and present)
 
 <figure>
-  <img src="/img/trucks/2003_f250_2025-10-13.jpg" alt="A 2003 Ford F-250 with a maroon paint job parked in a camping park in front of a travel trailer.">
+  <img src="/img/2003_f250_2025-10-13.jpg" alt="A 2003 Ford F-250 with a maroon paint job parked in a camping park in front of a travel trailer.">
   <figcaption>My 2003 Ford F-250 with a 6.0 Powerstroke diesel engine.</figcaption>
 </figure>
 
