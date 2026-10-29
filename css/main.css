@@ -91,3 +91,9 @@ th {
 tr:nth-child(even) {
   background-color: #eee;
 }
+
+.grid line {
+  stroke: #b4b4b4;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
