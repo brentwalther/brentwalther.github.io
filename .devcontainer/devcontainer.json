@@ -1,0 +1,36 @@
+// For format details, see https://aka.ms/devcontainer.json.
+{
+  "name": "GitHub Pages Jekyll Site",
+  
+  // Uses Microsoft's pre-built Jekyll image optimized for dev containers
+  "image": "mcr.microsoft.com/devcontainers/jekyll",
+
+  // Forwards ports from the container back to your local machine
+  // 4000: Default Jekyll server port
+  // 35729: Essential for Live Reloading when you modify files
+  "forwardPorts": [4000, 35729],
+
+  "portsAttributes": {
+    "4000": {
+      "label": "Jekyll Local Server",
+      "onAutoForward": "openBrowser"
+    },
+    "35729": {
+      "label": "Jekyll Live Reload",
+      "onAutoForward": "ignore"
+    }
+  },
+
+  // Automatically installs extensions inside the container environment
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "sissel.shopify-liquid",   // Syntax highlighting for Jekyll layouts
+        "yzhang.markdown-all-in-one" // Helps write Markdown content easily
+      ]
+    }
+  },
+
+  // Commands to run after the container is safely created
+  "postCreateCommand": "bundle install"
+}
